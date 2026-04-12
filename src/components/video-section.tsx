@@ -1,11 +1,9 @@
 "use client";
 
-import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
-const VIDEO_ID = "AKtT6NLZGoM";
+const YOUTUBE_URL = "https://youtu.be/AKtT6NLZGoM";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -13,8 +11,6 @@ const fadeUp = {
 };
 
 export function VideoSection() {
-  const [playing, setPlaying] = React.useState(false);
-
   return (
     <section id="watch" className="py-24 md:py-32">
       <motion.div
@@ -47,50 +43,31 @@ export function VideoSection() {
           .
         </motion.p>
 
-        {/* Video embed */}
-        <motion.div
-          variants={fadeUp}
-          className="mt-10 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] shadow-2xl shadow-black/40"
-        >
-          {playing ? (
-            <div className="relative aspect-video">
-              <iframe
-                src={`https://www.youtube.com/embed/${VIDEO_ID}?autoplay=1&rel=0`}
-                title="YouTube video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="absolute inset-0 size-full"
-              />
-            </div>
-          ) : (
-            <button
-              onClick={() => setPlaying(true)}
-              className="group relative block w-full cursor-pointer"
+        {/* Looping video preview */}
+        <motion.div variants={fadeUp} className="mt-10">
+          <Link
+            href={YOUTUBE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative block overflow-hidden rounded-2xl border border-white/10 shadow-2xl shadow-black/40"
+          >
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full transition-all duration-500 group-hover:scale-105 group-hover:blur-md"
             >
-              <div className="relative aspect-video">
-                <Image
-                  src={`https://img.youtube.com/vi/${VIDEO_ID}/maxresdefault.jpg`}
-                  alt="Watch on YouTube"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                {/* Dark overlay */}
-                <div className="absolute inset-0 bg-black/30 transition-colors group-hover:bg-black/20" />
-                {/* Play button */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="flex size-16 items-center justify-center rounded-full bg-white/90 shadow-xl transition-transform group-hover:scale-110 md:size-20">
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="black"
-                      className="ml-1 size-6 md:size-8"
-                    >
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </button>
-          )}
+              <source src="/preview.mp4" type="video/mp4" />
+            </video>
+
+            {/* Hover overlay */}
+            <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/0 transition-all duration-500 group-hover:bg-black/40">
+              <span className="text-xl font-medium tracking-tight opacity-0 transition-all duration-500 group-hover:opacity-100 md:text-2xl">
+                watch on youtube
+              </span>
+            </div>
+          </Link>
         </motion.div>
 
         <motion.p
