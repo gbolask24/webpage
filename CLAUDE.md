@@ -8,7 +8,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is the workspace for **Oleg Melnikov's personal landing page** — a one-pager website that quickly communicates who Oleg is to the public world: his story, expertise, what he offers, and how to connect.
 
-**Oleg** is a 25-year-old AI engineer turned entrepreneur. Former quant researcher (Pinely, Amsterdam), math olympiad winner, CS graduate from Saint Petersburg State University. He quit a ~600K EUR/year trading career at 24 to build Authority AI (done-for-you LinkedIn content for B2B founders) and a growing YouTube channel (15.7K subs, Claude Code + AI automation tutorials).
+**Oleg** is an AI software entrepreneur with 5 years in AI. Former big tech (Yandex, JetBrains) and hedge fund (Amsterdam). Now runs Authority AI (helps B2B founders build authentic personal brands) and a growing YouTube channel (16.6K subs, AI for marketing tutorials).
 
 **This file (CLAUDE.md) is the foundation.** It is automatically loaded at the start of every session. Keep it current — it is the single source of truth for how Claude should understand and operate within this workspace.
 
@@ -111,11 +111,11 @@ If yes to any, update the relevant sections. This file must always reflect the c
 
 This site should convey:
 
-- **Who Oleg is** -- AI engineer, math olympiad winner, former quant, founder
-- **The story** -- Quit 600K EUR/year trading career at 24, 8 months zero revenue, now building Authority AI + YouTube
-- **What he offers** -- Authority AI (LinkedIn content for B2B founders), YouTube (Claude Code tutorials), Skool community
-- **Social proof** -- Client results (Mike Kamo, Rhys McKay), YouTube growth (15.7K subs, 435K views), math/CS credentials
-- **How to connect** -- YouTube, LinkedIn, website links, CTA
+- **Who Oleg is** -- AI software entrepreneur, 5 years in AI, big tech + hedge fund background, math olympiad winner
+- **The arc** -- Built AI in big tech and as an entrepreneur; now focused on AI systems for marketing
+- **What he offers** -- Authority AI (authentic personal brands for B2B founders), YouTube (AI for marketing tutorials), Skool community
+- **Social proof** -- 1M+ client views, Mike Kamo, $6.6K first deal in 14 days, 16.6K YouTube subs, 500K+ YouTube views, math/CS credentials
+- **How to connect** -- YouTube (@Oleg-Melnikov), LinkedIn (/olegai), Instagram, buildauthority.ai
 
 Key references in the main repo (`/Users/olegmelnikov/Desktop/Software Projects/oleeeg`) contain deeper context if needed.
 
@@ -152,7 +152,7 @@ Single page with 6 sections:
 1. **Hero** — Tagline, photo, CTAs (`src/components/hero-section.tsx`)
 2. **About** — What Oleg does now (`src/components/about-section.tsx`)
 3. **Results** — Stats, client proof, credentials (`src/components/results-section.tsx`)
-4. **Video** — Embedded YouTube with thumbnail preview (`src/components/video-section.tsx`)
+4. **Video** — Looping 5s muted preview, blur + "watch on youtube" on hover (`src/components/video-section.tsx`)
 5. **Connect** — Social links + footer (`src/components/connect-section.tsx`)
 6. **Header** — Floating nav, blurs on scroll (`src/components/header.tsx`)
 

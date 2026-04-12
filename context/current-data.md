@@ -6,8 +6,8 @@
 
 | Metric | Current Value | Target | Notes |
 |--------|---------------|--------|-------|
-| YouTube subs | 15,700 | 120K by Oct 1 | Growing ~50% MoM |
-| YouTube total views | 435K+ | -- | 107 videos published |
+| YouTube subs | 16,600 | 120K by Oct 1 | Growing ~50% MoM |
+| YouTube total views | 500K+ | -- | Growing |
 | LinkedIn followers | 3,395 | -- | 2,496 connections, premium verified |
 | Website visitors/mo | 2,322 | -- | 75% from YouTube |
 | Monthly revenue (Mar) | $5,820 | $10K (Apr) | Total to date: ~$10K |
@@ -17,8 +17,8 @@
 
 ## Social Presence
 
-- YouTube: youtube.com/@oleeeg -- primary channel
-- LinkedIn: linkedin.com/in/olegmelnikov (premium, verified)
+- YouTube: youtube.com/@Oleg-Melnikov -- primary channel
+- LinkedIn: linkedin.com/in/olegai (premium, verified)
 - Instagram personal: @melnikoff_oleg (1,038 followers)
 - Website: buildauthority.ai (2,300+ visitors/mo)
 
