@@ -36,17 +36,16 @@ export function AboutSection() {
             className="text-white underline decoration-zinc-600 underline-offset-4 transition-colors hover:decoration-white"
           >
             authority ai
-          </Link>{" "}
-          — a done-for-you system that turns busy founders into linkedin
-          authorities. one hour per week, 5 posts delivered. no ghostwriters, no
-          templates — an AI interview that captures your real voice.
+          </Link>
+
+          . we help B2B founders build authentic personal brands. you talk, our AI writes your content. one hour a week, five posts done for you.
         </motion.p>
 
         <motion.p
           variants={fadeUp}
           className="mt-6 text-xl leading-relaxed text-zinc-300 md:text-2xl"
         >
-          i also teach ai automation and{" "}
+          i teach ai and{" "}
           <Link
             href="https://www.youtube.com/@Oleg-Melnikov"
             target="_blank"
@@ -55,24 +54,14 @@ export function AboutSection() {
           >
             claude code
           </Link>{" "}
-          to 16,600+ subscribers on youtube.
+          to 16,600+ people on youtube.
         </motion.p>
 
         <motion.p
           variants={fadeUp}
           className="mt-6 text-xl leading-relaxed text-zinc-300 md:text-2xl"
         >
-          before this, i spent 2 years as a quantitative researcher at pinely in
-          amsterdam, building high-frequency trading strategies. i left a
-          ~$650k/year career because i wanted to build something of my own.
-        </motion.p>
-
-        <motion.p
-          variants={fadeUp}
-          className="mt-6 text-lg leading-relaxed text-zinc-500"
-        >
-          8 months of zero revenue, zero clients, zero plan. then the first deal
-          came — completely organically from youtube.
+          before this, i spent 2 years building trading algorithms at a hedge fund in amsterdam. then i left to start my own thing.
         </motion.p>
       </motion.div>
     </section>

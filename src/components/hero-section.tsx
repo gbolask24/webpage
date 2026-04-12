@@ -43,7 +43,7 @@ export function HeroSection() {
             per="line"
             className="mx-auto mt-6 max-w-2xl text-balance text-lg text-zinc-400 md:text-xl"
           >
-            now i help B2B founders become authorities in their space — and teach thousands how to build with AI on youtube.
+            i build AI systems for marketing and teach thousands how to do the same on youtube.
           </TextEffect>
 
           {/* CTAs */}
