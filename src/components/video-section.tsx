@@ -61,8 +61,8 @@ export function VideoSection() {
               <source src="/preview.mp4" type="video/mp4" />
             </video>
 
-            {/* Hover overlay */}
-            <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/0 transition-all duration-500 group-hover:bg-black/40">
+            {/* Subtle darkening + hover overlay */}
+            <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/15 transition-all duration-500 group-hover:bg-black/40">
               <span className="text-xl font-medium tracking-tight opacity-0 transition-all duration-500 group-hover:opacity-100 md:text-2xl">
                 watch on youtube
               </span>
