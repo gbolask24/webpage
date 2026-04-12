@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Unbounded } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
+});
+
+const unbounded = Unbounded({
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+  variable: "--font-unbounded",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="en" className={`${inter.className} ${unbounded.variable}`}>
       <body>{children}</body>
     </html>
   );

@@ -32,7 +32,7 @@ export function Header() {
         )}
       >
         <div className="relative flex items-center justify-between py-3 lg:py-4">
-          <Link href="/" className="text-lg font-medium tracking-tight">
+          <Link href="/" className="text-lg font-[family-name:var(--font-unbounded)] tracking-tight">
             oleg melnikov
           </Link>
 
