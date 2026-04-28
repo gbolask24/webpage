@@ -33,7 +33,7 @@ export function HeroSection() {
             delay={0.2}
             className="mx-auto mt-8 max-w-3xl text-balance text-2xl font-medium tracking-tight sm:text-3xl md:text-4xl lg:text-5xl"
           >
-            5 years in AI. left big tech and a hedge fund to build on my own terms.
+            5 years in AI. left big tech and a hedge fund to do my own thing.
           </TextEffect>
 
           {/* Subheading */}
@@ -43,7 +43,7 @@ export function HeroSection() {
             per="line"
             className="mx-auto mt-6 max-w-2xl text-balance text-lg text-zinc-400 md:text-xl"
           >
-            i help founders build authentic personal brands — and share AI for marketing with 17K+ on youtube.
+            now i'm running a service business that's 90% AI inside — and sharing AI systems for marketing with 17K+ on youtube.
           </TextEffect>
 
           {/* CTAs */}
