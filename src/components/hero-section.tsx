@@ -43,7 +43,7 @@ export function HeroSection() {
             per="line"
             className="mx-auto mt-6 max-w-2xl text-balance text-lg text-zinc-400 md:text-xl"
           >
-            now i help founders build authentic brands with AI — and teach 17K+ how on youtube.
+            i help founders build authentic personal brands — and share AI for marketing with 17K+ on youtube.
           </TextEffect>
 
           {/* CTAs */}
