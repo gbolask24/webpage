@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const stats = [
   { value: "1M+", label: "views generated for clients" },
-  { value: "16.6K", label: "youtube subscribers" },
+  { value: "17K", label: "youtube subscribers" },
   { value: "500K+", label: "youtube views" },
   { value: "$6,600", label: "first inbound deal for a client in 14 days" },
 ];
