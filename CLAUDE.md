@@ -192,8 +192,18 @@ npm run start  # Start production server
 6. **Header** — Floating nav, blurs on scroll (`src/components/header.tsx`)
 
 **Resource pages** — YouTube video companion pages with setup guides:
-- `/claude-outreach` — Claude Code for cold outreach (`src/app/claude-outreach/page.tsx`)
-- `/claude-twitter` — Claude Code X/Twitter content machine (`src/app/claude-twitter/page.tsx`)
+- `/claude-outreach` — Claude Code for cold outreach
+- `/claude-twitter` — X/Twitter content machine
+- `/claude-tiktok` — Viral TikTok videos
+- `/claude-website` — Build personal website
+- `/claude-social-growth` — Viral social media growth
+- `/claude-trend-scanner` — Trend scanner for 10x more views
+- `/claude-b2b-outreach` — B2B outreach (35% reply rate)
+- `/claude-seo` — SEO optimization
+- `/claude-cowork-outreach` — Claude Cowork for cold outreach
+- `/claude-marketing` — Marketing (SMM, ads, outreach)
+- `/claude-reels` — Viral Instagram Reels
+- `/claude-content` — Content creation in 10 minutes
 
 Resource pages follow a shared pattern: minimal header, embedded YouTube video, accordion setup steps, footer. Each lives in `src/app/{slug}/page.tsx` with its own `layout.tsx` for metadata.
 
