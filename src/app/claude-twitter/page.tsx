@@ -331,13 +331,35 @@ export default function ClaudeTwitterPage() {
           </motion.div>
         </section>
 
+        {/* Setup guide */}
+        <motion.section
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
+          className="pb-16 md:pb-20"
+        >
+          <div className="mx-auto max-w-3xl px-6">
+            <motion.h2
+              variants={fadeUp}
+              className="text-sm uppercase tracking-widest text-zinc-500"
+            >
+              setup guide
+            </motion.h2>
+
+            <motion.div variants={fadeUp} className="mt-8">
+              <Accordion items={steps} />
+            </motion.div>
+          </div>
+        </motion.section>
+
         {/* YouTube video */}
         <motion.section
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={fadeUp}
-          className="pb-16 md:pb-20"
+          className="pb-24 md:pb-32"
         >
           <div className="mx-auto max-w-3xl px-6">
             <div className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl shadow-black/40">
@@ -354,28 +376,6 @@ export default function ClaudeTwitterPage() {
                 />
               </div>
             </div>
-          </div>
-        </motion.section>
-
-        {/* Setup guide */}
-        <motion.section
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
-          className="pb-24 md:pb-32"
-        >
-          <div className="mx-auto max-w-3xl px-6">
-            <motion.h2
-              variants={fadeUp}
-              className="text-sm uppercase tracking-widest text-zinc-500"
-            >
-              setup guide
-            </motion.h2>
-
-            <motion.div variants={fadeUp} className="mt-8">
-              <Accordion items={steps} />
-            </motion.div>
           </div>
         </motion.section>
       </main>
