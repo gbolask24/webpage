@@ -34,7 +34,8 @@ Claude should always orient itself through `/prime` at session start, then act w
 │   └── commands/          # Slash commands Claude can execute
 │       ├── prime.md       # /prime — session initialization
 │       ├── create-plan.md  # /create-plan — create implementation plans
-│       └── implement.md   # /implement — execute plans
+│       ├── implement.md   # /implement — execute plans
+│       └── scrape-video.md # /scrape-video — YouTube URL → full MD file
 ├── context/               # Background context about the user and project
 │                          # (User should populate with role, goals, strategies)
 ├── plans/                 # Implementation plans created by /create-plan
@@ -82,6 +83,20 @@ Example: `/create-plan add a competitor analysis command`
 Reads the plan, executes each step in order, validates the work, and updates the plan status.
 
 Example: `/implement plans/2026-01-28-competitor-analysis-command.md`
+
+### /scrape-video [youtube-url]
+
+**Purpose:** Scrape a YouTube video's metadata and transcript, then save as a clean markdown file.
+
+Uses two Apify actors in parallel:
+- `pintostudio/youtube-transcript-scraper` — full transcript
+- `streamers/youtube-scraper` — title, views, likes, duration, description, etc.
+
+Produces a single MD file in `outputs/video-{slug}.md` with metadata table, description, timestamps, links, and cleaned transcript.
+
+Requires `APIFY_KEY` in `.env`.
+
+Example: `/scrape-video https://youtu.be/JQQhT0edXXw`
 
 ---
 
