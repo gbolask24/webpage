@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Accordion } from "@/components/accordion";
 import { ResourceFooter } from "@/components/resource-footer";
+import { ArticleJsonLd } from "@/components/json-ld";
 
 const VIDEO_ID = "JQQhT0edXXw";
 
@@ -276,6 +277,15 @@ const steps = [
 export default function ClaudeTwitterPage() {
   return (
     <>
+      <ArticleJsonLd
+        title="AI Twitter Content Machine with Claude Code"
+        description="Build an AI-powered X/Twitter content system with Claude Code. Scrape competitor tweets, analyze what goes viral, and generate ready-to-publish posts."
+        url="https://oleg.ae/claude-twitter"
+        datePublished="2026-05-12"
+        dateModified="2026-05-13"
+        videoId="JQQhT0edXXw"
+        videoTitle="Claude Code X/Twitter Content Machine"
+      />
       {/* Minimal header */}
       <header className="px-2">
         <div className="mx-auto mt-2 flex max-w-3xl items-center justify-between px-6 py-4">

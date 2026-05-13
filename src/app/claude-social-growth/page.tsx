@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Accordion } from "@/components/accordion";
 import { ResourceFooter } from "@/components/resource-footer";
+import { ArticleJsonLd } from "@/components/json-ld";
 
 const VIDEO_ID = "GK3JFG7x7LA";
 
@@ -179,6 +180,15 @@ const steps = [
 export default function ClaudeSocialGrowthPage() {
   return (
     <>
+      <ArticleJsonLd
+        title="AI Social Media Growth with Claude Code"
+        description="Analyze thousands of competitor videos, identify viral outliers, and build a data-driven AI content strategy for YouTube, Instagram, and TikTok growth."
+        url="https://oleg.ae/claude-social-growth"
+        datePublished="2026-05-12"
+        dateModified="2026-05-13"
+        videoId="GK3JFG7x7LA"
+        videoTitle="Claude Code for Viral Social Media Growth"
+      />
       {/* Minimal header */}
       <header className="px-2">
         <div className="mx-auto mt-2 flex max-w-3xl items-center justify-between px-6 py-4">

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Accordion } from "@/components/accordion";
 import { ResourceFooter } from "@/components/resource-footer";
+import { ArticleJsonLd } from "@/components/json-ld";
 
 const VIDEO_ID = "QOuH88WW7bQ";
 
@@ -227,6 +228,15 @@ const steps = [
 export default function ClaudeContentPage() {
   return (
     <>
+      <ArticleJsonLd
+        title="AI Content Creation with Claude Code in 10 Minutes"
+        description="Generate weeks of social media content with custom visuals — infographics, carousels, personal images — from a single prompt using Claude Code."
+        url="https://oleg.ae/claude-content"
+        datePublished="2026-05-12"
+        dateModified="2026-05-13"
+        videoId="QOuH88WW7bQ"
+        videoTitle="Claude Code for Content Creation in 10 Minutes"
+      />
       {/* Minimal header */}
       <header className="px-2">
         <div className="mx-auto mt-2 flex max-w-3xl items-center justify-between px-6 py-4">

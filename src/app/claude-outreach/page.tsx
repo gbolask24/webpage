@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Accordion } from "@/components/accordion";
 import { ResourceFooter } from "@/components/resource-footer";
+import { ArticleJsonLd } from "@/components/json-ld";
 
 const VIDEO_ID = "aUO7kUc8aJU";
 
@@ -159,6 +160,15 @@ const steps = [
 export default function ClaudeOutreachPage() {
   return (
     <>
+      <ArticleJsonLd
+        title="Claude Code for Cold Outreach — Free AI Outreach Setup Guide"
+        description="Build an AI cold outreach system with Claude Code. Scrape leads, generate personalized messages with visuals, and close deals on LinkedIn, Instagram, or Facebook."
+        url="https://oleg.ae/claude-outreach"
+        datePublished="2026-05-12"
+        dateModified="2026-05-13"
+        videoId="aUO7kUc8aJU"
+        videoTitle="Claude Code for Cold Outreach"
+      />
       {/* Minimal header */}
       <header className="px-2">
         <div className="mx-auto mt-2 flex max-w-3xl items-center justify-between px-6 py-4">

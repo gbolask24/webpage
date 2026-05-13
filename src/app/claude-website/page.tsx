@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Accordion } from "@/components/accordion";
 import { ResourceFooter } from "@/components/resource-footer";
+import { ArticleJsonLd } from "@/components/json-ld";
 
 const VIDEO_ID = "Iew4mx03C3s";
 
@@ -231,6 +232,15 @@ const steps = [
 export default function ClaudeWebsitePage() {
   return (
     <>
+      <ArticleJsonLd
+        title="Build a Website with AI Using Claude Code"
+        description="Build a professional personal website from scratch with Claude Code in under 30 minutes. No design skills needed."
+        url="https://oleg.ae/claude-website"
+        datePublished="2026-05-12"
+        dateModified="2026-05-13"
+        videoId="Iew4mx03C3s"
+        videoTitle="Build Your Personal Website with Claude Code"
+      />
       {/* Minimal header */}
       <header className="px-2">
         <div className="mx-auto mt-2 flex max-w-3xl items-center justify-between px-6 py-4">

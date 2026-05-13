@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Accordion } from "@/components/accordion";
 import { ResourceFooter } from "@/components/resource-footer";
+import { ArticleJsonLd } from "@/components/json-ld";
 
 const VIDEO_ID = "AKtT6NLZGoM";
 
@@ -201,6 +202,15 @@ const steps = [
 export default function ClaudeMarketingPage() {
   return (
     <>
+      <ArticleJsonLd
+        title="Claude Code for Marketing — AI Marketing Automation Guide"
+        description="Five real marketing use cases with Claude Code — Instagram Reels, competitor analysis, ad campaigns, cold outreach, and content automation."
+        url="https://oleg.ae/claude-marketing"
+        datePublished="2026-05-12"
+        dateModified="2026-05-13"
+        videoId="AKtT6NLZGoM"
+        videoTitle="Claude Code for Marketing"
+      />
       {/* Minimal header */}
       <header className="px-2">
         <div className="mx-auto mt-2 flex max-w-3xl items-center justify-between px-6 py-4">

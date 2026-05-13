@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Accordion } from "@/components/accordion";
 import { ResourceFooter } from "@/components/resource-footer";
+import { ArticleJsonLd } from "@/components/json-ld";
 
 const VIDEO_ID = "KOK8-0v4mUc";
 
@@ -185,6 +186,15 @@ const steps = [
 export default function ClaudeSeoPage() {
   return (
     <>
+      <ArticleJsonLd
+        title="AI SEO Optimization with Claude Code"
+        description="Let Claude Code handle your entire SEO strategy — meta tags, structured data, sitemaps, keyword research, and content optimization in one session."
+        url="https://oleg.ae/claude-seo"
+        datePublished="2026-05-12"
+        dateModified="2026-05-13"
+        videoId="KOK8-0v4mUc"
+        videoTitle="Claude Code for SEO Optimization"
+      />
       {/* Minimal header */}
       <header className="px-2">
         <div className="mx-auto mt-2 flex max-w-3xl items-center justify-between px-6 py-4">

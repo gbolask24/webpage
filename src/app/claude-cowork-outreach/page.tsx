@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Accordion } from "@/components/accordion";
 import { ResourceFooter } from "@/components/resource-footer";
+import { ArticleJsonLd } from "@/components/json-ld";
 
 const VIDEO_ID = "QoiFASDh8J8";
 
@@ -164,6 +165,15 @@ const steps = [
 export default function ClaudeCoworkOutreachPage() {
   return (
     <>
+      <ArticleJsonLd
+        title="Claude Cowork for Cold Outreach — AI LinkedIn Automation"
+        description="Use Claude Cowork to automate LinkedIn cold outreach. Research prospects, write personalized messages, and send connection requests on autopilot."
+        url="https://oleg.ae/claude-cowork-outreach"
+        datePublished="2026-05-12"
+        dateModified="2026-05-13"
+        videoId="QoiFASDh8J8"
+        videoTitle="Claude Cowork for Cold Outreach"
+      />
       {/* Minimal header */}
       <header className="px-2">
         <div className="mx-auto mt-2 flex max-w-3xl items-center justify-between px-6 py-4">

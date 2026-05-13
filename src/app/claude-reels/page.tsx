@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Accordion } from "@/components/accordion";
 import { ResourceFooter } from "@/components/resource-footer";
+import { ArticleJsonLd } from "@/components/json-ld";
 
 const VIDEO_ID = "JhtbnZUU_8E";
 
@@ -266,6 +267,15 @@ const steps = [
 export default function ClaudeReelsPage() {
   return (
     <>
+      <ArticleJsonLd
+        title="AI Instagram Reels with Claude Code"
+        description="Reverse-engineer viral Instagram Reels from competitors, analyze hooks and retention patterns, and generate ready-to-film AI Reels scripts."
+        url="https://oleg.ae/claude-reels"
+        datePublished="2026-05-12"
+        dateModified="2026-05-13"
+        videoId="JhtbnZUU_8E"
+        videoTitle="Claude Code for Viral Instagram Reels"
+      />
       {/* Minimal header */}
       <header className="px-2">
         <div className="mx-auto mt-2 flex max-w-3xl items-center justify-between px-6 py-4">

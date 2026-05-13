@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Accordion } from "@/components/accordion";
 import { ResourceFooter } from "@/components/resource-footer";
+import { ArticleJsonLd } from "@/components/json-ld";
 
 const VIDEO_ID = "gVpAjLUnD2c";
 
@@ -232,6 +233,15 @@ const steps = [
 export default function ClaudeTrendScannerPage() {
   return (
     <>
+      <ArticleJsonLd
+        title="AI Trend Scanner with Claude Code — Get 10x More Views"
+        description="Build an AI trend scanner that monitors Twitter, Reddit, YouTube, TikTok, and websites for trending topics in your niche. Get a daily briefing automatically."
+        url="https://oleg.ae/claude-trend-scanner"
+        datePublished="2026-05-12"
+        dateModified="2026-05-13"
+        videoId="gVpAjLUnD2c"
+        videoTitle="Claude Code Trend Scanner for 10x More Views"
+      />
       {/* Minimal header */}
       <header className="px-2">
         <div className="mx-auto mt-2 flex max-w-3xl items-center justify-between px-6 py-4">

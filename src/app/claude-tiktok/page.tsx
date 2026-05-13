@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Accordion } from "@/components/accordion";
 import { ResourceFooter } from "@/components/resource-footer";
+import { ArticleJsonLd } from "@/components/json-ld";
 
 const VIDEO_ID = "lw69SOTKRM4";
 
@@ -276,6 +277,15 @@ const steps = [
 export default function ClaudeTiktokPage() {
   return (
     <>
+      <ArticleJsonLd
+        title="AI TikTok Content with Claude Code"
+        description="Build an AI system that reverse-engineers viral TikToks in your niche and generates scroll-stopping video concepts and scripts automatically."
+        url="https://oleg.ae/claude-tiktok"
+        datePublished="2026-05-12"
+        dateModified="2026-05-13"
+        videoId="lw69SOTKRM4"
+        videoTitle="Claude Code for Viral TikTok Videos"
+      />
       {/* Minimal header */}
       <header className="px-2">
         <div className="mx-auto mt-2 flex max-w-3xl items-center justify-between px-6 py-4">
