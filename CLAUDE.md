@@ -149,7 +149,7 @@ Ongoing goal: optimize the site for search around keywords like **"AI systems fo
 **Still to do:**
 - Open Graph images (branded preview for social shares)
 - Structured data / JSON-LD (Person schema)
-- Internal linking (homepage → resource pages)
+- Internal linking (homepage → resource pages — resource pages are now interlinked via `ResourceFooter`)
 - Performance audit (Lighthouse, image optimization)
 - More content pages (each YouTube video = a potential resource page targeting keywords)
 - Google Search Console verification (blocked for now, revisit later)
@@ -205,11 +205,12 @@ npm run start  # Start production server
 - `/claude-reels` — Viral Instagram Reels
 - `/claude-content` — Content creation in 10 minutes
 
-Resource pages follow a shared pattern: minimal header, embedded YouTube video, accordion setup steps, footer. Each lives in `src/app/{slug}/page.tsx` with its own `layout.tsx` for metadata.
+Resource pages follow a shared pattern: minimal header, embedded YouTube video, accordion setup steps, cross-linked resource footer. Each lives in `src/app/{slug}/page.tsx` with its own `layout.tsx` for metadata.
 
 **Shared components:**
 - Animation primitives in `src/components/motion/` (TextEffect, AnimatedGroup)
 - `src/components/accordion.tsx` — Reusable accordion for setup steps (used by resource pages)
+- `src/components/resource-footer.tsx` — Cross-linked footer showing all other resource pages with icons (uses `lucide-react`). When adding a new resource page, update the `resources` array in this file.
 
 ---
 

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Accordion } from "@/components/accordion";
+import { ResourceFooter } from "@/components/resource-footer";
 
 const VIDEO_ID = "KOK8-0v4mUc";
 
@@ -290,10 +291,7 @@ export default function ClaudeSeoPage() {
         </motion.section>
       </main>
 
-      {/* Footer */}
-      <footer className="border-t border-white/5 py-8 text-center text-sm text-zinc-600">
-        &copy; 2026 oleg melnikov
-      </footer>
+      <ResourceFooter currentSlug="claude-seo" />
     </>
   );
 }
