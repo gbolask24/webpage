@@ -14,348 +14,528 @@ const fadeUp = {
   },
 };
 
-const howItWorks = [
-  {
-    step: "1",
-    title: "collect brand",
-    description:
-      "scrape your website and Instagram, extract products, and build a complete brand profile with AI visual analysis.",
-  },
-  {
-    step: "2",
-    title: "find competitors",
-    description:
-      "search the Meta Ad Library by keywords, find advertisers spending real money, and rank them by performance signals.",
-  },
-  {
-    step: "3",
-    title: "analyze patterns",
-    description:
-      "AI analyzes top competitor ads and extracts winning hooks, copy structures, emotional angles, and visual approaches.",
-  },
-  {
-    step: "4",
-    title: "create ads",
-    description:
-      "generate ad concepts with AI-written copy and AI-generated visuals, each one replicating a proven competitor strategy.",
-  },
-];
-
 const steps = [
   {
-    title: "install prerequisites",
+    title: "step 1: install VS Code (your code editor)",
     content: (
       <div className="space-y-3">
-        <p>you need three things installed:</p>
-        <ul className="list-disc space-y-2 pl-5">
+        <p>
+          VS Code is a free app from Microsoft. it&apos;s where you&apos;ll open
+          and run the tool. think of it like Word, but for code.
+        </p>
+        <ol className="list-decimal space-y-2 pl-5">
           <li>
-            <a
-              href="https://nodejs.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white underline decoration-zinc-600 underline-offset-4 transition-colors hover:decoration-white"
-            >
-              Node.js 18+
-            </a>{" "}
-            — the runtime for the web app
-          </li>
-          <li>
+            go to{" "}
             <a
               href="https://code.visualstudio.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white underline decoration-zinc-600 underline-offset-4 transition-colors hover:decoration-white"
             >
-              VS Code
-            </a>{" "}
-            — recommended editor for the best experience with Claude Code
+              code.visualstudio.com
+            </a>
           </li>
           <li>
-            <span className="text-white">Claude Code</span> — install the{" "}
+            click the big <span className="text-white">Download</span> button
+          </li>
+          <li>open the downloaded file and install it like any other app</li>
+          <li>
+            on Mac: drag it into your Applications folder. on Windows: just
+            click &quot;Next&quot; through the installer
+          </li>
+        </ol>
+      </div>
+    ),
+  },
+  {
+    title: "step 2: install Node.js (makes the tool run)",
+    content: (
+      <div className="space-y-3">
+        <p>
+          Node.js is a small program that runs in the background. you install it
+          once and forget about it — the tool needs it to work.
+        </p>
+        <ol className="list-decimal space-y-2 pl-5">
+          <li>
+            go to{" "}
             <a
-              href="https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code"
+              href="https://nodejs.org/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white underline decoration-zinc-600 underline-offset-4 transition-colors hover:decoration-white"
             >
-              VS Code extension
-            </a>{" "}
-            from the marketplace, or use the CLI (
-            <code className="rounded bg-white/10 px-1.5 py-0.5 text-sm text-zinc-300">
-              npm install -g @anthropic-ai/claude-code
-            </code>
-            ). requires a $19/mo subscription.
+              nodejs.org
+            </a>
           </li>
-        </ul>
+          <li>
+            click the big green button that says{" "}
+            <span className="text-white">Download Node.js (LTS)</span>
+          </li>
+          <li>
+            open the downloaded file and install it — click &quot;Next&quot; /
+            &quot;Continue&quot; through everything, don&apos;t change any
+            settings
+          </li>
+        </ol>
+        <p>that&apos;s it. you won&apos;t need to open Node.js ever again.</p>
       </div>
     ),
   },
   {
-    title: "clone the repo and set up API keys",
+    title: "step 3: install Claude Code inside VS Code",
+    content: (
+      <div className="space-y-3">
+        <p>
+          Claude Code is the AI assistant that helps you use this tool. it lives
+          inside VS Code.
+        </p>
+        <ol className="list-decimal space-y-2 pl-5">
+          <li>open VS Code</li>
+          <li>
+            on the left sidebar, click the{" "}
+            <span className="text-white">Extensions</span> icon (it looks like
+            four small squares)
+          </li>
+          <li>
+            in the search bar at the top, type{" "}
+            <span className="text-white">Claude Code</span>
+          </li>
+          <li>
+            find the one by <span className="text-white">Anthropic</span> and
+            click the blue <span className="text-white">Install</span> button
+          </li>
+          <li>
+            once installed, it will ask you to sign in — follow the prompts to
+            create an account. it costs{" "}
+            <span className="text-white">$19/month</span> (you can cancel
+            anytime)
+          </li>
+        </ol>
+      </div>
+    ),
+  },
+  {
+    title: "step 4: download the tool",
+    content: (
+      <div className="space-y-3">
+        <p>the tool is free and lives on GitHub (a site where people share code).</p>
+        <ol className="list-decimal space-y-2 pl-5">
+          <li>
+            go to{" "}
+            <a
+              href="https://github.com/melnikoff-oleg/ads-ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white underline decoration-zinc-600 underline-offset-4 transition-colors hover:decoration-white"
+            >
+              github.com/melnikoff-oleg/ads-ai
+            </a>
+          </li>
+          <li>
+            click the green{" "}
+            <span className="text-white">&lt;&gt; Code</span> button
+          </li>
+          <li>
+            click <span className="text-white">Download ZIP</span>
+          </li>
+          <li>
+            find the downloaded ZIP file (usually in your Downloads folder) and
+            double-click it to unzip
+          </li>
+          <li>
+            you should now have a folder called{" "}
+            <span className="text-white">ads-ai-main</span> — move it
+            somewhere easy to find, like your Desktop
+          </li>
+        </ol>
+      </div>
+    ),
+  },
+  {
+    title: "step 5: open the project in VS Code",
+    content: (
+      <div className="space-y-3">
+        <ol className="list-decimal space-y-2 pl-5">
+          <li>open VS Code</li>
+          <li>
+            click <span className="text-white">File</span> in the top menu,
+            then <span className="text-white">Open Folder...</span>
+          </li>
+          <li>
+            find the <span className="text-white">ads-ai-main</span> folder you
+            just downloaded and select it
+          </li>
+          <li>
+            if VS Code asks &quot;Do you trust the authors?&quot; — click{" "}
+            <span className="text-white">Yes, I trust the authors</span>
+          </li>
+        </ol>
+        <p>
+          you should now see all the project files in the left sidebar.
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: "step 6: get your API keys",
     content: (
       <div className="space-y-4">
-        <div className="space-y-2">
-          <p>clone the repository and create your environment file:</p>
-          <pre className="overflow-x-auto rounded-lg bg-white/5 p-4 text-sm text-zinc-300">
-            <code>{`git clone https://github.com/melnikoff-oleg/ads-ai.git
-cd ads-ai
-cp .env.example .env`}</code>
-          </pre>
-        </div>
         <p>
-          open{" "}
-          <code className="rounded bg-white/10 px-1.5 py-0.5 text-sm text-zinc-300">
-            .env
-          </code>{" "}
-          and fill in your API keys:
+          API keys are like passwords that let the tool use different AI
+          services. you need to sign up for each service (most have free trials)
+          and copy the key they give you.
         </p>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-white/10 text-left text-zinc-500">
-                <th className="pb-2 pr-4 font-medium">variable</th>
-                <th className="pb-2 pr-4 font-medium">purpose</th>
-                <th className="pb-2 font-medium">where to get it</th>
-              </tr>
-            </thead>
-            <tbody className="text-zinc-400">
-              <tr className="border-b border-white/5">
-                <td className="py-2 pr-4 font-mono text-xs text-zinc-300">
-                  ANTHROPIC_API_KEY
-                </td>
-                <td className="py-2 pr-4">ad copy, analysis, QC</td>
-                <td className="py-2">
-                  <a
-                    href="https://console.anthropic.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white underline decoration-zinc-600 underline-offset-4 transition-colors hover:decoration-white"
-                  >
-                    console.anthropic.com
-                  </a>
-                </td>
-              </tr>
-              <tr className="border-b border-white/5">
-                <td className="py-2 pr-4 font-mono text-xs text-zinc-300">
-                  GEMINI_API_KEY
-                </td>
-                <td className="py-2 pr-4">brand image analysis</td>
-                <td className="py-2">
-                  <a
-                    href="https://aistudio.google.com/apikey"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white underline decoration-zinc-600 underline-offset-4 transition-colors hover:decoration-white"
-                  >
-                    aistudio.google.com
-                  </a>
-                </td>
-              </tr>
-              <tr className="border-b border-white/5">
-                <td className="py-2 pr-4 font-mono text-xs text-zinc-300">
-                  FIRECRAWL_API_KEY
-                </td>
-                <td className="py-2 pr-4">website scraping</td>
-                <td className="py-2">
-                  <a
-                    href="https://firecrawl.dev/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white underline decoration-zinc-600 underline-offset-4 transition-colors hover:decoration-white"
-                  >
-                    firecrawl.dev
-                  </a>
-                </td>
-              </tr>
-              <tr className="border-b border-white/5">
-                <td className="py-2 pr-4 font-mono text-xs text-zinc-300">
-                  APIFY_API_TOKEN
-                </td>
-                <td className="py-2 pr-4">Instagram + Meta Ad Library</td>
-                <td className="py-2">
-                  <a
-                    href="https://console.apify.com/account/integrations"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white underline decoration-zinc-600 underline-offset-4 transition-colors hover:decoration-white"
-                  >
-                    console.apify.com
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td className="py-2 pr-4 font-mono text-xs text-zinc-300">
-                  KIE_AI_API_KEY
-                </td>
-                <td className="py-2 pr-4">AI image generation</td>
-                <td className="py-2">
-                  <a
-                    href="https://kie.ai/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white underline decoration-zinc-600 underline-offset-4 transition-colors hover:decoration-white"
-                  >
-                    kie.ai
-                  </a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    ),
-  },
-  {
-    title: "install and run",
-    content: (
-      <div className="space-y-3">
-        <p>install dependencies and start the dev server:</p>
-        <pre className="overflow-x-auto rounded-lg bg-white/5 p-4 text-sm text-zinc-300">
-          <code>{`cd app
-npm install
-npm run dev`}</code>
-        </pre>
         <p>
-          open{" "}
-          <a
-            href="http://localhost:3000"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white underline decoration-zinc-600 underline-offset-4 transition-colors hover:decoration-white"
-          >
-            localhost:3000
-          </a>{" "}
-          — you should see the brand context page.
+          you need <span className="text-white">5 keys</span>. here&apos;s
+          where to get each one:
         </p>
-      </div>
-    ),
-  },
-  {
-    title: "collect your brand context",
-    content: (
-      <div className="space-y-4">
-        <p>two ways to do this:</p>
-        <div className="space-y-3">
-          <div>
+        <div className="space-y-4">
+          <div className="rounded-lg border border-white/5 bg-white/[0.02] p-4">
             <p className="font-medium text-white">
-              option A — web form{" "}
-              <span className="font-normal text-zinc-500">(quick)</span>
+              1. Anthropic (Claude AI){" "}
+              <span className="font-normal text-zinc-500">
+                — writes your ad copy
+              </span>
             </p>
             <p className="mt-1">
-              go to /brand in the app, enter your website URL and optional
-              Instagram handle, and click &quot;Scrape Brand.&quot; the tool
-              crawls your site, extracts products, downloads visuals, and builds
-              your brand profile automatically.
+              go to{" "}
+              <a
+                href="https://console.anthropic.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white underline decoration-zinc-600 underline-offset-4 transition-colors hover:decoration-white"
+              >
+                console.anthropic.com
+              </a>
+              , create an account, go to{" "}
+              <span className="text-white">API Keys</span>, click{" "}
+              <span className="text-white">Create Key</span>, and copy it
             </p>
           </div>
-          <div>
+
+          <div className="rounded-lg border border-white/5 bg-white/[0.02] p-4">
             <p className="font-medium text-white">
-              option B — Claude Code{" "}
-              <span className="font-normal text-zinc-500">(flexible)</span>
+              2. Google Gemini{" "}
+              <span className="font-normal text-zinc-500">
+                — analyzes your brand images
+              </span>
             </p>
             <p className="mt-1">
-              open Claude Code in the project folder and run{" "}
-              <code className="rounded bg-white/10 px-1.5 py-0.5 text-sm text-zinc-300">
-                /collect-brand
-              </code>
-              . this guided flow accepts any combination of website URL,
-              Instagram handle, keywords, or files. it uses Gemini AI to analyze
-              your images and videos too.
+              go to{" "}
+              <a
+                href="https://aistudio.google.com/apikey"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white underline decoration-zinc-600 underline-offset-4 transition-colors hover:decoration-white"
+              >
+                aistudio.google.com/apikey
+              </a>
+              , sign in with your Google account, click{" "}
+              <span className="text-white">Create API Key</span>, and copy it
+            </p>
+          </div>
+
+          <div className="rounded-lg border border-white/5 bg-white/[0.02] p-4">
+            <p className="font-medium text-white">
+              3. FireCrawl{" "}
+              <span className="font-normal text-zinc-500">
+                — reads your website
+              </span>
+            </p>
+            <p className="mt-1">
+              go to{" "}
+              <a
+                href="https://firecrawl.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white underline decoration-zinc-600 underline-offset-4 transition-colors hover:decoration-white"
+              >
+                firecrawl.dev
+              </a>
+              , create an account, and copy your API key from the dashboard
+            </p>
+          </div>
+
+          <div className="rounded-lg border border-white/5 bg-white/[0.02] p-4">
+            <p className="font-medium text-white">
+              4. Apify{" "}
+              <span className="font-normal text-zinc-500">
+                — finds competitor ads on Meta
+              </span>
+            </p>
+            <p className="mt-1">
+              go to{" "}
+              <a
+                href="https://console.apify.com/account/integrations"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white underline decoration-zinc-600 underline-offset-4 transition-colors hover:decoration-white"
+              >
+                console.apify.com
+              </a>
+              , create an account, go to{" "}
+              <span className="text-white">Settings → Integrations</span>, and
+              copy your API token
+            </p>
+          </div>
+
+          <div className="rounded-lg border border-white/5 bg-white/[0.02] p-4">
+            <p className="font-medium text-white">
+              5. Kie.ai{" "}
+              <span className="font-normal text-zinc-500">
+                — generates ad images
+              </span>
+            </p>
+            <p className="mt-1">
+              go to{" "}
+              <a
+                href="https://kie.ai/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white underline decoration-zinc-600 underline-offset-4 transition-colors hover:decoration-white"
+              >
+                kie.ai
+              </a>
+              , create an account, and copy your API key
             </p>
           </div>
         </div>
-      </div>
-    ),
-  },
-  {
-    title: "find competitors and analyze",
-    content: (
-      <div className="space-y-3">
         <p>
-          go to /competitors in the app. the tool searches the{" "}
-          <span className="text-white">Meta Ad Library</span> by keywords
-          related to your brand — keywords are auto-suggested from your brand
-          context.
-        </p>
-        <p>
-          it finds advertisers actually spending money and ranks them by days
-          running (longer = more profitable), ad count, and creative diversity.
-        </p>
-        <p>
-          then go to /analysis — Claude analyzes the top 25 competitor ads and
-          extracts deep hook analysis (exact opening text, technique, and
-          psychology) and winning patterns across copy structure, emotional
-          angle, and visual approach.
+          save all 5 keys somewhere safe (like a notes app) — you&apos;ll paste
+          them in the next step.
         </p>
       </div>
     ),
   },
   {
-    title: "generate your ads",
+    title: "step 7: paste your API keys into the project",
     content: (
       <div className="space-y-3">
-        <p>
-          go to /create — set how many concepts you want (1-30), pick which
-          products to feature, and hit generate.
-        </p>
-        <p>
-          concepts are generated in parallel batches of 3, roughly 2 minutes per
-          batch. each concept includes:
-        </p>
-        <ul className="list-disc space-y-1 pl-5">
-          <li>AI-written ad copy — headline, primary text, description, CTA</li>
+        <ol className="list-decimal space-y-2 pl-5">
           <li>
-            AI-generated image matching the competitor&apos;s visual approach
+            in VS Code, look at the left sidebar and find a file called{" "}
+            <span className="text-white">.env.example</span>
           </li>
           <li>
-            side-by-side comparison with the reference ad so you can see exactly
-            what strategy was replicated
+            right-click on it and choose{" "}
+            <span className="text-white">Rename</span>
           </li>
           <li>
-            video concepts for video reference ads — scene-by-scene script + key
-            frame
-          </li>
-        </ul>
-        <p>
-          every concept goes through automatic quality control — only passing
-          concepts are shown.
-        </p>
-      </div>
-    ),
-  },
-  {
-    title: "using Claude Code in your project",
-    content: (
-      <div className="space-y-3">
-        <p>
-          open the ads-ai folder in VS Code, then open Claude Code (click the
-          sidebar icon or press{" "}
-          <code className="rounded bg-white/10 px-1.5 py-0.5 text-sm text-zinc-300">
-            Cmd+Shift+P
-          </code>{" "}
-          and search &quot;Claude Code&quot;).
-        </p>
-        <p>Claude Code gives you superpowers in this project:</p>
-        <ul className="list-disc space-y-2 pl-5">
-          <li>
-            run{" "}
+            change the name from{" "}
             <code className="rounded bg-white/10 px-1.5 py-0.5 text-sm text-zinc-300">
-              /collect-brand
+              .env.example
             </code>{" "}
-            for guided brand context collection via chat
+            to just{" "}
+            <code className="rounded bg-white/10 px-1.5 py-0.5 text-sm text-zinc-300">
+              .env
+            </code>{" "}
+            (remove the word &quot;example&quot;) and press Enter
+          </li>
+          <li>click on the file to open it — you&apos;ll see something like this:</li>
+        </ol>
+        <pre className="overflow-x-auto rounded-lg bg-white/5 p-4 text-sm text-zinc-300">
+          <code>{`ANTHROPIC_API_KEY=
+GEMINI_API_KEY=
+FIRECRAWL_API_KEY=
+APIFY_API_TOKEN=
+KIE_AI_API_KEY=`}</code>
+        </pre>
+        <ol className="list-decimal space-y-2 pl-5" start={5}>
+          <li>
+            paste each key right after the{" "}
+            <span className="text-white">=</span> sign, with no spaces. for
+            example:
+          </li>
+        </ol>
+        <pre className="overflow-x-auto rounded-lg bg-white/5 p-4 text-sm text-zinc-300">
+          <code>{`ANTHROPIC_API_KEY=sk-ant-abc123...
+GEMINI_API_KEY=AIzaSy...
+FIRECRAWL_API_KEY=fc-...
+APIFY_API_TOKEN=apify_api...
+KIE_AI_API_KEY=kie-...`}</code>
+        </pre>
+        <ol className="list-decimal space-y-2 pl-5" start={6}>
+          <li>
+            press{" "}
+            <span className="text-white">Cmd+S</span> (Mac) or{" "}
+            <span className="text-white">Ctrl+S</span> (Windows) to save the
+            file
+          </li>
+        </ol>
+      </div>
+    ),
+  },
+  {
+    title: "step 8: start the tool",
+    content: (
+      <div className="space-y-3">
+        <p>
+          now you&apos;ll use Claude Code to start the tool. this is the easiest
+          part.
+        </p>
+        <ol className="list-decimal space-y-2 pl-5">
+          <li>
+            in VS Code, click the{" "}
+            <span className="text-white">Claude Code</span> icon in the left
+            sidebar (it looks like a sparkle ✦)
           </li>
           <li>
-            ask it to customize the tool — add new features, change the UI,
-            tweak the prompts
+            a chat panel will open. type this message and press Enter:
+          </li>
+        </ol>
+        <pre className="overflow-x-auto rounded-lg bg-white/5 p-4 text-sm text-zinc-300">
+          <code>install the app dependencies and start the dev server</code>
+        </pre>
+        <ol className="list-decimal space-y-2 pl-5" start={3}>
+          <li>
+            Claude Code will run the commands for you. when it&apos;s done,
+            it&apos;ll say the server is running
           </li>
           <li>
-            debug issues — paste an error and Claude Code will fix it in context
+            open your web browser (Chrome, Safari, etc.) and go to{" "}
+            <span className="text-white">localhost:3000</span> — you should see
+            the tool
+          </li>
+        </ol>
+        <p>
+          if anything goes wrong, just ask Claude Code in the chat — it can
+          read the error and fix it for you.
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: "step 9: add your brand",
+    content: (
+      <div className="space-y-3">
+        <p>
+          now the tool is running in your browser. the first thing to do is tell
+          it about your brand.
+        </p>
+        <ol className="list-decimal space-y-2 pl-5">
+          <li>
+            you should see the{" "}
+            <span className="text-white">Brand</span> page — if not, click{" "}
+            <span className="text-white">Brand</span> in the left sidebar
           </li>
           <li>
-            the project has a detailed CLAUDE.md that gives Claude Code full
-            understanding of the codebase
+            enter your <span className="text-white">website URL</span> (like
+            https://yourbrand.com)
           </li>
-        </ul>
+          <li>
+            optionally add your{" "}
+            <span className="text-white">Instagram handle</span> (like
+            @yourbrand)
+          </li>
+          <li>
+            click{" "}
+            <span className="text-white">&quot;Scrape Brand&quot;</span> and
+            wait about 30 seconds
+          </li>
+        </ol>
+        <p>
+          the tool will crawl your website, pull out your products, download
+          your images, and build a complete brand profile. you&apos;ll see
+          everything it found on the page.
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: "step 10: find your competitors' ads",
+    content: (
+      <div className="space-y-3">
+        <ol className="list-decimal space-y-2 pl-5">
+          <li>
+            click <span className="text-white">Competitors</span> in the left
+            sidebar
+          </li>
+          <li>
+            you&apos;ll see suggested keywords based on your brand — you can
+            edit them or add your own
+          </li>
+          <li>
+            click <span className="text-white">Search</span> — the tool will
+            search the Meta Ad Library and find companies running ads in your
+            space
+          </li>
+          <li>
+            it ranks them by how long their ads have been running (longer =
+            they&apos;re making money from those ads)
+          </li>
+        </ol>
+      </div>
+    ),
+  },
+  {
+    title: "step 11: analyze what's working",
+    content: (
+      <div className="space-y-3">
+        <ol className="list-decimal space-y-2 pl-5">
+          <li>
+            click <span className="text-white">What&apos;s Working</span> in
+            the left sidebar
+          </li>
+          <li>
+            click the <span className="text-white">Analyze</span> button — the
+            AI will study the top 25 competitor ads
+          </li>
+          <li>
+            wait about a minute. when it&apos;s done, you&apos;ll see:
+            <ul className="mt-2 list-disc space-y-1 pl-5">
+              <li>
+                the exact opening lines (hooks) that grab attention, and why
+                they work
+              </li>
+              <li>
+                patterns across all the ads — what copy style, emotional angle,
+                and visual approach keeps showing up
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    ),
+  },
+  {
+    title: "step 12: generate your ads",
+    content: (
+      <div className="space-y-3">
+        <ol className="list-decimal space-y-2 pl-5">
+          <li>
+            click <span className="text-white">Create</span> in the left
+            sidebar
+          </li>
+          <li>
+            choose how many ad concepts you want (start with{" "}
+            <span className="text-white">3</span> to test it out)
+          </li>
+          <li>
+            pick which of your products to feature
+          </li>
+          <li>
+            click <span className="text-white">Generate</span> and wait a
+            couple of minutes
+          </li>
+          <li>
+            each concept comes with:
+            <ul className="mt-2 list-disc space-y-1 pl-5">
+              <li>AI-written ad copy (headline, text, and call-to-action)</li>
+              <li>
+                an AI-generated image matching the competitor&apos;s visual
+                style
+              </li>
+              <li>
+                a side-by-side comparison so you can see the original ad next to
+                yours
+              </li>
+            </ul>
+          </li>
+        </ol>
+        <p>
+          the tool automatically checks the quality of each concept — only the
+          good ones are shown.
+        </p>
       </div>
     ),
   },
@@ -408,23 +588,23 @@ export default function AdsAiPage() {
           >
             oleg melnikov
           </Link>
-          <Link
-            href="https://www.youtube.com/@Oleg-Melnikov"
+          <a
+            href="https://github.com/melnikoff-oleg/ads-ai"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-lg bg-white/10 px-4 py-2 text-sm font-medium transition-colors hover:bg-white/20"
           >
             <svg viewBox="0 0 24 24" fill="currentColor" className="size-4">
-              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
             </svg>
-            youtube
-          </Link>
+            github
+          </a>
         </div>
       </header>
 
       <main>
         {/* Hero */}
-        <section className="pt-16 pb-12 md:pt-24 md:pb-16">
+        <section className="pt-16 pb-8 md:pt-24 md:pb-12">
           <motion.div
             initial="hidden"
             animate="visible"
@@ -435,7 +615,7 @@ export default function AdsAiPage() {
               variants={fadeUp}
               className="inline-block rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-zinc-400"
             >
-              free open source tool
+              free tool — no coding required
             </motion.span>
 
             <motion.h1
@@ -449,97 +629,28 @@ export default function AdsAiPage() {
               variants={fadeUp}
               className="mt-4 text-lg text-zinc-400 md:text-xl"
             >
-              study your competitors&apos; proven Meta ads, analyze what&apos;s
-              working, and generate new ad concepts for your brand — AI-written
-              copy, AI-generated visuals, and video scripts.
+              find what ads your competitors are running, see why they work, and
+              generate new ads for your brand — copy, images, and video scripts.
+              all done by AI.
             </motion.p>
 
-            <motion.div
+            <motion.p
               variants={fadeUp}
-              className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row"
+              className="mt-3 text-sm text-zinc-500"
             >
-              <a
-                href="https://github.com/melnikoff-oleg/ads-ai"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 text-sm font-medium text-black transition-colors hover:bg-zinc-200"
-              >
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="size-5"
-                >
-                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                </svg>
-                download on github
-              </a>
-              <a
-                href="#setup"
-                className="inline-flex items-center gap-1 rounded-lg border border-white/10 px-6 py-3 text-sm font-medium text-zinc-400 transition-colors hover:border-white/20 hover:text-white"
-              >
-                setup guide
-                <svg
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="size-4"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </a>
-            </motion.div>
+              follow the steps below to set everything up. takes about 15
+              minutes.
+            </motion.p>
           </motion.div>
         </section>
 
-        {/* How it works */}
-        <motion.section
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
-          className="pb-16 md:pb-20"
-        >
-          <div className="mx-auto max-w-3xl px-6">
-            <motion.h2
-              variants={fadeUp}
-              className="text-sm uppercase tracking-widest text-zinc-500"
-            >
-              how it works
-            </motion.h2>
-
-            <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              {howItWorks.map((item) => (
-                <motion.div
-                  key={item.step}
-                  variants={fadeUp}
-                  className="rounded-xl border border-white/5 bg-white/[0.02] p-5"
-                >
-                  <span className="text-xs font-medium text-zinc-600">
-                    step {item.step}
-                  </span>
-                  <h3 className="mt-1 text-sm font-medium text-white">
-                    {item.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-zinc-500">
-                    {item.description}
-                  </p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </motion.section>
-
         {/* Setup guide */}
         <motion.section
-          id="setup"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
-          className="scroll-mt-8 pb-24 md:pb-32"
+          className="pb-24 md:pb-32"
         >
           <div className="mx-auto max-w-3xl px-6">
             <motion.h2
@@ -548,6 +659,14 @@ export default function AdsAiPage() {
             >
               setup guide
             </motion.h2>
+
+            <motion.p
+              variants={fadeUp}
+              className="mt-3 text-sm text-zinc-500"
+            >
+              steps 1-8 are one-time setup. steps 9-12 are how you use the tool
+              every time.
+            </motion.p>
 
             <motion.div variants={fadeUp} className="mt-8">
               <Accordion items={steps} />
