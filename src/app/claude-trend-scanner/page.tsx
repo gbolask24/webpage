@@ -4,7 +4,6 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Accordion } from "@/components/accordion";
 import { ResourceFooter } from "@/components/resource-footer";
-import { ConsultCta } from "@/components/consult-cta";
 import { ArticleJsonLd } from "@/components/json-ld";
 
 const VIDEO_ID = "gVpAjLUnD2c";
@@ -346,7 +345,6 @@ export default function ClaudeTrendScannerPage() {
         </motion.section>
       </main>
 
-      <ConsultCta />
       <ResourceFooter currentSlug="claude-trend-scanner" />
     </>
   );
