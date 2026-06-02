@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Accordion } from "@/components/accordion";
 import { ResourceFooter } from "@/components/resource-footer";
+import { ConsultCta } from "@/components/consult-cta";
 import { ArticleJsonLd } from "@/components/json-ld";
 
 const VIDEO_ID = "lw69SOTKRM4";
@@ -341,6 +342,7 @@ export default function ClaudeTiktokPage() {
         </motion.section>
       </main>
 
+      <ConsultCta />
       <ResourceFooter currentSlug="claude-tiktok" />
     </>
   );
