@@ -31,52 +31,75 @@ const steps = [
             className="text-white underline decoration-zinc-600 underline-offset-4 transition-colors hover:decoration-white"
           >
             code.visualstudio.com
-          </a>
-          .
+          </a>{" "}
+          — it auto-detects your OS.
         </p>
         <p>
-          this is where you&apos;ll run claude code and build your reels
-          pipeline.
-        </p>
-      </div>
-    ),
-  },
-  {
-    title: "install claude code extension",
-    content: (
-      <div className="space-y-3">
-        <p>
-          open VS Code, go to the Extensions tab on the left sidebar, and search
-          for &quot;Claude Code&quot;. install the extension and log in with your
-          Anthropic account.
-        </p>
-        <p>
-          the subscription is $19/mo and gives you access to claude code
-          directly inside VS Code.
+          run the installer and verify VS Code launches properly.
         </p>
       </div>
     ),
   },
   {
-    title: "download the source code",
+    title: "install claude code",
     content: (
       <div className="space-y-3">
         <p>
-          join the free Skool community to get the source code for this project:
+          open the terminal in VS Code (Terminal → New Terminal) and run:
         </p>
+        <div className="rounded-lg bg-white/[0.03] border border-white/10 p-4 font-mono text-sm text-zinc-300">
+          npm install -g @anthropic-ai/claude-code
+        </div>
         <p>
+          requires Node.js (LTS). if you don&apos;t have it, download from{" "}
           <a
-            href="https://www.skool.com/ai-automation-7100/about"
+            href="https://nodejs.org"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white underline decoration-zinc-600 underline-offset-4 transition-colors hover:decoration-white"
           >
-            https://www.skool.com/ai-automation-7100/about
+            nodejs.org
+          </a>
+          .
+        </p>
+        <p>
+          once installed, type{" "}
+          <code className="rounded bg-white/10 px-1.5 py-0.5 text-sm text-zinc-300">
+            claude
+          </code>{" "}
+          in the terminal and complete Anthropic account authentication.
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: "download the project from github",
+    content: (
+      <div className="space-y-3">
+        <p>
+          go to the GitHub repository:
+        </p>
+        <p>
+          <a
+            href="https://github.com/melnikoff-oleg/social-media"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white underline decoration-zinc-600 underline-offset-4 transition-colors hover:decoration-white"
+          >
+            github.com/melnikoff-oleg/social-media
           </a>
         </p>
         <p>
-          once you have the files, open the project folder in VS Code.
+          click the green <span className="text-white">&lt;&gt; Code</span>{" "}
+          button, then <span className="text-white">Download ZIP</span>. unzip
+          the file and open the folder in VS Code via File → Open Folder.
         </p>
+        <p>
+          alternatively, clone it from the terminal:
+        </p>
+        <div className="rounded-lg bg-white/[0.03] border border-white/10 p-4 font-mono text-sm text-zinc-300">
+          git clone https://github.com/melnikoff-oleg/social-media.git
+        </div>
       </div>
     ),
   },
@@ -84,7 +107,7 @@ const steps = [
     title: "get your api keys",
     content: (
       <div className="space-y-4">
-        <p>you need three APIs:</p>
+        <p>you need three API keys:</p>
         <div className="space-y-3">
           <div>
             <p className="text-white font-medium">
@@ -103,13 +126,13 @@ const steps = [
                 className="text-white underline decoration-zinc-600 underline-offset-4 transition-colors hover:decoration-white"
               >
                 apify.com
-              </a>
-              . free tier available.
+              </a>{" "}
+              → Settings → Personal API Token.
             </p>
           </div>
           <div>
             <p className="text-white font-medium">
-              Gemini API{" "}
+              Google Gemini{" "}
               <span className="font-normal text-zinc-500">
                 — analyzing video content
               </span>
@@ -118,19 +141,19 @@ const steps = [
               analyzes the actual video content of reels — hooks, visuals,
               retention mechanisms. get your key at{" "}
               <a
-                href="https://aistudio.google.com"
+                href="https://aistudio.google.com/apikey"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white underline decoration-zinc-600 underline-offset-4 transition-colors hover:decoration-white"
               >
-                aistudio.google.com
+                aistudio.google.com/apikey
               </a>
-              . free to use.
+              .
             </p>
           </div>
           <div>
             <p className="text-white font-medium">
-              Anthropic API{" "}
+              Anthropic{" "}
               <span className="font-normal text-zinc-500">
                 — generating scripts
               </span>
@@ -145,12 +168,34 @@ const steps = [
                 className="text-white underline decoration-zinc-600 underline-offset-4 transition-colors hover:decoration-white"
               >
                 console.anthropic.com
-              </a>
-              . $5 minimum deposit.
+              </a>{" "}
+              → Settings → API Keys.
             </p>
           </div>
         </div>
-        <p>add your keys to a .env file in the project root:</p>
+      </div>
+    ),
+  },
+  {
+    title: "configure your .env file",
+    content: (
+      <div className="space-y-3">
+        <p>
+          in the project folder, find{" "}
+          <code className="rounded bg-white/10 px-1.5 py-0.5 text-sm text-zinc-300">
+            .env.example
+          </code>{" "}
+          (or{" "}
+          <code className="rounded bg-white/10 px-1.5 py-0.5 text-sm text-zinc-300">
+            .env
+          </code>
+          ). duplicate it and rename to{" "}
+          <code className="rounded bg-white/10 px-1.5 py-0.5 text-sm text-zinc-300">
+            .env
+          </code>{" "}
+          if needed.
+        </p>
+        <p>paste your API keys:</p>
         <div className="rounded-lg bg-white/[0.03] border border-white/10 p-4 font-mono text-sm text-zinc-300">
           APIFY_API_KEY=your_apify_key_here
           <br />
@@ -158,107 +203,28 @@ const steps = [
           <br />
           ANTHROPIC_API_KEY=your_anthropic_key_here
         </div>
+        <p>
+          save the file. check the project README if variable names differ.
+        </p>
       </div>
     ),
   },
   {
-    title: "run the app",
+    title: "run the project",
     content: (
       <div className="space-y-3">
-        <p>open terminal in VS Code and run:</p>
-        <div className="rounded-lg bg-white/[0.03] border border-white/10 p-4 font-mono text-sm text-zinc-300">
-          npm run dev
-        </div>
         <p>
-          open{" "}
+          open the terminal in VS Code, type{" "}
           <code className="rounded bg-white/10 px-1.5 py-0.5 text-sm text-zinc-300">
-            localhost:3000
+            claude
           </code>{" "}
-          in your browser. you&apos;ll see a dashboard with competitor tracking
-          and content generation.
-        </p>
-      </div>
-    ),
-  },
-  {
-    title: "add instagram creators",
-    content: (
-      <div className="space-y-3">
-        <p>
-          go to the creators tab and add 5+ competitor Instagram accounts in your
-          niche.
+          to start Claude Code, and ask it to help you run the project.
         </p>
         <p>
-          the system scrapes their most viral reels, view counts, and engagement
-          data.
+          claude code will install dependencies, start the app, and walk you
+          through the workflow — scraping competitor reels, analyzing hooks and
+          retention patterns, and generating ready-to-film scripts.
         </p>
-      </div>
-    ),
-  },
-  {
-    title: "configure your brand",
-    content: (
-      <div className="space-y-3">
-        <p>
-          go to the configs tab and define your brand context, ICP, and content
-          pillars.
-        </p>
-        <p>
-          set your analysis instructions — hook analysis, retention mechanisms,
-          engagement drivers.
-        </p>
-        <p>
-          set your generation instructions — how to adapt competitor ideas to
-          your voice and niche.
-        </p>
-      </div>
-    ),
-  },
-  {
-    title: "run the pipeline",
-    content: (
-      <div className="space-y-3">
-        <p>
-          select your config and set parameters: posts per creator, top
-          selection, and time window.
-        </p>
-        <p>
-          the pipeline takes ~15 minutes. you&apos;ll get full scripts with
-          hooks, visual direction, captions, and retention strategies.
-        </p>
-        <p>ready to film immediately.</p>
-      </div>
-    ),
-  },
-  {
-    title: "level up: extra tips",
-    content: (
-      <div className="space-y-3">
-        <p>once you&apos;re running, here are ways to get even better results:</p>
-        <ul className="list-disc pl-5 space-y-2">
-          <li>
-            <span className="text-white">provide more brand context</span> —
-            your website, other socials, brand guidelines. the more context, the
-            better the scripts.
-          </li>
-          <li>
-            <span className="text-white">analyze competitor comments</span> —
-            look for content gaps and questions people are asking.
-          </li>
-          <li>
-            <span className="text-white">
-              feed your own reel performance data
-            </span>{" "}
-            — after 30+ posts, use your analytics to refine what works for your
-            audience.
-          </li>
-          <li>
-            <span className="text-white">
-              use claude code for other marketing tasks
-            </span>{" "}
-            — ads, outreach, content repurposing. the same workflow applies.
-          </li>
-        </ul>
       </div>
     ),
   },

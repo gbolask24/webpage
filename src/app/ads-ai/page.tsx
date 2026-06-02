@@ -4,6 +4,9 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Accordion } from "@/components/accordion";
 import { ResourceFooter } from "@/components/resource-footer";
+import { ArticleJsonLd } from "@/components/json-ld";
+
+const VIDEO_ID = "5_QP6_EmReQ";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -542,41 +545,16 @@ KIE_AI_API_KEY=kie-...`}</code>
 ];
 
 export default function AdsAiPage() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: "AI Ads Creator — Free Open Source Tool",
-    description:
-      "Clone winning Meta ads with AI. Study competitors' proven ads and generate new ad concepts — copy, visuals, and video scripts.",
-    url: "https://oleg.ae/ads-ai",
-    datePublished: "2026-05-31",
-    dateModified: "2026-05-31",
-    author: {
-      "@type": "Person",
-      name: "Oleg Melnikov",
-      url: "https://oleg.ae",
-      sameAs: [
-        "https://www.youtube.com/@Oleg-Melnikov",
-        "https://www.linkedin.com/in/olegai",
-        "https://www.instagram.com/melnikoff_oleg",
-      ],
-    },
-    publisher: {
-      "@type": "Person",
-      name: "Oleg Melnikov",
-      url: "https://oleg.ae",
-    },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": "https://oleg.ae/ads-ai",
-    },
-  };
-
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      <ArticleJsonLd
+        title="AI Ads Creator — Free Open Source Tool"
+        description="Clone winning Meta ads with AI. Study competitors' proven ads and generate new ad concepts — copy, visuals, and video scripts."
+        url="https://oleg.ae/ads-ai"
+        datePublished="2026-05-31"
+        dateModified="2026-06-02"
+        videoId={VIDEO_ID}
+        videoTitle="AI Ads Creator — Free Open Source Tool"
       />
 
       {/* Minimal header */}
@@ -671,6 +649,29 @@ export default function AdsAiPage() {
             <motion.div variants={fadeUp} className="mt-8">
               <Accordion items={steps} />
             </motion.div>
+          </div>
+        </motion.section>
+
+        {/* YouTube video */}
+        <motion.section
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeUp}
+          className="pb-24 md:pb-32"
+        >
+          <div className="mx-auto max-w-3xl px-6">
+            <div className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl shadow-black/40">
+              <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+                <iframe
+                  src={`https://www.youtube.com/embed/${VIDEO_ID}`}
+                  title="AI Ads Creator"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 h-full w-full"
+                />
+              </div>
+            </div>
           </div>
         </motion.section>
       </main>
