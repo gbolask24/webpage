@@ -32,7 +32,7 @@ export function ConsultCta() {
             >
               book a 1:1 consult
             </a>{" "}
-            — 45 min, $300. bring a specific problem, leave with a clear next step.
+            — bring a specific problem, leave with a clear next step.
           </p>
         </div>
       </div>
