@@ -16,38 +16,40 @@ const unbounded = Unbounded({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://oleg.ae"),
+  metadataBase: new URL("https://gbolagade.com"),
   title: {
-    default: "Oleg Melnikov — AI Systems for Marketing & Claude Code Tutorials",
-    template: "%s — Oleg Melnikov",
+    default: "Gbolagade Ishola — AI Engineer & AI Automation Architect",
+    template: "%s — Gbolagade Ishola",
   },
   description:
-    "AI software entrepreneur building AI systems for marketing. Claude Code tutorials, AI automation for B2B founders, and 18K+ YouTube community. Former big tech & hedge fund.",
+    "AI Engineer in London building production LLM systems — RAG, multi-agent automation, and observable AI workflows that deliver measurable business impact.",
   keywords: [
-    "AI systems for marketing",
-    "Claude Code",
-    "Claude Code for marketing",
-    "AI automation",
-    "AI for B2B founders",
-    "personal branding AI",
-    "Oleg Melnikov",
+    "AI Engineer",
+    "AI Automation Architect",
+    "LLM solutions",
+    "RAG",
+    "retrieval-augmented generation",
+    "production AI",
+    "AI engineer London",
+    "prompt engineering",
+    "Gbolagade Ishola",
   ],
   openGraph: {
-    title: "Oleg Melnikov — AI Systems for Marketing & Claude Code Tutorials",
+    title: "Gbolagade Ishola — AI Engineer & AI Automation Architect",
     description:
-      "AI software entrepreneur building AI systems for marketing. Claude Code tutorials, AI automation for B2B founders, and 18K+ YouTube community.",
+      "AI Engineer in London building production LLM systems — RAG, multi-agent automation, and observable AI workflows with measurable business impact.",
     type: "website",
-    url: "https://oleg.ae",
-    siteName: "Oleg Melnikov",
+    url: "https://gbolagade.com",
+    siteName: "Gbolagade Ishola",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Oleg Melnikov — AI Systems for Marketing & Claude Code Tutorials",
+    title: "Gbolagade Ishola — AI Engineer & AI Automation Architect",
     description:
-      "AI software entrepreneur building AI systems for marketing. Claude Code tutorials, AI automation for B2B founders, and 18K+ YouTube community.",
+      "AI Engineer in London building production LLM systems — RAG, multi-agent automation, and observable AI workflows with measurable business impact.",
   },
   alternates: {
-    canonical: "https://oleg.ae",
+    canonical: "https://gbolagade.com",
   },
 };
 
