@@ -111,10 +111,10 @@ export function HeroSection() {
         >
           <div className="relative mx-auto max-w-4xl overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-2 shadow-2xl shadow-black/40">
             <Image
-              src="/hero.jpg"
+              src="/hero.png"
               alt="Gbolagade Ishola"
-              width={1920}
-              height={1080}
+              width={1672}
+              height={941}
               className="rounded-xl"
               priority
             />
