@@ -23,7 +23,7 @@ export function HeroSection() {
           {/* Top label */}
           <AnimatedGroup>
             <span className="inline-block rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-zinc-400">
-              ai software entrepreneur
+              AI Engineer · AI Automation Architect · LLM Solutions
             </span>
           </AnimatedGroup>
 
@@ -33,7 +33,7 @@ export function HeroSection() {
             delay={0.2}
             className="mx-auto mt-8 max-w-3xl text-balance text-2xl font-medium tracking-tight sm:text-3xl md:text-4xl lg:text-5xl"
           >
-            5 years in AI. left big tech and a hedge fund to build my own company.
+            I build AI systems that move real business metrics.
           </TextEffect>
 
           {/* Subheading */}
@@ -43,7 +43,7 @@ export function HeroSection() {
             per="line"
             className="mx-auto mt-6 max-w-2xl text-balance text-lg text-zinc-400 md:text-xl"
           >
-            now i'm running a service business that's 90% AI inside — and sharing AI systems for marketing with 18K+ on youtube.
+            Senior AI engineer in London. I design and ship enterprise AI — RAG, multi-agent automation, and observable LLM systems — from R&D through to production.
           </TextEffect>
 
           {/* CTAs */}
@@ -67,32 +67,23 @@ export function HeroSection() {
             className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row"
           >
             <Link
-              href="https://www.youtube.com/@Oleg-Melnikov"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#projects"
               className="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 text-sm font-semibold text-black transition-opacity hover:opacity-90"
             >
-              watch on youtube
-              <svg viewBox="0 0 24 24" fill="currentColor" className="size-4">
-                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-              </svg>
-            </Link>
-            <Link
-              href="#results"
-              className="inline-flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-medium text-zinc-400 transition-colors hover:text-white"
-            >
-              see my work
-              <svg
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="size-4"
-              >
+              View Projects
+              <svg viewBox="0 0 20 20" fill="currentColor" className="size-4">
                 <path
                   fillRule="evenodd"
                   d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06z"
                   clipRule="evenodd"
                 />
               </svg>
+            </Link>
+            <Link
+              href="#connect"
+              className="inline-flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-medium text-zinc-400 transition-colors hover:text-white"
+            >
+              Work with me
             </Link>
           </AnimatedGroup>
         </div>
@@ -121,7 +112,7 @@ export function HeroSection() {
           <div className="relative mx-auto max-w-4xl overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-2 shadow-2xl shadow-black/40">
             <Image
               src="/hero.jpg"
-              alt="Oleg Melnikov"
+              alt="Gbolagade Ishola"
               width={1920}
               height={1080}
               className="rounded-xl"
