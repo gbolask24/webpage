@@ -6,9 +6,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Is
 
-This is the workspace for **Oleg Melnikov's personal landing page** — a one-pager website that quickly communicates who Oleg is to the public world: his story, expertise, what he offers, and how to connect.
+This is the workspace for **Gbolagade Ishola's personal landing page** — a one-pager website that quickly communicates who Gbolagade is to the public world: his story, expertise, projects, and how to connect. The audience is dual: recruiters/employers and prospective clients.
 
-**Oleg** is an AI software entrepreneur with 5 years in AI. Former big tech (Yandex, JetBrains) and hedge fund (Amsterdam). Now runs Authority AI (helps B2B founders build authentic personal brands) and a growing YouTube channel (16.6K subs, AI for marketing tutorials).
+**Gbolagade Samuel Ishola** is an AI Engineer / AI Automation Architect based in London, UK. He started in SEO and digital marketing, moved into AI automation for enterprise clients, and now builds production LLM systems — RAG architectures, multi-agent automation, prompt evaluation, and the observability that keeps them reliable. MSc Digital Marketing (Middlesex University) plus AI/ML certifications.
+
+> **Content constraints (deliberate):** the site uses NO employer names (roles/projects are described by function/industry only) and NO numeric metrics (impact is described qualitatively). Preserve these when editing copy. Note: this codebase was forked from Oleg Melnikov's landing page — the design/animations were kept, all content replaced.
 
 **This file (CLAUDE.md) is the foundation.** It is automatically loaded at the start of every session. Keep it current — it is the single source of truth for how Claude should understand and operate within this workspace.
 
@@ -126,33 +128,33 @@ If yes to any, update the relevant sections. This file must always reflect the c
 
 This site should convey:
 
-- **Who Oleg is** -- AI software entrepreneur, 5 years in AI, big tech + hedge fund background, math olympiad winner
-- **The arc** -- Built AI in big tech and as an entrepreneur; now focused on AI systems for marketing
-- **What he offers** -- Authority AI (authentic personal brands for B2B founders), YouTube (AI for marketing tutorials), Skool community
-- **Social proof** -- 1M+ client views, Mike Kamo, $6.6K first deal in 14 days, 16.6K YouTube subs, 500K+ YouTube views, math/CS credentials
-- **How to connect** -- YouTube (@Oleg-Melnikov), LinkedIn (/olegai), Instagram, buildauthority.ai
-
-Key references in the main repo (`/Users/olegmelnikov/Desktop/Software Projects/oleeeg`) contain deeper context if needed.
+- **Who Gbolagade is** -- AI Engineer / AI Automation Architect, London, UK
+- **The arc** -- SEO/digital marketing → AI automation for enterprise clients → building production LLM systems
+- **What he builds** -- Production LLM systems: RAG, multi-agent automation, AI customer operations, observability & governance
+- **Credibility** -- Qualitative capability + outcome statements (NO numeric metrics, NO employer names) + MSc Digital Marketing and AI/ML certifications
+- **How to connect** -- LinkedIn (/in/ishola-gbolagade), X (@GbolagadeSEO), GitHub (gbolask24), email (gbolagade.ishola@outlook.com), portfolio (gbolask24.github.io/portfolio)
 
 ---
 
 ## SEO
 
-Ongoing goal: optimize the site for search around keywords like **"AI systems for marketing"**, **"Claude Code"**, **"Claude Code for marketing"**.
+Ongoing goal: optimize the site for search around keywords like **"AI Engineer"**, **"AI Automation Architect"**, **"LLM systems"**, **"RAG"**, **"AI engineer London"**.
 
 **Done:**
-- Sitemap (`src/app/sitemap.ts`) + robots.txt (`src/app/robots.ts`)
+- Sitemap (`src/app/sitemap.ts`) + robots.txt (`src/app/robots.ts`) — domain `gbolagade.com`, includes all project pages
 - Keyword-rich meta tags (title, description, keywords, OG, Twitter cards) on all pages
 - Proper heading hierarchy (`h1` → `h2`) across all sections
-- Plausible analytics (`src/components/plausible.tsx`, domain: oleg.ae)
+- Structured data / JSON-LD `Person` schema (`src/components/json-ld.tsx`, on homepage)
+- Plausible analytics (`src/components/plausible.tsx`, domain: gbolagade.com)
 
 **Still to do:**
 - Open Graph images (branded preview for social shares)
-- Structured data / JSON-LD (Person schema)
-- Internal linking (homepage → resource pages — resource pages are now interlinked via `ResourceFooter`)
+- Replace favicon (`src/app/icon.png` is still Oleg's)
+- Swap hero photo (`public/hero.jpg` is still a placeholder)
 - Performance audit (Lighthouse, image optimization)
-- More content pages (each YouTube video = a potential resource page targeting keywords)
-- Google Search Console verification (blocked for now, revisit later)
+- More project case-study pages (add to `src/lib/projects.ts`)
+- Add custom domain `gbolagade.com` in Vercel
+- Google Search Console verification (revisit later)
 
 ---
 
@@ -183,41 +185,27 @@ npm run start  # Start production server
 
 ### Site Structure
 
-**Main page** (`/`) — single page with 6 sections:
-1. **Hero** — Tagline, photo, CTAs (`src/components/hero-section.tsx`)
-2. **About** — What Oleg does now (`src/components/about-section.tsx`)
-3. **Results** — Stats, client proof, credentials (`src/components/results-section.tsx`)
-4. **Video** — Looping 5s muted preview, blur + "watch on youtube" on hover (`src/components/video-section.tsx`)
+**Domain:** `gbolagade.com` (referenced in `layout.tsx` metadata, `sitemap.ts`, `robots.ts`, `json-ld.tsx`, and the Plausible analytics domain in `plausible.tsx`).
+
+**Main page** (`/`) — single page with 5 sections + header:
+1. **Hero** — Title, photo, CTAs "View Projects" + "Work with me" (`src/components/hero-section.tsx`)
+2. **About** — The arc: marketing → AI automation → enterprise AI engineering (`src/components/about-section.tsx`)
+3. **Impact** (`id="impact"`) — Capability cards + credentials, no metrics (`src/components/results-section.tsx`)
+4. **Projects** — Grid of project case-study cards (`src/components/projects-section.tsx`)
 5. **Connect** — Social links + footer (`src/components/connect-section.tsx`)
-6. **Header** — Floating nav, blurs on scroll (`src/components/header.tsx`)
+6. **Header** — Floating nav (About · Impact · Projects · Connect), blurs on scroll (`src/components/header.tsx`)
 
-**Resource pages** — YouTube video companion pages with setup guides:
-- `/claude-outreach` — Claude Code for cold outreach
-- `/claude-twitter` — X/Twitter content machine
-- `/claude-tiktok` — Viral TikTok videos
-- `/claude-website` — Build personal website
-- `/claude-social-growth` — Viral social media growth
-- `/claude-trend-scanner` — Trend scanner for 10x more views
-- `/claude-b2b-outreach` — B2B outreach (35% reply rate)
-- `/claude-seo` — SEO optimization
-- `/claude-cowork-outreach` — Claude Cowork for cold outreach
-- `/claude-marketing` — Marketing (SMM, ads, outreach)
-- `/claude-reels` — Viral Instagram Reels
-- `/claude-content` — Content creation in 10 minutes
-- `/claude-interviewer` — AI voice interviewer for content creation
-
-**Tool pages** — free open-source tool lead magnets (GitHub download + setup guide, no YouTube video):
-- `/ads-ai` — AI ads creator (study competitors' Meta ads, generate ad concepts)
-
-**Lead magnet pages** — prompt-based giveaways (no code setup, just copy-paste prompts):
-- `/60k-linkedin-post` — 3 AI prompts for LinkedIn content that sells ($60K client case study)
-
-Resource pages follow a shared pattern: minimal header, embedded YouTube video, accordion setup steps, cross-linked resource footer. Tool pages follow the same pattern but replace the video embed with a GitHub download CTA and "how it works" overview. Lead magnet pages have their own structure: prompts with copy buttons, how-it-works overview, and client proof. Each lives in `src/app/{slug}/page.tsx` with its own `layout.tsx` for metadata.
+**Project case-study pages** — dynamic route `/projects/[slug]`, data-driven:
+- Content lives in `src/lib/projects.ts` (the `projects` array + `getProject`). Each project has `slug`, `title`, `tagline`, `cardDescription`, `stack`, optional `repoUrl`, and `sections` (heading/body).
+- Rendered by `src/components/project-page.tsx` (one reusable component). Route files (`src/app/projects/[slug]/page.tsx` + `layout.tsx`) are thin: `generateStaticParams` + `generateMetadata` from the data.
+- The 5 projects: `llm-proxy`, `ai-ops-monitor` (both open-source, link to GitHub), `exec-ai-assistant`, `ai-support-platform`, `agentic-content-pipeline` (anonymized enterprise work, no employer names/metrics).
+- **To add a project:** append to the `projects` array in `src/lib/projects.ts` — the homepage grid, footer, routes, and sitemap all derive from it automatically.
 
 **Shared components:**
 - Animation primitives in `src/components/motion/` (TextEffect, AnimatedGroup)
-- `src/components/accordion.tsx` — Reusable accordion for setup steps (used by resource pages)
-- `src/components/resource-footer.tsx` — Cross-linked footer showing all other resource pages with icons (uses `lucide-react`). When adding a new resource page, update the `resources` array in this file.
+- `src/components/accordion.tsx` — Reusable accordion (available; not currently used on the live pages)
+- `src/components/resource-footer.tsx` — "More projects" footer, derives from `src/lib/projects.ts`. Pass `currentSlug` to exclude the current page (homepage passes `""`).
+- `src/components/json-ld.tsx` — `PersonJsonLd` (Person schema, rendered on the homepage).
 
 ---
 
