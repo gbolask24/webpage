@@ -18,11 +18,11 @@ const unbounded = Unbounded({
 export const metadata: Metadata = {
   metadataBase: new URL("https://gbolagade.com"),
   title: {
-    default: "Gbolagade Ishola — AI Engineer & AI Automation Architect",
-    template: "%s — Gbolagade Ishola",
+    default: "Gbolagade Ishola · AI Engineer & AI Automation Architect",
+    template: "%s · Gbolagade Ishola",
   },
   description:
-    "AI Engineer in London building production LLM systems — RAG, multi-agent automation, and observable AI workflows that deliver measurable business impact.",
+    "AI Engineer in London building production LLM systems: RAG, multi-agent automation, and observable AI workflows that deliver measurable business impact.",
   keywords: [
     "AI Engineer",
     "AI Automation Architect",
@@ -35,18 +35,18 @@ export const metadata: Metadata = {
     "Gbolagade Ishola",
   ],
   openGraph: {
-    title: "Gbolagade Ishola — AI Engineer & AI Automation Architect",
+    title: "Gbolagade Ishola · AI Engineer & AI Automation Architect",
     description:
-      "AI Engineer in London building production LLM systems — RAG, multi-agent automation, and observable AI workflows with measurable business impact.",
+      "AI Engineer in London building production LLM systems: RAG, multi-agent automation, and observable AI workflows with measurable business impact.",
     type: "website",
     url: "https://gbolagade.com",
     siteName: "Gbolagade Ishola",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gbolagade Ishola — AI Engineer & AI Automation Architect",
+    title: "Gbolagade Ishola · AI Engineer & AI Automation Architect",
     description:
-      "AI Engineer in London building production LLM systems — RAG, multi-agent automation, and observable AI workflows with measurable business impact.",
+      "AI Engineer in London building production LLM systems: RAG, multi-agent automation, and observable AI workflows with measurable business impact.",
   },
   alternates: {
     canonical: "https://gbolagade.com",

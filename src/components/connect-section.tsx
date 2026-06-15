@@ -80,15 +80,34 @@ export function ConnectSection() {
           variants={fadeUp}
           className="text-sm uppercase tracking-widest text-zinc-500"
         >
-          connect
+          Connect
         </motion.h2>
 
         <motion.p
           variants={fadeUp}
           className="mt-8 text-xl text-zinc-300 md:text-2xl"
         >
-          Open to roles and freelance work. If you&apos;re building with AI — or want to — let&apos;s talk.
+          Open to roles and freelance work. If you&apos;re building with AI, or want to, let&apos;s talk.
         </motion.p>
+
+        {/* Consult CTA */}
+        <motion.div variants={fadeUp} className="mt-10">
+          <Link
+            href="https://calendly.com/topchoiceai/consultation"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 text-sm font-semibold text-black transition-opacity hover:opacity-90"
+          >
+            Book a 1:1 consult
+            <svg viewBox="0 0 20 20" fill="currentColor" className="size-4">
+              <path
+                fillRule="evenodd"
+                d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </Link>
+        </motion.div>
 
         {/* Social links */}
         <motion.div

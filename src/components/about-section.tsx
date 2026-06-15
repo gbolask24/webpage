@@ -27,21 +27,21 @@ export function AboutSection() {
           variants={fadeUp}
           className="mt-8 text-xl leading-relaxed text-zinc-300 md:text-2xl"
         >
-          I&apos;m Gbolagade — an AI engineer based in London. I design and ship production AI systems, turning large language models into reliable services that behave predictably inside secure, governed environments.
+          I&apos;m Gbolagade, an AI engineer based in London. I design and ship production AI systems, turning large language models into reliable services that behave predictably inside secure, governed environments.
         </motion.p>
 
         <motion.p
           variants={fadeUp}
           className="mt-6 text-xl leading-relaxed text-zinc-300 md:text-2xl"
         >
-          I started out in SEO and digital marketing, leading content and growth for a range of businesses. From there I moved into AI automation — wiring language models into ERPs, customer operations, and internal tooling for enterprise teams.
+          My focus is the hard part of AI: retrieval-augmented generation, structured output validation, multi-agent automation, and AI co-pilots that take real actions rather than just chat. I build the pipelines, integrations, and monitoring that let these systems run dependably at scale.
         </motion.p>
 
         <motion.p
           variants={fadeUp}
           className="mt-6 text-xl leading-relaxed text-zinc-300 md:text-2xl"
         >
-          Today I lead enterprise AI work end to end: RAG architectures, multi-agent automation, prompt evaluation, and the monitoring that keeps it all reliable in production. I hold an MSc in Digital Marketing from Middlesex University, alongside AI and machine-learning certifications.
+          I work end to end, from research and prototyping through to deployment, observability, and real business impact, across customer operations, internal tooling, and content. I care about systems that are accurate, cost-aware, and accountable.
         </motion.p>
       </motion.div>
     </section>

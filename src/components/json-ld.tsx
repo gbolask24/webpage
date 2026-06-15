@@ -7,7 +7,7 @@ export function PersonJsonLd() {
     url: "https://gbolagade.com",
     jobTitle: "AI Engineer & AI Automation Architect",
     description:
-      "AI Engineer in London building production LLM systems — RAG, multi-agent automation, and observable AI workflows.",
+      "AI Engineer in London building production LLM systems: RAG, multi-agent automation, and observable AI workflows.",
     address: {
       "@type": "PostalAddress",
       addressLocality: "London",

@@ -190,7 +190,7 @@ npm run start  # Start production server
 **Main page** (`/`) — single page with 5 sections + header:
 1. **Hero** — Title, photo, CTAs "View Projects" + "Work with me" (`src/components/hero-section.tsx`)
 2. **About** — The arc: marketing → AI automation → enterprise AI engineering (`src/components/about-section.tsx`)
-3. **Impact** (`id="impact"`) — Capability cards + credentials, no metrics (`src/components/results-section.tsx`)
+3. **Impact** (`id="impact"`) — Capability cards only, no metrics, no credentials/education (`src/components/results-section.tsx`)
 4. **Projects** — Grid of project case-study cards (`src/components/projects-section.tsx`)
 5. **Connect** — Social links + footer (`src/components/connect-section.tsx`)
 6. **Header** — Floating nav (About · Impact · Projects · Connect), blurs on scroll (`src/components/header.tsx`)
@@ -198,7 +198,7 @@ npm run start  # Start production server
 **Project case-study pages** — dynamic route `/projects/[slug]`, data-driven:
 - Content lives in `src/lib/projects.ts` (the `projects` array + `getProject`). Each project has `slug`, `title`, `tagline`, `cardDescription`, `stack`, optional `repoUrl`, and `sections` (heading/body).
 - Rendered by `src/components/project-page.tsx` (one reusable component). Route files (`src/app/projects/[slug]/page.tsx` + `layout.tsx`) are thin: `generateStaticParams` + `generateMetadata` from the data.
-- The 5 projects: `llm-proxy`, `ai-ops-monitor` (both open-source, link to GitHub), `exec-ai-assistant`, `ai-support-platform`, `agentic-content-pipeline` (anonymized enterprise work, no employer names/metrics).
+- The 7 projects: `exec-ai-assistant`, `ai-support-copilot`, `ai-crm-copilot`, `ai-content-engine`, `llm-proxy`, `ai-ops-monitor`, `agentic-content-pipeline`. Repos linked: `ai-content-engine` (alice), `llm-proxy`, `ai-ops-monitor`. All anonymized (no employer names), no numeric metrics. Copy uses NO em dashes (—), and does NOT mention SEO, digital marketing, or the underlying product names of the support/CRM projects (framed as AI co-pilots/automations). The Connect section has a "Book a 1:1 consult" Calendly CTA.
 - **To add a project:** append to the `projects` array in `src/lib/projects.ts` — the homepage grid, footer, routes, and sitemap all derive from it automatically.
 
 **Shared components:**
