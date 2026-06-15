@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
 
 const fadeUp = {
@@ -21,47 +20,28 @@ export function AboutSection() {
         className="mx-auto max-w-3xl px-6"
       >
         <motion.h2 variants={fadeUp} className="text-sm uppercase tracking-widest text-zinc-500">
-          what i do
+          About
         </motion.h2>
 
         <motion.p
           variants={fadeUp}
           className="mt-8 text-xl leading-relaxed text-zinc-300 md:text-2xl"
         >
-          i run{" "}
-          <Link
-            href="https://buildauthority.ai"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white underline decoration-zinc-600 underline-offset-4 transition-colors hover:decoration-white"
-          >
-            authority ai
-          </Link>
-
-          . we help B2B founders build authentic personal brands. you talk, our AI writes your content. one hour a week, five posts done for you.
+          I&apos;m Gbolagade — an AI engineer based in London. I design and ship production AI systems, turning large language models into reliable services that behave predictably inside secure, governed environments.
         </motion.p>
 
         <motion.p
           variants={fadeUp}
           className="mt-6 text-xl leading-relaxed text-zinc-300 md:text-2xl"
         >
-          i teach ai and{" "}
-          <Link
-            href="https://www.youtube.com/@Oleg-Melnikov"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white underline decoration-zinc-600 underline-offset-4 transition-colors hover:decoration-white"
-          >
-            claude code
-          </Link>{" "}
-          to 18,000+ people on youtube.
+          I started out in SEO and digital marketing, leading content and growth for a range of businesses. From there I moved into AI automation — wiring language models into ERPs, customer operations, and internal tooling for enterprise teams.
         </motion.p>
 
         <motion.p
           variants={fadeUp}
           className="mt-6 text-xl leading-relaxed text-zinc-300 md:text-2xl"
         >
-          before this, i used AI to build trading algorithms at a hedge fund in amsterdam. then i left to build my own company.
+          Today I lead enterprise AI work end to end: RAG architectures, multi-agent automation, prompt evaluation, and the monitoring that keeps it all reliable in production. I hold an MSc in Digital Marketing from Middlesex University, alongside AI and machine-learning certifications.
         </motion.p>
       </motion.div>
     </section>
