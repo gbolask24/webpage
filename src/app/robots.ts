@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://oleg.ae/sitemap.xml",
+    sitemap: "https://gbolagade.com/sitemap.xml",
   };
 }
