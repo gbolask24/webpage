@@ -2,8 +2,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { projects } from "@/lib/projects";
 
-
-export function ResourceFooter({ currentSlug }: { currentSlug: string }) {
+export function ResourceFooter({ currentSlug = "" }: { currentSlug?: string }) {
   const filtered = projects.filter((p) => p.slug !== currentSlug);
 
   return (

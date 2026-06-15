@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import type { Project } from "@/lib/projects";
+import { ResourceFooter } from "@/components/resource-footer";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -130,12 +131,8 @@ export function ProjectPage({ project }: { project: Project }) {
         </motion.section>
       </main>
 
-      {/* Footer */}
-      <footer className="mx-auto max-w-3xl px-6 pb-12">
-        <p className="text-center text-sm text-zinc-600">
-          &copy; 2026 Gbolagade Ishola
-        </p>
-      </footer>
+      {/* More projects + footer */}
+      <ResourceFooter currentSlug={project.slug} />
     </>
   );
 }
