@@ -33,7 +33,7 @@ export function HeroSection() {
             delay={0.2}
             className="mx-auto mt-8 max-w-3xl text-balance text-2xl font-medium tracking-tight sm:text-3xl md:text-4xl lg:text-5xl"
           >
-            I build AI systems that move real business metrics.
+            I build production AI that does real work.
           </TextEffect>
 
           {/* Subheading */}
