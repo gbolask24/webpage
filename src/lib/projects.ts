@@ -20,29 +20,29 @@ export const projects: Project[] = [
     slug: "exec-ai-assistant",
     title: "Executive AI Assistant",
     tagline:
-      "A director-level AI operating system with voice and chat that takes real actions across Microsoft 365.",
+      "An AI chief of staff that runs a director's inbox, calendar, and calls by voice and chat.",
     cardDescription:
-      "Conversational AI co-pilot (voice and chat) that manages email, calendar, meetings, and calls.",
+      "Voice-and-chat AI co-pilot that triages email, runs the calendar, preps meetings, and places calls.",
     stack: [
       "Next.js",
       "Bun",
       "OpenAI Realtime",
-      "n8n",
       "Microsoft Graph",
       "SQLite",
+      "Webhooks",
     ],
     sections: [
       {
         heading: "The problem",
-        body: "A busy director loses hours every week to email triage, scheduling, meeting prep, and follow-ups scattered across separate tools, with important threads slipping through the cracks.",
+        body: "A director's attention is the bottleneck. Email triage, scheduling, meeting prep, and follow-ups eat the day, and the threads that slip are usually the ones that mattered most.",
       },
       {
         heading: "What I built",
-        body: "A conversational app with chat and always-on realtime voice and full tool-calling. It reads and writes email, manages tasks and calendar, captures meetings, generates pre-meeting briefs, places outbound calls, and remembers durable context across sessions. Side-effecting actions fan out through dedicated automation workflows that hold the credentials, and every write is confirmed before it fires.",
+        body: "An assistant the director talks to, by voice or chat, that acts on their behalf across Microsoft 365. It triages and drafts email, runs the calendar, turns meetings into briefs, places outbound calls, and carries context between sessions. Every action that changes something is confirmed before it fires, and credentials never touch the model.",
       },
       {
-        heading: "The effect",
-        body: "Collapses a director's scattered admin into a single co-pilot: fewer dropped threads, faster meeting prep, and far less time spent in the inbox.",
+        heading: "The result",
+        body: "Hours of admin handled before the director opens their laptop, nothing dropped, and a clear audit trail behind every action taken.",
       },
     ],
   },
@@ -50,22 +50,22 @@ export const projects: Project[] = [
     slug: "ai-support-copilot",
     title: "AI Customer Support Co-pilot",
     tagline:
-      "AI co-pilots and automations layered onto a self-hosted, open-source customer support platform.",
+      "AI that resolves the routine and drafts the rest, on a support desk you fully own.",
     cardDescription:
-      "Self-hosted support stack with AI co-pilots, smart routing, and reply automations.",
-    stack: ["Python", "LLM APIs", "n8n", "Webhooks", "Self-hosted"],
+      "Self-hosted support stack with AI routing, drafted replies, and back-office automations.",
+    stack: ["Python", "LLM APIs", "Webhooks", "Docker", "Self-hosted"],
     sections: [
       {
         heading: "The problem",
-        body: "Support teams drown in repetitive questions across fragmented channels, and most help-desk tools treat AI as a bolt-on rather than part of the workflow.",
+        body: "Support teams answer the same questions all day across disconnected channels, and bolt-on AI tends to reply confidently and wrongly, which costs more trust than it saves time.",
       },
       {
         heading: "What I built",
-        body: "A self-hosted, open-source support platform extended with AI co-pilots and automations: LLM-driven routing, drafted replies that agents approve, structured-output validation to keep answers reliable, and event-driven workflows that connect the desk to ERP, CRM, and courier systems. Chat, email, and forms are unified into one pipeline.",
+        body: "An open, self-hosted support platform with AI built into the workflow rather than bolted on. It routes incoming messages, drafts replies for an agent to approve, validates every answer against a strict schema, and reaches into ERP, CRM, and courier systems to act on real orders. Chat, email, and forms run through one queue.",
       },
       {
-        heading: "The effect",
-        body: "Automates the bulk of routine queries and drafts the rest for human approval, so a small team handles far more volume without losing quality.",
+        heading: "The result",
+        body: "Agents stop repeating themselves and start handling the exceptions, while answers stay accurate because a human signs off on anything that carries risk.",
       },
     ],
   },
@@ -73,22 +73,22 @@ export const projects: Project[] = [
     slug: "ai-crm-copilot",
     title: "AI-Native CRM",
     tagline:
-      "An open-source CRM rebuilt around AI co-pilots and automations.",
+      "A CRM that does the admin itself, instead of asking your team to feed it.",
     cardDescription:
-      "Open-source CRM with built-in AI co-pilots, record enrichment, and workflow automations.",
+      "Open-source CRM with AI co-pilots, automatic enrichment, and natural-language actions.",
     stack: ["TypeScript", "React", "GraphQL", "PostgreSQL", "AI co-pilots"],
     sections: [
       {
         heading: "The problem",
-        body: "Traditional CRMs store data but leave the busywork to people: chasing updates, enriching records, drafting follow-ups, and moving deals along by hand.",
+        body: "Teams buy a CRM to move faster and then lose hours feeding it: chasing updates, enriching records, and writing the same follow-ups by hand. The tool meant to help becomes the chore.",
       },
       {
         heading: "What I built",
-        body: "An open-source, AI-native CRM where co-pilots sit inside the workflow. Records enrich themselves, routine updates and follow-ups are automated, and natural-language actions let the team query and update the pipeline without clicking through forms. It runs on a modern TypeScript stack with a GraphQL API and pluggable automations.",
+        body: "An open-source, AI-native CRM where co-pilots live inside the workflow. Records enrich themselves, follow-ups and status changes run automatically, and anyone can query or update the pipeline in plain language instead of clicking through forms. It runs on a modern TypeScript and GraphQL stack with pluggable automations.",
       },
       {
-        heading: "The effect",
-        body: "The CRM handles the admin instead of the team, so people spend their time on relationships and deals rather than data entry.",
+        heading: "The result",
+        body: "The pipeline stays current on its own, so the team spends its time on relationships and deals rather than on the system that was supposed to help them close.",
       },
     ],
   },
@@ -96,23 +96,22 @@ export const projects: Project[] = [
     slug: "ai-content-engine",
     title: "AI Content Engine",
     tagline:
-      "A multi-channel AI content engine with a learned, per-user voice model.",
+      "An AI content engine that writes in a real person's voice, not a generic model's.",
     cardDescription:
-      "AI content generator across multiple channels with a three-layer learned voice model.",
+      "Multi-channel AI content generator with a three-layer, per-user learned voice model.",
     stack: ["Next.js", "TypeScript", "Vercel AI SDK", "SQLite", "Multi-agent"],
-    repoUrl: "https://github.com/gbolask24/alice",
     sections: [
       {
         heading: "The problem",
-        body: "Producing a steady stream of on-brand writing by hand is slow, and generic AI output sounds nothing like the person it is meant to represent.",
+        body: "Generic AI writing is easy to spot and easy to ignore. The hard part was never producing more words, it was sounding like a specific, credible person while doing it at volume.",
       },
       {
         heading: "What I built",
-        body: "A content engine that generates across several output channels from a single brief, backed by a dozen curated generators and a three-layer voice model that blends a per-user learned style, a shared house style, and an optional brand-voice modifier. A repurpose action turns one piece into many.",
+        body: "A content engine that turns a single brief into output across several channels, driven by a library of purpose-built generators and a three-layer voice model: a per-user learned style, a shared house style, and an optional brand modifier. One finished piece can be repurposed into many.",
       },
       {
-        heading: "The effect",
-        body: "On-brand writing in a fraction of the time, in a voice that actually sounds like its author rather than a generic model.",
+        heading: "The result",
+        body: "On-brand writing at the pace of a team, in a voice readers recognise as the author's rather than a model's.",
       },
     ],
   },
@@ -120,23 +119,23 @@ export const projects: Project[] = [
     slug: "llm-proxy",
     title: "Multi-Provider LLM Proxy",
     tagline:
-      "A unified API gateway that routes requests across multiple LLM providers behind a single schema.",
+      "One endpoint for every LLM provider, with automatic failover and cost control built in.",
     cardDescription:
-      "Open-source FastAPI gateway with provider fallback, cost estimation, and structured logging.",
+      "Open-source FastAPI gateway with provider fallback, cost tracking, and structured logging.",
     stack: ["Python", "FastAPI", "OpenAI", "Anthropic", "Docker", "pytest"],
     repoUrl: "https://github.com/gbolask24/multi-provider-llm-proxy",
     sections: [
       {
         heading: "The problem",
-        body: "Production AI systems should not be locked to a single LLM provider. Outages, cost swings, and model changes break apps that are hard-wired to one SDK, and there is rarely clear visibility into what each request actually costs.",
+        body: "Wiring a product directly to one model provider is a standing liability. When that provider has an outage, raises prices, or changes a model, the whole product feels it, and nobody can say what a single request actually costs.",
       },
       {
         heading: "What I built",
-        body: "A FastAPI service that exposes one messages-first endpoint and routes each request to the chosen provider, with automatic fallback chains, response normalisation, token-based cost estimation, structured logging, and a pluggable provider registry. The whole thing ships in Docker with pytest coverage.",
+        body: "A FastAPI gateway that puts one messages-first endpoint in front of every provider. It routes each call, fails over automatically, normalises responses, estimates cost per request, and logs everything, with new providers added through a small registry. It ships in Docker with test coverage.",
       },
       {
-        heading: "The effect",
-        body: "Applications can switch providers, or fail over automatically, without any code changes, with full cost and reliability visibility for every call.",
+        heading: "The result",
+        body: "Switching or combining providers becomes a config change instead of a rewrite, and every call is observable and costed.",
       },
     ],
   },
@@ -144,23 +143,23 @@ export const projects: Project[] = [
     slug: "ai-ops-monitor",
     title: "AI Operations Monitor",
     tagline:
-      "A lightweight observability layer for AI-assisted operations.",
+      "The dashboard that tells you when your AI is slow, expensive, or quietly failing.",
     cardDescription:
-      "Open-source FastAPI, Postgres, and Grafana stack tracking AI latency, cost, and failure trends.",
+      "Open-source FastAPI, Postgres, and Grafana stack for AI latency, cost, and failure tracking.",
     stack: ["Python", "FastAPI", "Postgres", "Grafana", "Docker Compose"],
     repoUrl: "https://github.com/gbolask24/ai-ops-monitor",
     sections: [
       {
         heading: "The problem",
-        body: "AI workflows are hard to trust in production without visibility into how they actually behave: latency, cost per request, schema validity, and where things quietly fail.",
+        body: "Most teams ship AI into production blind. They learn about latency spikes, runaway cost, and silent failures from customers rather than from a dashboard, which means they learn late.",
       },
       {
         heading: "What I built",
-        body: "A thin FastAPI webhook receiver that ingests chat events, workflow runs, and AI telemetry into Postgres, surfaced through provisioned Grafana dashboards. It tracks latency, cost, schema validity, escalation, and failure trends, and runs end to end with a single Docker Compose command.",
+        body: "A lightweight telemetry layer that captures chat events, workflow runs, and model calls into Postgres and surfaces them in provisioned Grafana dashboards, tracking latency, cost, schema validity, escalations, and failure trends. The whole stack comes up with one command.",
       },
       {
-        heading: "The effect",
-        body: "Real-time operational visibility into AI systems, spotting regressions, runaway costs, and failing workflows before they reach customers.",
+        heading: "The result",
+        body: "Problems surface on a dashboard before they reach the support queue, and cost and reliability stop being guesswork.",
       },
     ],
   },
@@ -168,28 +167,28 @@ export const projects: Project[] = [
     slug: "agentic-content-pipeline",
     title: "Agentic Product Content Pipeline",
     tagline:
-      "A multi-agent pipeline that turns raw supplier data into published, structured product content.",
+      "A multi-agent pipeline that builds an entire product catalogue from raw supplier data.",
     cardDescription:
-      "Multi-agent ingestion, enrichment, and publishing with a Pinecone-backed RAG taxonomy layer.",
+      "Multi-agent ingestion, enrichment, and publishing with a Pinecone-backed RAG taxonomy.",
     stack: [
       "Python",
       "OpenAI",
       "Pinecone (RAG)",
-      "n8n",
+      "Docker",
       "Structured output validation",
     ],
     sections: [
       {
         heading: "The problem",
-        body: "Building a large product catalogue by hand is slow, inconsistent, and simply does not scale as supplier data grows.",
+        body: "Cataloguing products by hand does not scale. As supplier feeds grow, listings get slower to produce and less consistent, and the backlog only ever gets longer.",
       },
       {
         heading: "What I built",
-        body: "A multi-agent system that automates supplier-data ingestion, attribute extraction, enrichment, validation, and publishing, with a Pinecone-backed RAG layer for taxonomy classification and structured JSON-schema outputs guarded for quality.",
+        body: "A pipeline of cooperating agents that ingest supplier data, extract and enrich attributes, validate against a schema, and publish, with a Pinecone-backed retrieval layer classifying each product into the right place in the taxonomy. Output is structured and quality-gated at every step.",
       },
       {
-        heading: "The effect",
-        body: "Let a small team expand a product catalogue many times over while cutting manual onboarding to a fraction of the time.",
+        heading: "The result",
+        body: "A small team ships a catalogue that would otherwise need a department, at a consistency manual entry never reaches.",
       },
     ],
   },
