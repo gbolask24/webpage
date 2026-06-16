@@ -14,8 +14,7 @@ export function PersonJsonLd() {
       addressCountry: "UK",
     },
     sameAs: [
-      "https://www.linkedin.com/in/ishola-gbolagade/",
-      "https://x.com/GbolagadeSEO",
+      "https://x.com/GbolagadeHQ",
       "https://github.com/gbolask24",
     ],
   };
