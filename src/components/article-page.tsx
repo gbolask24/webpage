@@ -111,7 +111,7 @@ export function ArticlePage({
           >
             <motion.div
               variants={fadeUp}
-              className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-zinc-500"
+              className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-zinc-400"
             >
               <time dateTime={article.date}>{formatArticleDate(article.date)}</time>
               <span aria-hidden>·</span>

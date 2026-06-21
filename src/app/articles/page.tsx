@@ -69,7 +69,7 @@ export default function ArticlesIndex() {
                     href={`/articles/${a.slug}`}
                     className="group block py-7 transition-colors"
                   >
-                    <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-zinc-500">
+                    <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-zinc-400">
                       <time dateTime={a.date}>{formatArticleDate(a.date)}</time>
                       <span aria-hidden>·</span>
                       <span>{a.readingTime}</span>
