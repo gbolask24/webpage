@@ -12,18 +12,20 @@ export async function generateMetadata({
   const url = `https://gbolagade.com/projects/${project.slug}`;
   return {
     title: project.title,
-    description: project.tagline,
+    description: project.seoDescription,
+    keywords: project.stack,
     openGraph: {
-      title: project.title,
-      description: project.tagline,
+      title: `${project.title} · Gbolagade Ishola`,
+      description: project.seoDescription,
       type: "article",
       url,
+      siteName: "Gbolagade Ishola",
       authors: ["Gbolagade Ishola"],
     },
     twitter: {
       card: "summary_large_image",
-      title: project.title,
-      description: project.tagline,
+      title: `${project.title} · Gbolagade Ishola`,
+      description: project.seoDescription,
     },
     alternates: { canonical: url },
   };

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import type { Project } from "@/lib/projects";
 import { ResourceFooter } from "@/components/resource-footer";
+import { ProjectJsonLd } from "@/components/json-ld";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -17,6 +18,7 @@ const fadeUp = {
 export function ProjectPage({ project }: { project: Project }) {
   return (
     <>
+      <ProjectJsonLd project={project} />
       {/* Minimal header */}
       <header className="px-2">
         <div className="mx-auto mt-2 flex max-w-3xl items-center justify-between px-6 py-4">
@@ -35,7 +37,7 @@ export function ProjectPage({ project }: { project: Project }) {
         </div>
       </header>
 
-      <main>
+      <main id="main">
         {/* Hero */}
         <section className="pt-16 pb-8 md:pt-24 md:pb-12">
           <motion.div

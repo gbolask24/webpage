@@ -94,16 +94,15 @@ export function HeroSection() {
             container: {
               hidden: {},
               visible: {
-                transition: { delayChildren: 1.2 },
+                transition: { delayChildren: 0.15 },
               },
             },
             item: {
-              hidden: { opacity: 0, y: 24, filter: "blur(12px)" },
+              hidden: { opacity: 0, y: 16 },
               visible: {
                 opacity: 1,
                 y: 0,
-                filter: "blur(0px)",
-                transition: { type: "spring", bounce: 0.2, duration: 2 },
+                transition: { type: "spring", bounce: 0.2, duration: 0.9 },
               },
             },
           }}

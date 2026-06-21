@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <PersonJsonLd />
       <Header />
-      <main>
+      <main id="main">
         <HeroSection />
         <AboutSection />
         <ResultsSection />
