@@ -23,7 +23,7 @@ export function HeroSection() {
           {/* Top label */}
           <AnimatedGroup>
             <span className="inline-block rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-zinc-400">
-              AI Engineer · AI Automation Architect · LLM Solutions
+              AI Engineer · AI Automation Architect · London, UK
             </span>
           </AnimatedGroup>
 
@@ -43,7 +43,7 @@ export function HeroSection() {
             per="line"
             className="mx-auto mt-6 max-w-2xl text-balance text-lg text-zinc-400 md:text-xl"
           >
-            Senior AI engineer in London. I design and ship enterprise AI: RAG, multi-agent automation, and observable LLM systems, from research through to production.
+            Senior AI engineer in London. I build the software businesses run on, internal tools, automations, and production AI systems, and use AI to solve real problems end to end.
           </TextEffect>
 
           {/* CTAs */}
@@ -115,6 +115,7 @@ export function HeroSection() {
               width={1672}
               height={941}
               className="rounded-xl"
+              sizes="(max-width: 1024px) 100vw, 896px"
               priority
             />
             <div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/10" />

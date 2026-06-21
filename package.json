@@ -12,10 +12,13 @@
     "@plausible-analytics/tracker": "^0.4.5",
     "clsx": "^2.1.1",
     "framer-motion": "^12.7.3",
+    "gray-matter": "^4.0.3",
     "lucide-react": "^1.14.0",
     "next": "^15.3.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
     "tailwind-merge": "^3.2.0"
   },
   "devDependencies": {

@@ -1,4 +1,5 @@
 import type { Project } from "@/lib/projects";
+import type { Article } from "@/lib/articles";
 
 const SITE = "https://gbolagade.com";
 const PERSON_ID = `${SITE}/#person`;
@@ -93,6 +94,39 @@ export function ProjectJsonLd({ project }: { project: Project }) {
   return (
     <JsonLd
       data={{ "@context": "https://schema.org", "@graph": [work, breadcrumb] }}
+    />
+  );
+}
+
+/** BlogPosting + breadcrumb for an article page. */
+export function ArticleJsonLd({ article }: { article: Article }) {
+  const url = `${SITE}/articles/${article.slug}`;
+  const post = {
+    "@type": "BlogPosting",
+    "@id": `${url}#article`,
+    headline: article.title,
+    description: article.description,
+    url,
+    mainEntityOfPage: url,
+    datePublished: article.date,
+    dateModified: article.date,
+    inLanguage: "en-GB",
+    image: `${url}/opengraph-image`,
+    author: { "@id": PERSON_ID },
+    publisher: { "@id": PERSON_ID },
+    keywords: article.tags.join(", "),
+  };
+  const breadcrumb = {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE },
+      { "@type": "ListItem", position: 2, name: "Articles", item: `${SITE}/articles` },
+      { "@type": "ListItem", position: 3, name: article.title, item: url },
+    ],
+  };
+  return (
+    <JsonLd
+      data={{ "@context": "https://schema.org", "@graph": [post, breadcrumb] }}
     />
   );
 }

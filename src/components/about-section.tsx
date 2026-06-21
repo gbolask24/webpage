@@ -27,21 +27,21 @@ export function AboutSection() {
           variants={fadeUp}
           className="mt-8 text-xl leading-relaxed text-zinc-300 md:text-2xl"
         >
-          I&apos;m Gbolagade, an AI engineer based in London. I design and ship production AI systems, turning large language models into reliable services that behave predictably inside secure, governed environments.
+          I&apos;m Gbolagade, an AI engineer based in London. I build the software businesses actually run on, internal tools, automations, customer-facing products, and production AI systems, and I use AI to make them faster, cheaper, and smarter.
         </motion.p>
 
         <motion.p
           variants={fadeUp}
           className="mt-6 text-xl leading-relaxed text-zinc-300 md:text-2xl"
         >
-          My focus is the hard part of AI: retrieval-augmented generation, structured output validation, multi-agent automation, and AI co-pilots that take real actions rather than just chat. I build the pipelines, integrations, and monitoring that let these systems run dependably at scale.
+          I am not boxed into one kind of work. Some days that is a RAG pipeline or a multi-agent automation that takes real actions. Other days it is an internal tool, a back-office integration, or an open-source library that solves a problem cleanly. I go where the business problem is, and I use the right tool for it.
         </motion.p>
 
         <motion.p
           variants={fadeUp}
           className="mt-6 text-xl leading-relaxed text-zinc-300 md:text-2xl"
         >
-          I work end to end, from research and prototyping through to deployment, observability, and real business impact, across customer operations, internal tooling, and content. I care about systems that are accurate, cost-aware, and accountable.
+          I work end to end, from research and prototyping through to deployment, observability, and real business impact, across customer operations, internal tooling, ecommerce, and content. I care about systems that are accurate, cost-aware, and accountable, whether they are powered by a large language model or just good engineering.
         </motion.p>
       </motion.div>
     </section>

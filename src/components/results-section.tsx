@@ -4,24 +4,24 @@ import { motion } from "framer-motion";
 
 const capabilities = [
   {
-    title: "Production LLM systems",
+    title: "Business software & internal tools",
     description:
-      "RAG pipelines, structured-output validation, prompt evaluation, and multi-provider routing. AI that behaves predictably and stays reliable in production.",
+      "The day-to-day systems a business runs on: internal tools, dashboards, integrations, and automations that remove manual work and connect the systems you already use.",
   },
   {
-    title: "AI co-pilots & automations",
+    title: "Production LLM & agent systems",
     description:
-      "Voice and chat assistants that take real actions across business tools, with confirmed writes and event-driven workflows that remove manual busywork.",
+      "RAG pipelines, multi-agent automation, structured-output validation, and AI co-pilots that take real actions, built to behave predictably and stay reliable in production.",
   },
   {
-    title: "AI customer operations",
+    title: "AI for real business problems",
     description:
-      "AI-first support and back-office automation across channels, handling the bulk of routine work while keeping a human in the loop where it matters.",
+      "Customer operations, content, ecommerce catalogs, and back-office workflows. I use AI where it pays off and plain engineering where it does not, then ship the result.",
   },
   {
-    title: "Observability & governance",
+    title: "Observability, governance & open source",
     description:
-      "Latency, cost, and output-validity monitoring with PII exclusion and GDPR-aligned redaction. AI you can trust, audit, and run accountably.",
+      "Latency, cost, and output-validity monitoring with GDPR-aligned redaction, plus open-source tools I build and share. AI you can trust, audit, and run accountably.",
   },
 ];
 

@@ -22,11 +22,11 @@ export const projects: Project[] = [
     slug: "exec-ai-assistant",
     title: "Executive AI Assistant",
     tagline:
-      "A director-level AI operating system with voice and chat that takes real actions across Microsoft 365.",
+      "A voice and chat AI agent that runs real business operations, from inbox and calendar to outbound calls.",
     cardDescription:
       "Voice-and-chat AI co-pilot that triages email, runs the calendar, preps meetings, and places calls.",
     seoDescription:
-      "A director-level AI assistant with realtime voice and chat that takes real Microsoft 365 actions behind human-in-the-loop controls. An agentic engineering case study.",
+      "A voice-and-chat AI agent that takes real actions across the systems a business runs on, behind human-in-the-loop controls. An agentic engineering case study.",
     stack: [
       "Next.js",
       "Bun",
@@ -38,11 +38,11 @@ export const projects: Project[] = [
     sections: [
       {
         heading: "The problem",
-        body: "A director's attention is the bottleneck. Email triage, scheduling, meeting prep, and follow-ups eat the day, and the threads that slip are usually the ones that mattered most.",
+        body: "The person running a business is the bottleneck. Email triage, scheduling, meeting prep, and follow-ups eat the day, and the threads that slip are usually the ones that mattered most.",
       },
       {
         heading: "What I built",
-        body: "An assistant the director talks to, by voice or chat, that acts on their behalf across Microsoft 365. It triages and drafts email, runs the calendar, turns meetings into briefs, places outbound calls, and carries context between sessions. Every action that changes something is confirmed before it fires, and credentials never touch the model.",
+        body: "An assistant you talk to, by voice or chat, that acts on your behalf across the tools the business already runs on, Microsoft 365 among them. It triages and drafts email, runs the calendar, turns meetings into briefs, places outbound calls, and carries context between sessions. Every action that changes something is confirmed before it fires, and credentials never touch the model.",
       },
       {
         heading: "My approach",
@@ -50,7 +50,7 @@ export const projects: Project[] = [
       },
       {
         heading: "The result",
-        body: "Hours of admin handled before the director opens their laptop, nothing dropped, and a clear audit trail behind every action taken.",
+        body: "Hours of admin handled before the working day starts, nothing dropped, and a clear audit trail behind every action taken.",
       },
     ],
   },

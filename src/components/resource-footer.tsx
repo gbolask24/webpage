@@ -8,7 +8,7 @@ export function ResourceFooter({ currentSlug = "" }: { currentSlug?: string }) {
   return (
     <footer className="mx-auto max-w-3xl px-6 pb-12">
       <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-10 sm:px-8 sm:py-12 mt-16">
-        <p className="text-center text-xs font-medium uppercase tracking-widest text-zinc-500">
+        <p className="text-center text-xs font-medium uppercase tracking-widest text-zinc-400">
           More projects
         </p>
 
@@ -33,7 +33,7 @@ export function ResourceFooter({ currentSlug = "" }: { currentSlug?: string }) {
         </div>
       </div>
 
-      <p className="mt-8 text-center text-sm text-zinc-500">
+      <p className="mt-8 text-center text-sm text-zinc-400">
         &copy; 2026 Gbolagade Ishola
       </p>
     </footer>
