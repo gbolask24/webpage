@@ -58,13 +58,16 @@ export function ConnectSection() {
 
         <motion.p
           variants={fadeUp}
-          className="mt-8 text-xl text-zinc-300 md:text-2xl"
+          className="mt-8 text-base text-zinc-300 md:text-lg"
         >
           Building something, or thinking about it? Book a 1:1 and let&apos;s dig in.
         </motion.p>
 
-        {/* Consult CTA */}
-        <motion.div variants={fadeUp} className="mt-10">
+        {/* Actions: consult + socials on one line */}
+        <motion.div
+          variants={fadeUp}
+          className="mt-10 flex flex-wrap items-center justify-center gap-3"
+        >
           <Link
             href="https://calendly.com/topchoiceai/consultation"
             target="_blank"
@@ -80,13 +83,6 @@ export function ConnectSection() {
               />
             </svg>
           </Link>
-        </motion.div>
-
-        {/* Social links */}
-        <motion.div
-          variants={fadeUp}
-          className="mt-10 flex flex-wrap items-center justify-center gap-4"
-        >
           {socials.map((social) => (
             <Link
               key={social.name}
