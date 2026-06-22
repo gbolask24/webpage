@@ -60,7 +60,7 @@ export function ConnectSection() {
           variants={fadeUp}
           className="mt-8 text-xl text-zinc-300 md:text-2xl"
         >
-          Available for AI engineering contracts and hands-on builds. If you&apos;re shipping AI, or want to start, let&apos;s work together.
+          Available for contracts and hands-on builds. If you&apos;ve got something to build, get in touch.
         </motion.p>
 
         {/* Consult CTA */}
