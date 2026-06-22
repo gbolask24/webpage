@@ -60,7 +60,7 @@ export function ConnectSection() {
           variants={fadeUp}
           className="mt-8 text-xl text-zinc-300 md:text-2xl"
         >
-          Stuck on something? Book a 1:1 consult. Bring a specific problem, leave with a clear next step.
+          Building something, or thinking about it? Book a 1:1 and let&apos;s dig in.
         </motion.p>
 
         {/* Consult CTA */}
