@@ -43,7 +43,7 @@ export function HeroSection() {
             per="line"
             className="mx-auto mt-6 max-w-2xl text-balance text-lg text-zinc-400 md:text-xl"
           >
-            AI engineer in London, building the software businesses run on, internal tools, automations, and production AI systems, and using AI to solve real problems end to end.
+            From internal tools to production AI systems, built end to end.
           </TextEffect>
 
           {/* CTAs */}
