@@ -64,6 +64,15 @@ const markdownComponents: Components = {
       {...props}
     />
   ),
+  // eslint-disable-next-line @next/next/no-img-element
+  img: ({ node, alt = "", ...props }) => (
+    <img
+      alt={alt}
+      loading="lazy"
+      className="mx-auto mt-8 w-full rounded-xl border border-white/10"
+      {...props}
+    />
+  ),
   blockquote: ({ node, ...props }) => (
     <blockquote
       className="mt-6 border-l-2 border-white/20 pl-5 text-lg italic text-zinc-400"
