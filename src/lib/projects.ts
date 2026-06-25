@@ -14,6 +14,8 @@ export interface Project {
   stack: string[];
   /** Public GitHub repo, if open source. */
   repoUrl?: string;
+  /** ISO date (YYYY-MM-DD) of the last meaningful update, for sitemap lastmod. Optional. */
+  updated?: string;
   sections: ProjectSection[];
 }
 
