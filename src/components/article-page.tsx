@@ -7,6 +7,7 @@ import remarkGfm from "remark-gfm";
 import type { Article } from "@/lib/articles";
 import { formatArticleDate } from "@/lib/format-date";
 import { ResourceFooter } from "@/components/resource-footer";
+import { ConnectSection } from "@/components/connect-section";
 import { ArticleJsonLd } from "@/components/json-ld";
 import { ShareButtons } from "@/components/share-buttons";
 
@@ -89,6 +90,8 @@ export function ArticlePage({
   article: Article;
   more: Article[];
 }) {
+  const shareUrl = `https://gbolagade.com/articles/${article.slug}`;
+
   return (
     <>
       <ArticleJsonLd article={article} />
@@ -101,12 +104,20 @@ export function ArticlePage({
           >
             Gbolagade Ishola
           </Link>
-          <Link
-            href="/articles"
-            className="inline-flex items-center gap-2 rounded-lg bg-white/10 px-4 py-2 text-sm font-medium transition-colors hover:bg-white/20"
-          >
-            All articles
-          </Link>
+          <div className="flex items-center gap-2">
+            <Link
+              href="/articles"
+              className="inline-flex items-center gap-2 rounded-lg bg-white/10 px-4 py-2 text-sm font-medium transition-colors hover:bg-white/20"
+            >
+              All articles
+            </Link>
+            <Link
+              href="#connect"
+              className="inline-flex items-center gap-2 rounded-lg bg-white/10 px-4 py-2 text-sm font-medium transition-colors hover:bg-white/20"
+            >
+              Connect
+            </Link>
+          </div>
         </div>
       </header>
 
@@ -148,6 +159,10 @@ export function ArticlePage({
                 </span>
               ))}
             </motion.div>
+
+            <motion.div variants={fadeUp} className="mt-8">
+              <ShareButtons title={article.title} url={shareUrl} />
+            </motion.div>
           </motion.div>
         </section>
 
@@ -166,10 +181,7 @@ export function ArticlePage({
         {/* Share */}
         <div className="mx-auto max-w-3xl px-6 pb-16">
           <div className="border-t border-white/10 pt-8">
-            <ShareButtons
-              title={article.title}
-              url={`https://gbolagade.com/articles/${article.slug}`}
-            />
+            <ShareButtons title={article.title} url={shareUrl} />
           </div>
         </div>
 
@@ -201,6 +213,9 @@ export function ArticlePage({
             </div>
           </section>
         )}
+
+        {/* Connect CTA, same as the homepage */}
+        <ConnectSection />
       </main>
 
       {/* Projects + footer for cross-linking */}
