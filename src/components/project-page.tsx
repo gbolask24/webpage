@@ -29,26 +29,34 @@ export function ProjectPage({ project }: { project: Project }) {
           >
             Gbolagade Ishola
           </Link>
-          <nav>
-            <ul className="flex gap-8 text-sm">
-              <li>
-                <Link
-                  href="/#projects"
-                  className="text-zinc-400 transition-colors hover:text-white"
-                >
-                  All projects
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#connect"
-                  className="text-zinc-400 transition-colors hover:text-white"
-                >
-                  Connect
-                </Link>
-              </li>
-            </ul>
-          </nav>
+          <div className="flex items-center gap-6">
+            <nav>
+              <ul className="flex gap-8 text-sm">
+                <li>
+                  <Link
+                    href="/#projects"
+                    className="text-zinc-400 transition-colors hover:text-white"
+                  >
+                    All projects
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/articles"
+                    className="text-zinc-400 transition-colors hover:text-white"
+                  >
+                    Articles
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+            <Link
+              href="#connect"
+              className="inline-flex items-center gap-2 rounded-lg bg-white/10 px-4 py-2 text-sm font-medium transition-colors hover:bg-white/20"
+            >
+              Get in touch
+            </Link>
+          </div>
         </div>
       </header>
 
