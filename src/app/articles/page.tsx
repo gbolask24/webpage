@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllArticles, formatArticleDate } from "@/lib/articles";
 import { ResourceFooter } from "@/components/resource-footer";
+import { ConnectSection } from "@/components/connect-section";
 
 const DESCRIPTION =
   "Writing on AI engineering: loop engineering, agent observability and cost, enterprise context layers, ERP and cloud agents, and agentic commerce.";
@@ -38,12 +39,20 @@ export default function ArticlesIndex() {
           >
             Gbolagade Ishola
           </Link>
-          <Link
-            href="/#projects"
-            className="inline-flex items-center gap-2 rounded-lg bg-white/10 px-4 py-2 text-sm font-medium transition-colors hover:bg-white/20"
-          >
-            Projects
-          </Link>
+          <div className="flex items-center gap-2">
+            <Link
+              href="/#projects"
+              className="inline-flex items-center gap-2 rounded-lg bg-white/10 px-4 py-2 text-sm font-medium transition-colors hover:bg-white/20"
+            >
+              Projects
+            </Link>
+            <Link
+              href="#connect"
+              className="inline-flex items-center gap-2 rounded-lg bg-white px-4 py-2 text-sm font-semibold text-black transition-opacity hover:opacity-90"
+            >
+              Connect
+            </Link>
+          </div>
         </div>
       </header>
 
@@ -96,6 +105,9 @@ export default function ArticlesIndex() {
             </ul>
           </div>
         </section>
+
+        {/* Connect CTA, same as the homepage */}
+        <ConnectSection />
       </main>
 
       <ResourceFooter />
