@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import type { Project } from "@/lib/projects";
 import { ResourceFooter } from "@/components/resource-footer";
+import { ConnectSection } from "@/components/connect-section";
 import { ProjectJsonLd } from "@/components/json-ld";
 
 const fadeUp = {
@@ -28,12 +29,26 @@ export function ProjectPage({ project }: { project: Project }) {
           >
             Gbolagade Ishola
           </Link>
-          <Link
-            href="/#projects"
-            className="inline-flex items-center gap-2 rounded-lg bg-white/10 px-4 py-2 text-sm font-medium transition-colors hover:bg-white/20"
-          >
-            All projects
-          </Link>
+          <nav>
+            <ul className="flex gap-8 text-sm">
+              <li>
+                <Link
+                  href="/#projects"
+                  className="text-zinc-400 transition-colors hover:text-white"
+                >
+                  All projects
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#connect"
+                  className="text-zinc-400 transition-colors hover:text-white"
+                >
+                  Connect
+                </Link>
+              </li>
+            </ul>
+          </nav>
         </div>
       </header>
 
@@ -131,6 +146,9 @@ export function ProjectPage({ project }: { project: Project }) {
             </div>
           </div>
         </motion.section>
+
+        {/* Connect CTA, same as the homepage */}
+        <ConnectSection />
       </main>
 
       {/* More projects + footer */}

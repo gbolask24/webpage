@@ -39,20 +39,26 @@ export default function ArticlesIndex() {
           >
             Gbolagade Ishola
           </Link>
-          <div className="flex items-center gap-2">
-            <Link
-              href="/#projects"
-              className="inline-flex items-center gap-2 rounded-lg bg-white/10 px-4 py-2 text-sm font-medium transition-colors hover:bg-white/20"
-            >
-              Projects
-            </Link>
-            <Link
-              href="#connect"
-              className="inline-flex items-center gap-2 rounded-lg bg-white px-4 py-2 text-sm font-semibold text-black transition-opacity hover:opacity-90"
-            >
-              Connect
-            </Link>
-          </div>
+          <nav>
+            <ul className="flex gap-8 text-sm">
+              <li>
+                <Link
+                  href="/#projects"
+                  className="text-zinc-400 transition-colors hover:text-white"
+                >
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#connect"
+                  className="text-zinc-400 transition-colors hover:text-white"
+                >
+                  Connect
+                </Link>
+              </li>
+            </ul>
+          </nav>
         </div>
       </header>
 

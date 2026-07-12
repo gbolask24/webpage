@@ -104,20 +104,26 @@ export function ArticlePage({
           >
             Gbolagade Ishola
           </Link>
-          <div className="flex items-center gap-2">
-            <Link
-              href="/articles"
-              className="inline-flex items-center gap-2 rounded-lg bg-white/10 px-4 py-2 text-sm font-medium transition-colors hover:bg-white/20"
-            >
-              All articles
-            </Link>
-            <Link
-              href="#connect"
-              className="inline-flex items-center gap-2 rounded-lg bg-white px-4 py-2 text-sm font-semibold text-black transition-opacity hover:opacity-90"
-            >
-              Connect
-            </Link>
-          </div>
+          <nav>
+            <ul className="flex gap-8 text-sm">
+              <li>
+                <Link
+                  href="/articles"
+                  className="text-zinc-400 transition-colors hover:text-white"
+                >
+                  All articles
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#connect"
+                  className="text-zinc-400 transition-colors hover:text-white"
+                >
+                  Connect
+                </Link>
+              </li>
+            </ul>
+          </nav>
         </div>
       </header>
 
