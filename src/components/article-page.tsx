@@ -8,6 +8,7 @@ import type { Article } from "@/lib/articles";
 import { formatArticleDate } from "@/lib/format-date";
 import { ResourceFooter } from "@/components/resource-footer";
 import { ArticleJsonLd } from "@/components/json-ld";
+import { ShareButtons } from "@/components/share-buttons";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -161,6 +162,16 @@ export function ArticlePage({
             {article.body}
           </ReactMarkdown>
         </motion.article>
+
+        {/* Share */}
+        <div className="mx-auto max-w-3xl px-6 pb-16">
+          <div className="border-t border-white/10 pt-8">
+            <ShareButtons
+              title={article.title}
+              url={`https://gbolagade.com/articles/${article.slug}`}
+            />
+          </div>
+        </div>
 
         {/* More articles */}
         {more.length > 0 && (

@@ -101,7 +101,7 @@ export function ShareButtons({ title, url }: { title: string; url: string }) {
 
   return (
     <div className="flex flex-wrap items-center gap-2">
-      <span className="mr-1 text-xs uppercase tracking-widest text-zinc-500">
+      <span className="mr-1 text-xs uppercase tracking-widest text-zinc-400">
         Share
       </span>
       {targets.map((target) => (
