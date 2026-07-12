@@ -159,10 +159,6 @@ export function ArticlePage({
                 </span>
               ))}
             </motion.div>
-
-            <motion.div variants={fadeUp} className="mt-8">
-              <ShareButtons title={article.title} url={shareUrl} />
-            </motion.div>
           </motion.div>
         </section>
 
