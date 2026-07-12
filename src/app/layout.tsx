@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Unbounded } from "next/font/google";
 import { Plausible } from "@/components/plausible";
+import { GoogleAnalytics } from "@/components/google-analytics";
 import "./globals.css";
 
 // Paste your Google Search Console verification token here to enable GSC.
@@ -85,6 +86,7 @@ export default function RootLayout({
           Skip to content
         </a>
         <Plausible />
+        <GoogleAnalytics />
         {children}
       </body>
     </html>
