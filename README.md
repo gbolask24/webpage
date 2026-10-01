@@ -1,73 +1,83 @@
-# gbolagade.com
+# A portfolio site you can fork
 
-The personal site of Gbolagade Ishola, an AI engineer in London. It has a landing page, a case
-study for each system I have built, and articles on agent engineering.
+This is the code behind [gbolagade.com](https://gbolagade.com), my personal site. It is a
+landing page, a case study page for each project, and a blog, in one small Next.js app.
 
-Live at [gbolagade.com](https://gbolagade.com).
+If you need a portfolio, use it. Fork the repo or press "Use this template", swap my content
+for yours, and deploy. Most people can have their own version live in an afternoon. There is
+no CMS, database or paid service to set up.
 
-## What is on it
+## What you get
 
-- **Landing page**: who I am, what I build, the project grid, and how to get in touch.
-- **Project case studies** at `/projects/<slug>`: the problem, what I built, my approach and the
-  result, with the stack and a link to the repo or live demo where one is public.
-- **Articles** at `/articles`: longer pieces on agent loops, observability and cost, context
-  layers, ERP agents and agentic commerce.
+- A landing page with a hero, an about section, capability cards, a project grid and a
+  contact section.
+- A case study page for every project, generated from one data file. Add an object, get a page.
+- A "More projects" button on the grid, so a long list does not push the rest of the page down.
+- Articles written as Markdown files, with reading time, tags and share buttons.
+- The search basics already done: meta tags, Open Graph images generated per page, JSON-LD,
+  a sitemap and robots.txt.
+- A dark design with scroll animations that works on a phone.
 
-The case studies cover:
+## Start
 
-| Project | Public code |
-|---|---|
-| Executive AI Assistant | |
-| Federated Agent Platform | |
-| Agentic Product Content Pipeline | |
-| AI Customer Support Co-pilot | |
-| Workplace Automation on the Microsoft Stack | |
-| AI-Native CRM | |
-| Alice, AI Task and Content Studio | |
-| Local Agent Panel and Framework Benchmark | [agent-panel-agentscope](https://github.com/gbolask24/agent-panel-agentscope) |
-| Multi-Provider LLM Proxy | [multi-provider-llm-proxy](https://github.com/gbolask24/multi-provider-llm-proxy) |
-| North Star Support Bot | [north-star-support-bot](https://github.com/gbolask24/north-star-support-bot), [live demo](https://north-star-support-bot-roan.vercel.app) |
-| AI Operations Monitor | [ai-ops-monitor](https://github.com/gbolask24/ai-ops-monitor) |
-
-## Stack
-
-Next.js 15 (App Router), React 19, TypeScript, Tailwind CSS 4 and Framer Motion. Articles are
-Markdown files read with gray-matter and rendered with react-markdown. Hosted on Vercel.
-
-## Run it locally
+You need Node.js 20 or newer.
 
 ```bash
+git clone https://github.com/gbolask24/webpage.git my-site
+cd my-site
 npm install
 npm run dev
 ```
 
-The dev server runs at http://localhost:3000. `npm run build` makes the production build and is
-also the type check.
+The site runs at http://localhost:3000. `npm run build` makes the production build and is also
+the type check, so run it before you deploy.
 
-## Where the content lives
+## Make it yours
 
-| What | Where |
+Work through these in order. The first three change most of what a visitor sees.
+
+### 1. Your projects
+
+Everything lives in the `projects` array in `src/lib/projects.ts`. Replace my entries with
+yours. The landing page grid, the "More projects" footer, each `/projects/<slug>` page, its
+social card and the sitemap all read from that array, so there is nothing else to edit.
+
+```ts
+{
+  slug: "my-project",                  // becomes /projects/my-project
+  title: "My Project",
+  tagline: "One sentence on what it does.",
+  cardDescription: "The short line shown on the landing page card.",
+  seoDescription: "140 to 160 characters for search results.",
+  stack: ["TypeScript", "Next.js"],    // the first four show on the card
+  repoUrl: "https://github.com/you/my-project",   // optional, adds a GitHub button
+  demoUrl: "https://my-project.example.com",      // optional, adds a live demo button
+  updated: "2026-10-01",               // optional, feeds the sitemap
+  sections: [
+    { heading: "The problem", body: "..." },
+    { heading: "What I built", body: "..." },
+    { heading: "My approach", body: "..." },
+    { heading: "The result", body: "..." },
+  ],
+}
+```
+
+The section headings are free text, so use whatever structure suits the project.
+
+### 2. Your words on the landing page
+
+| Section | File |
 |---|---|
-| Project case studies | `src/lib/projects.ts`, one array |
-| Articles | `content/articles/*.md` |
-| Landing page sections | `src/components/*-section.tsx` |
-| Site metadata and keywords | `src/app/layout.tsx` |
-| Structured data (JSON-LD) | `src/components/json-ld.tsx` |
-| Sitemap and robots | `src/app/sitemap.ts`, `src/app/robots.ts` |
+| Hero headline, label and buttons | `src/components/hero-section.tsx` |
+| About | `src/components/about-section.tsx` |
+| Capability cards | `src/components/results-section.tsx` |
+| Contact links and booking button | `src/components/connect-section.tsx` |
+| Navigation | `src/components/header.tsx` |
 
-### Add a project
+### 3. Your articles
 
-Append an object to the `projects` array in `src/lib/projects.ts`. The landing page grid, the
-"More projects" footer, the `/projects/<slug>` route, its social card and the sitemap all read
-from that array, so nothing else needs editing.
-
-Each project has a `slug`, `title`, `tagline`, `cardDescription`, `seoDescription`, `stack` and
-`sections`. `repoUrl` and `demoUrl` are optional and add a button each. `updated` is an ISO date
-that feeds the sitemap.
-
-### Add an article
-
-Add a Markdown file to `content/articles/`. The file name is the slug. Front matter:
+Delete my files in `content/articles/` and add your own. The file name is the URL slug. Each
+file starts with this front matter:
 
 ```yaml
 ---
@@ -79,16 +89,69 @@ tags: ["Agents", "LLM"]
 ---
 ```
 
-## Content rules
+If you do not want a blog, delete `src/app/articles`, `content/articles` and the "Articles"
+link in the header.
 
-The site describes work by function and industry. It names no employers and quotes no impact
-figures. Copy is in British English with no em dashes.
+### 4. Your name and domain
 
-## Deployment
+My name and domain are written into the metadata, the structured data and the page headers.
+This lists every file that still mentions me:
 
-Vercel builds and deploys every push to `main`.
+```bash
+grep -rlE "gbolagade\.com|Gbolagade|gbolask24|GbolagadeHQ|outlook\.com" src
+```
 
-## Credit
+Replace them with your own name, domain and handles. The ones that matter most for search are
+`src/app/layout.tsx`, `src/components/json-ld.tsx`, `src/app/sitemap.ts` and
+`src/app/robots.ts`.
 
-The layout and animations started from Oleg Melnikov's landing page template. All content is
-mine.
+### 5. Your images
+
+- `public/hero.png`: the large image under the headline. Mine is 1672 by 941 pixels.
+- `src/app/icon.png`: the favicon.
+
+### 6. Your analytics
+
+Do this before you deploy, or your visits will be counted on my accounts.
+
+- `src/components/google-analytics.tsx` holds my Google Analytics ID.
+- `src/components/plausible.tsx` holds my Plausible domain.
+
+Put your own values in, or remove both components from `src/app/layout.tsx`.
+
+### 7. Tidy up
+
+These folders are my working notes and are not part of the site. Delete them: `.claude/`,
+`context/`, `docs/`, `plans/`, `outputs/`, `reference/`, and the `CLAUDE.md` and
+`shell-aliases.md` files.
+
+## Deploy
+
+The site is a standard Next.js app, so it deploys anywhere Next.js runs. On Vercel:
+
+1. Push your fork to GitHub.
+2. Import the repo at [vercel.com/new](https://vercel.com/new). The defaults are correct.
+3. Add your domain in the project settings.
+
+Every push to `main` then deploys on its own.
+
+## Stack
+
+Next.js 15 with the App Router, React 19, TypeScript, Tailwind CSS 4 and Framer Motion.
+Articles are read with gray-matter and rendered with react-markdown.
+
+## What you may reuse
+
+Take the code, the structure and the design, and change them as much as you like. A link back
+is welcome and not required.
+
+Please do not reuse my case studies, articles, photo or name. They describe my work, and they
+are the part you would want to replace anyway.
+
+The layout and animations started from Oleg Melnikov's landing page template, so credit goes to
+him for the design.
+
+## Questions and improvements
+
+If something in these steps is unclear or broken, open an issue. If you build a site from this,
+I would like to see it, so open an issue with the link.
