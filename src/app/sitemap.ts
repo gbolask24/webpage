@@ -6,17 +6,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://gbolagade.com";
   const articles = getAllArticles();
 
-  // Home and the articles index don't change on their own; their "last
-  // modified" is really the last time new content was published. Tie lastmod
-  // to the newest article date so it reflects a real change, not the build.
+  // The articles index doesn't change on its own; its "last modified" is
+  // really the last time an article was published. Tie lastmod to the newest
+  // article date so it reflects a real change, not the build.
   const latestPublished = articles.length
     ? new Date(`${articles[0].date}T00:00:00Z`)
     : new Date();
 
+  // The home page also lists every project, so it changes when a case study
+  // is added or revised. Use whichever is newer: an article or a project.
+  const latestProject = projects
+    .map((p) => p.updated)
+    .filter((d): d is string => Boolean(d))
+    .sort()
+    .pop();
+  const homeModified =
+    latestProject && new Date(`${latestProject}T00:00:00Z`) > latestPublished
+      ? new Date(`${latestProject}T00:00:00Z`)
+      : latestPublished;
+
   return [
     {
       url: base,
-      lastModified: latestPublished,
+      lastModified: homeModified,
       changeFrequency: "weekly",
       priority: 1,
     },

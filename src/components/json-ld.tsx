@@ -20,9 +20,13 @@ const KNOWS_ABOUT = [
   "Large Language Models",
   "Retrieval-Augmented Generation",
   "Multi-Agent Systems",
+  "Agent Memory Architecture",
+  "Model Context Protocol",
+  "LLM Evaluation",
   "Prompt Engineering",
   "LLM Observability",
   "AI Automation",
+  "Microsoft Power Platform",
   "Vector Databases",
   "Responsible AI",
 ];

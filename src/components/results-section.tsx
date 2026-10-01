@@ -6,12 +6,12 @@ const capabilities = [
   {
     title: "Business software & internal tools",
     description:
-      "The day-to-day systems a business runs on: internal tools, dashboards, integrations, and automations that remove manual work and connect the systems you already use.",
+      "The day-to-day systems a business runs on: internal tools, dashboards, integrations, and automations, in custom code or on Power Platform, that remove manual work and connect the systems you already use.",
   },
   {
     title: "Production LLM & agent systems",
     description:
-      "RAG pipelines, multi-agent automation, structured-output validation, and AI co-pilots that take real actions, built to behave predictably and stay reliable in production.",
+      "RAG pipelines, multi-agent orchestration, agent memory, MCP servers, and AI co-pilots that take real actions behind confirmation. Evals and structured-output validation keep them predictable in production.",
   },
   {
     title: "AI for real business problems",
@@ -21,7 +21,7 @@ const capabilities = [
   {
     title: "Observability, governance & open source",
     description:
-      "Latency, cost, and output-validity monitoring with GDPR-aligned redaction, plus open-source tools I build and share. AI you can trust, audit, and run accountably.",
+      "Latency, cost, and output-validity monitoring with GDPR-aligned redaction, plus open-source tools and local-model experiments I build and share. AI you can trust, audit, and run accountably.",
   },
 ];
 

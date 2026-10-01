@@ -34,7 +34,7 @@ export function AboutSection() {
           variants={fadeUp}
           className="mt-6 text-xl leading-relaxed text-zinc-300 md:text-2xl"
         >
-          I am not boxed into one kind of work. Some days that is a RAG pipeline or a multi-agent automation that takes real actions. Other days it is an internal tool, a back-office integration, or an open-source library that solves a problem cleanly. I go where the business problem is, and I use the right tool for it.
+          I am not boxed into one kind of work. Some days that is a RAG pipeline or a multi-agent automation that takes real actions. Other days it is an internal tool, a back-office integration, or an open-source library that solves a problem cleanly. Lately it has meant joining a company&apos;s internal apps into one assistant with a memory layer behind it, and running open-weight models locally to see how far a small model goes. I go where the business problem is, and I use the right tool for it.
         </motion.p>
 
         <motion.p

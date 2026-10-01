@@ -90,8 +90,29 @@ export function ProjectPage({ project }: { project: Project }) {
               {project.tagline}
             </motion.p>
 
-            {project.repoUrl && (
-              <motion.div variants={fadeUp} className="mt-8">
+            {(project.repoUrl || project.demoUrl) && (
+              <motion.div
+                variants={fadeUp}
+                className="mt-8 flex flex-wrap items-center justify-center gap-3"
+              >
+                {project.demoUrl && (
+                  <a
+                    href={project.demoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/[0.03] px-6 py-3 text-sm font-medium text-zinc-300 transition-all hover:border-white/20 hover:bg-white/[0.06] hover:text-white"
+                  >
+                    Open live demo
+                    <svg viewBox="0 0 20 20" fill="currentColor" className="size-4">
+                      <path
+                        fillRule="evenodd"
+                        d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                )}
+                {project.repoUrl && (
                 <a
                   href={project.repoUrl}
                   target="_blank"
@@ -103,6 +124,7 @@ export function ProjectPage({ project }: { project: Project }) {
                   </svg>
                   View on GitHub
                 </a>
+                )}
               </motion.div>
             )}
           </motion.div>
