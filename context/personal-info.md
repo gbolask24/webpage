@@ -1,34 +1,37 @@
 # Personal Info
 
----
+This repo is public. Keep this file to what is already on the site or on the CV, and leave out
+anything private (salary, visa status, phone, home address, employer names).
 
-## Your Role
+## Role
 
-Oleg Melnikov, 25, Russian founder based in Belgrade, Serbia (as of April 2026). AI software entrepreneur with 5 years in AI, building in public. Previously: Deep Learning Engineer at Yandex and JetBrains (billion-dollar tech companies), used AI to build trading algorithms at a hedge fund in Amsterdam. Left to start his own thing.
+Gbolagade Samuel Ishola, AI Engineer and AI Automation Architect, London, UK. Seven-plus years in
+software and IT, three-plus in AI.
 
-## Background & Credentials
+## Background
 
-- **Math/CS:** Winner of Russian National Math Olympiad (2017, 2018), International Math Olympiad candidate, codeforces.com Master (2280)
-- **Education:** BS Mathematics & Computer Science, Saint Petersburg State University (2018-2022)
-- **Career:** Yandex (DL intern) -> JetBrains (DL intern) -> Hedge fund in Amsterdam (quant, 2 years, used AI for trading) -> Evolva AI (founder, no longer active) -> Authority AI (current founder, Oct 2025-present)
+- Started in content and digital work, moved into AI automation for medium and enterprise clients
+  on contract, and now builds production LLM systems in-house for a multi-site distributor with
+  several e-commerce platforms.
+- MSc Digital Marketing, Middlesex University (2024). Andrew Ng Machine Learning Specialization;
+  DataCamp RAG with LangChain, Transformers with PyTorch, Vector Databases with Pinecone. Working
+  towards Microsoft's Azure AI Apps and Agents Developer Associate.
 
-## Key Strengths
+## What he builds
 
-- Rare combo: deep technical AI/ML expertise + genuine understanding of media, branding, and personal authority
-- Authentic voice, radical transparency, builds in public
-- Competitive math/CS background applied to real business problems
+- Multi-agent systems on custom TypeScript orchestration over provider agent SDKs, with
+  confirmation-gated writes and durable memory.
+- A federated agent platform: one hub, many internal apps, a shared agent-tool contract, per-user
+  manifests, grant-filtered access and two-sided audit.
+- Typed agent memory: kinds, provenance, importance, pinning, visibility, archive in place of
+  delete, nightly consolidation.
+- RAG over Pinecone, structured-output validation, eval harnesses, observability and cost
+  attribution.
+- Power Platform automation, Copilot Studio agents and desktop RPA.
+- Local and open-weight models (Ollama, Qwen, AgentScope, Qwen-Agent) as experiments, not in
+  production.
 
-## Current Focus
+## How this workspace helps
 
-- Growing YouTube channel (16.6K subs, targeting 120K by Oct 2026) as primary growth engine -- AI for marketing niche
-- Running Authority AI (helping B2B founders build authentic personal brands)
-- Launching paid Skool community ($99/mo)
-- Planning US relocation via O-1 visa
-
-## How This Workspace Helps
-
-This workspace is for building a personal landing page (one-pager) that quickly communicates who Oleg is to the public world — his story, expertise, what he offers, and how to connect.
-
----
-
-_Keep this concise -- enough for Claude to understand your context, not an exhaustive biography._
+It holds the personal site at gbolagade.com: one landing page, project case studies and articles.
+The audience is recruiters, hiring managers and prospective clients.

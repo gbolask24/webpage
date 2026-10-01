@@ -132,7 +132,7 @@ This site should convey:
 - **The arc** -- SEO/digital marketing → AI automation for enterprise clients → building production LLM systems
 - **What he builds** -- Production LLM systems: RAG, multi-agent automation, AI customer operations, observability & governance
 - **Credibility** -- Qualitative capability + outcome statements (NO numeric metrics, NO employer names) + MSc Digital Marketing and AI/ML certifications
-- **How to connect** -- LinkedIn (/in/ishola-gbolagade), X (@GbolagadeSEO), GitHub (gbolask24), email (gbolagade.ishola@outlook.com), portfolio (gbolask24.github.io/portfolio)
+- **How to connect** -- X (@GbolagadeHQ), GitHub (gbolask24), email (gbolagade.ishola@outlook.com), plus the Calendly consult link. Socials were trimmed to these three on purpose; LinkedIn is not linked from the site.
 
 ---
 
@@ -148,13 +148,11 @@ Ongoing goal: optimize the site for search around keywords like **"AI Engineer"*
 - Plausible analytics (`src/components/plausible.tsx`, domain: gbolagade.com)
 
 **Still to do:**
-- Open Graph images (branded preview for social shares)
 - Replace favicon (`src/app/icon.png` is still Oleg's)
-- Swap hero photo (`public/hero.jpg` is still a placeholder)
 - Performance audit (Lighthouse, image optimization)
-- More project case-study pages (add to `src/lib/projects.ts`)
-- Add custom domain `gbolagade.com` in Vercel
-- Google Search Console verification (revisit later)
+- Google Search Console verification (token slot is in `src/app/layout.tsx`, still empty)
+
+Done since the list was first written: Open Graph images (`opengraph-image.tsx` routes), the hero photo (`public/hero.png`), the custom domain on Vercel, and Google Analytics 4.
 
 ---
 
@@ -196,9 +194,10 @@ npm run start  # Start production server
 6. **Header** — Floating nav (About · Impact · Projects · Connect), blurs on scroll (`src/components/header.tsx`)
 
 **Project case-study pages** — dynamic route `/projects/[slug]`, data-driven:
-- Content lives in `src/lib/projects.ts` (the `projects` array + `getProject`). Each project has `slug`, `title`, `tagline`, `cardDescription`, `stack`, optional `repoUrl`, and `sections` (heading/body).
-- Rendered by `src/components/project-page.tsx` (one reusable component). Route files (`src/app/projects/[slug]/page.tsx` + `layout.tsx`) are thin: `generateStaticParams` + `generateMetadata` from the data.
-- The 7 projects: `exec-ai-assistant`, `ai-support-copilot`, `ai-crm-copilot`, `ai-content-engine`, `llm-proxy`, `ai-ops-monitor`, `agentic-content-pipeline`. Repos linked: `ai-content-engine` (alice), `llm-proxy`, `ai-ops-monitor`. All anonymized (no employer names), no numeric metrics. Copy uses NO em dashes (—), and does NOT mention SEO, digital marketing, or the underlying product names of the support/CRM projects (framed as AI co-pilots/automations). The Connect section has a "Book a 1:1 consult" Calendly CTA.
+- Content lives in `src/lib/projects.ts` (the `projects` array + `getProject`). Each project has `slug`, `title`, `tagline`, `cardDescription`, `seoDescription`, `stack`, optional `repoUrl`, optional `demoUrl`, optional `updated` (ISO date, feeds sitemap lastmod), and `sections` (heading/body).
+- Rendered by `src/components/project-page.tsx` (one reusable component). Route files (`src/app/projects/[slug]/page.tsx` + `layout.tsx`) are thin: `generateStaticParams` + `generateMetadata` from the data. A project with a `demoUrl` gets an "Open live demo" button beside "View on GitHub".
+- The 11 projects, in display order: `exec-ai-assistant`, `federated-agent-platform`, `agentic-content-pipeline`, `ai-support-copilot`, `microsoft-automation`, `ai-crm-copilot`, `ai-content-engine` (Alice; slug kept for the URL), `local-agent-panel`, `llm-proxy`, `north-star-support-bot`, `ai-ops-monitor`. Repos linked: `local-agent-panel` (agent-panel-agentscope), `llm-proxy`, `north-star-support-bot` (also has the live demo), `ai-ops-monitor`. Alice's repo is private, so it has no link. All anonymized (no employer names, and the internal platform is described by function, never by its internal name), no numeric metrics. Copy uses NO em dashes (—), and does NOT mention SEO, digital marketing, or the underlying product names of the support/CRM projects (framed as AI co-pilots/automations). The Connect section has a "Book a 1:1 consult" Calendly CTA.
+- Last content refresh: 1 October 2026, against the September 2026 CV. Added the federated agent platform, Microsoft automation, the local agent panel and the North Star bot; revised the executive assistant, Alice and the content pipeline.
 - **To add a project:** append to the `projects` array in `src/lib/projects.ts` — the homepage grid, footer, routes, and sitemap all derive from it automatically.
 
 **Shared components:**
