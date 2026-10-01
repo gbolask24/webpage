@@ -189,7 +189,7 @@ npm run start  # Start production server
 1. **Hero** — Title, photo, CTAs "View Projects" + "Work with me" (`src/components/hero-section.tsx`)
 2. **About** — The arc: marketing → AI automation → enterprise AI engineering (`src/components/about-section.tsx`)
 3. **Impact** (`id="impact"`) — Capability cards only, no metrics, no credentials/education (`src/components/results-section.tsx`)
-4. **Projects** — Grid of project case-study cards (`src/components/projects-section.tsx`)
+4. **Projects** — Grid of project case-study cards (`src/components/projects-section.tsx`). Shows the first 6 (`INITIAL_COUNT`); a "More projects" button reveals the rest in place and "Show fewer" collapses them. Cards revealed by the button carry their own entrance animation, because the grid's scroll-in animation has already run by then.
 5. **Connect** — Social links + footer (`src/components/connect-section.tsx`)
 6. **Header** — Floating nav (About · Impact · Projects · Connect), blurs on scroll (`src/components/header.tsx`)
 
