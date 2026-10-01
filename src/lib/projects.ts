@@ -199,7 +199,7 @@ export const projects: Project[] = [
       },
       {
         heading: "My approach",
-        body: "I started from what each team did by hand and automated the steps they agreed were routine. Staying on the platform the business already used meant sign-in and permissions were already in place, and nothing new had to be bought or hosted.",
+        body: "I start from what each team does by hand and automate the steps they agree are routine. Staying on the platform the business already uses means sign-in and permissions are already in place, and nothing new has to be bought or hosted.",
       },
       {
         heading: "The result",
