@@ -27,21 +27,28 @@ export function AboutSection() {
           variants={fadeUp}
           className="mt-8 text-xl leading-relaxed text-zinc-300 md:text-2xl"
         >
-          I&apos;m Gbolagade, an AI engineer based in London. I build the software businesses actually run on, internal tools, automations, customer-facing products, and production AI systems, and I use AI to make them faster, cheaper, and smarter.
+          I&apos;m Gbolagade, an AI engineer based in London. I build the software a business runs on day to day: internal tools, customer-facing products, and the AI systems behind them.
         </motion.p>
 
         <motion.p
           variants={fadeUp}
           className="mt-6 text-xl leading-relaxed text-zinc-300 md:text-2xl"
         >
-          I am not boxed into one kind of work. Some days that is a RAG pipeline or a multi-agent automation that takes real actions. Other days it is an internal tool, a back-office integration, or an open-source library that solves a problem cleanly. Lately it has meant joining a company&apos;s internal apps into one assistant with a memory layer behind it, and running open-weight models locally to see how far a small model goes. I go where the business problem is, and I use the right tool for it.
+          Most of my work is agentic. I have built an assistant that triages email, runs a calendar and places calls, and a hub that joins a company&apos;s internal apps into one assistant with a memory layer behind it. Some of the work is plain engineering, such as a back-office integration or an internal tool, because that is often what the problem needs.
         </motion.p>
 
         <motion.p
           variants={fadeUp}
           className="mt-6 text-xl leading-relaxed text-zinc-300 md:text-2xl"
         >
-          I work end to end, from research and prototyping through to deployment, observability, and real business impact, across customer operations, internal tooling, ecommerce, and content. I care about systems that are accurate, cost-aware, and accountable, whether they are powered by a large language model or just good engineering.
+          I have done this in-house and on contract for clients in pharmacy, wholesale and retail. With clients I work as a forward deployed engineer. I sit down with the founder or the operations manager, build on the systems they already have, run the launch, and train their staff before I hand it over.
+        </motion.p>
+
+        <motion.p
+          variants={fadeUp}
+          className="mt-6 text-xl leading-relaxed text-zinc-300 md:text-2xl"
+        >
+          Everything I ship has evals, cost tracking and an audit trail, so the people running it can see what it did and what it cost. In my own time I run open-weight models on a laptop to see how far a small one goes.
         </motion.p>
       </motion.div>
     </section>

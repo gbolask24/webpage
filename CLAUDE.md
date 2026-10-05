@@ -8,7 +8,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is the workspace for **Gbolagade Ishola's personal landing page** — a one-pager website that quickly communicates who Gbolagade is to the public world: his story, expertise, projects, and how to connect. The audience is dual: recruiters/employers and prospective clients.
 
-**Gbolagade Samuel Ishola** is an AI Engineer / AI Automation Architect based in London, UK. He started in SEO and digital marketing, moved into AI automation for enterprise clients, and now builds production LLM systems — RAG architectures, multi-agent automation, prompt evaluation, and the observability that keeps them reliable. MSc Digital Marketing (Middlesex University) plus AI/ML certifications.
+**Gbolagade Samuel Ishola** is an AI Engineer based in London, UK, positioned as "AI Engineer · Agentic Systems · Forward Deployed Engineer" (the word "automation" was dropped from the headline on 5 October 2026). He started in SEO and digital marketing, moved into AI automation for enterprise clients, and now builds production LLM systems — RAG architectures, multi-agent automation, prompt evaluation, and the observability that keeps them reliable. MSc Digital Marketing (Middlesex University) plus AI/ML certifications.
 
 > **Content constraints (deliberate):** the site uses NO employer names (roles/projects are described by function/industry only) and NO numeric metrics (impact is described qualitatively). Preserve these when editing copy. Note: this codebase was forked from Oleg Melnikov's landing page — the design/animations were kept, all content replaced.
 
@@ -128,7 +128,7 @@ If yes to any, update the relevant sections. This file must always reflect the c
 
 This site should convey:
 
-- **Who Gbolagade is** -- AI Engineer / AI Automation Architect, London, UK
+- **Who Gbolagade is** -- AI Engineer, agentic systems, forward deployed (client-facing) delivery, London, UK
 - **The arc** -- SEO/digital marketing → AI automation for enterprise clients → building production LLM systems
 - **What he builds** -- Production LLM systems: RAG, multi-agent automation, AI customer operations, observability & governance
 - **Credibility** -- Qualitative capability + outcome statements (NO numeric metrics, NO employer names) + MSc Digital Marketing and AI/ML certifications
@@ -138,7 +138,7 @@ This site should convey:
 
 ## SEO
 
-Ongoing goal: optimize the site for search around keywords like **"AI Engineer"**, **"AI Automation Architect"**, **"LLM systems"**, **"RAG"**, **"AI engineer London"**.
+Ongoing goal: optimize the site for search around keywords like **"AI Engineer"**, **"Forward Deployed Engineer"**, **"agentic systems"**, **"LLM systems"**, **"RAG"**, **"AI engineer London"**.
 
 **Done:**
 - Sitemap (`src/app/sitemap.ts`) + robots.txt (`src/app/robots.ts`) — domain `gbolagade.com`, includes all project pages

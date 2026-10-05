@@ -17,6 +17,7 @@ function JsonLd({ data }: { data: object }) {
 const KNOWS_ABOUT = [
   "AI Engineering",
   "Agentic Engineering",
+  "Forward Deployed Engineering",
   "Large Language Models",
   "Retrieval-Augmented Generation",
   "Multi-Agent Systems",
@@ -44,9 +45,9 @@ export function PersonJsonLd() {
         url: SITE,
         image: `${SITE}/hero.png`,
         email: "mailto:gbolagade.ishola@outlook.com",
-        jobTitle: "AI Engineer & AI Automation Architect",
+        jobTitle: "AI Engineer",
         description:
-          "AI Engineer in London building production LLM systems: RAG, multi-agent automation, and observable AI workflows.",
+          "AI engineer in London who builds agentic systems, RAG pipelines and AI co-pilots inside working businesses, from scoping to handover.",
         knowsAbout: KNOWS_ABOUT,
         address: {
           "@type": "PostalAddress",
@@ -61,7 +62,7 @@ export function PersonJsonLd() {
         url: SITE,
         name: "Gbolagade Ishola",
         description:
-          "Personal site of Gbolagade Ishola, AI Engineer & AI Automation Architect.",
+          "Personal site of Gbolagade Ishola, AI engineer and forward deployed engineer in London.",
         inLanguage: "en-GB",
         publisher: { "@id": PERSON_ID },
       },

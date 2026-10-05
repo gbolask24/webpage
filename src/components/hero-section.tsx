@@ -23,7 +23,7 @@ export function HeroSection() {
           {/* Top label */}
           <AnimatedGroup>
             <span className="inline-block rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-zinc-400">
-              AI Engineer · AI Automation Architect · London, UK
+              AI Engineer · Agentic Systems · Forward Deployed Engineer
             </span>
           </AnimatedGroup>
 
@@ -43,7 +43,7 @@ export function HeroSection() {
             per="line"
             className="mx-auto mt-6 max-w-2xl text-balance text-lg text-zinc-400 md:text-xl"
           >
-            From internal tools to production AI systems, built end to end.
+            I work inside a business, on the systems it already has, from the first conversation to handover.
           </TextEffect>
 
           {/* CTAs */}

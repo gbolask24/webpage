@@ -14,14 +14,14 @@ const capabilities = [
       "RAG pipelines, multi-agent orchestration, agent memory, MCP servers, and AI co-pilots that take real actions behind confirmation. Evals and structured-output validation keep them predictable in production.",
   },
   {
-    title: "AI for real business problems",
+    title: "Forward deployed delivery",
     description:
-      "Customer operations, content, ecommerce catalogs, and back-office workflows. I use AI where it pays off and plain engineering where it does not, then ship the result.",
+      "With clients I work inside the business. I scope the problem with the founder or operations manager, build on the systems already in place, run the launch, then train the staff and hand over. I have done this across customer operations, ecommerce catalogues, content, and back-office workflows.",
   },
   {
     title: "Observability, governance & open source",
     description:
-      "Latency, cost, and output-validity monitoring with GDPR-aligned redaction, plus open-source tools and local-model experiments I build and share. AI you can trust, audit, and run accountably.",
+      "Latency, cost, and output-validity monitoring with GDPR-aligned redaction, plus open-source tools and local-model experiments that I publish. You can see what a system did, what it cost, and who approved it.",
   },
 ];
 

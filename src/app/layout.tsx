@@ -22,18 +22,19 @@ const unbounded = Unbounded({
 export const metadata: Metadata = {
   metadataBase: new URL("https://gbolagade.com"),
   title: {
-    default: "Gbolagade Ishola · AI Engineer & AI Automation Architect",
+    default: "Gbolagade Ishola · AI Engineer & Forward Deployed Engineer",
     template: "%s · Gbolagade Ishola",
   },
   description:
-    "AI Engineer in London building production LLM systems: RAG, multi-agent automation, and observable AI workflows that deliver measurable business impact.",
+    "Gbolagade Ishola is an AI engineer in London who builds agentic systems, RAG pipelines and AI co-pilots inside working businesses, from scoping to handover.",
   applicationName: "Gbolagade Ishola",
   authors: [{ name: "Gbolagade Ishola", url: "https://gbolagade.com" }],
   creator: "Gbolagade Ishola",
   publisher: "Gbolagade Ishola",
   keywords: [
     "AI Engineer",
-    "AI Automation Architect",
+    "Forward Deployed Engineer",
+    "agentic systems",
     "agentic engineering",
     "LLM solutions",
     "RAG",
@@ -51,18 +52,18 @@ export const metadata: Metadata = {
     ? { verification: { google: GOOGLE_SITE_VERIFICATION } }
     : {}),
   openGraph: {
-    title: "Gbolagade Ishola · AI Engineer & AI Automation Architect",
+    title: "Gbolagade Ishola · AI Engineer & Forward Deployed Engineer",
     description:
-      "AI Engineer in London building production LLM systems: RAG, multi-agent automation, and observable AI workflows with measurable business impact.",
+      "Gbolagade Ishola is an AI engineer in London who builds agentic systems, RAG pipelines and AI co-pilots inside working businesses, from scoping to handover.",
     type: "website",
     url: "https://gbolagade.com",
     siteName: "Gbolagade Ishola",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gbolagade Ishola · AI Engineer & AI Automation Architect",
+    title: "Gbolagade Ishola · AI Engineer & Forward Deployed Engineer",
     description:
-      "AI Engineer in London building production LLM systems: RAG, multi-agent automation, and observable AI workflows with measurable business impact.",
+      "Gbolagade Ishola is an AI engineer in London who builds agentic systems, RAG pipelines and AI co-pilots inside working businesses, from scoping to handover.",
   },
   alternates: {
     canonical: "https://gbolagade.com",

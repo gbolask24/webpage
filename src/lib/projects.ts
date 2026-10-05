@@ -53,11 +53,11 @@ export const projects: Project[] = [
       },
       {
         heading: "My approach",
-        body: "Tool-calling is the core abstraction: the agent reasons in plain language and acts through typed, validated functions. Latency, tool-call success, and cost are instrumented end to end, and every write passes a confirmation gate, so the system stays fast, observable, and safe to let loose on a real inbox.",
+        body: "The agent reasons in plain language and acts only through typed, validated functions. I measure latency, tool-call success, and cost on every run, and every write waits for a confirmation. That is what makes it safe to point at a real inbox.",
       },
       {
         heading: "The result",
-        body: "Hours of admin handled before the working day starts, nothing dropped, and a clear audit trail behind every action taken.",
+        body: "The inbox is triaged and the day's briefs are written before the working day starts, and every action the assistant took is in an audit trail.",
       },
     ],
   },
@@ -135,7 +135,7 @@ export const projects: Project[] = [
       },
       {
         heading: "The result",
-        body: "A small team ships a catalogue that would otherwise need a department, at a consistency manual entry never reaches.",
+        body: "A small team publishes a catalogue that would otherwise need a department, and the listings are more consistent than hand entry ever made them.",
       },
     ],
   },
@@ -156,11 +156,11 @@ export const projects: Project[] = [
       },
       {
         heading: "What I built",
-        body: "An open, self-hosted support platform with AI built into the workflow rather than bolted on. It routes incoming messages, drafts replies for an agent to approve, validates every answer against a strict schema, and reaches into ERP, CRM, and courier systems to act on real orders. Chat, email, and forms run through one queue.",
+        body: "A self-hosted, open-source support desk with AI built into the workflow. It routes incoming messages, drafts replies for an agent to approve, validates every answer against a strict schema, and reaches into ERP, CRM, and courier systems to act on real orders. Chat, email, and forms run through one queue.",
       },
       {
         heading: "My approach",
-        body: "Human-in-the-loop by default: the AI drafts and routes, a person approves anything that carries risk. Answers are schema-validated and the desk is wired to back-office systems through event-driven hooks, so automation scales without sacrificing accuracy or auditability.",
+        body: "Human-in-the-loop by default: the AI drafts and routes, a person approves anything that carries risk. Answers are schema-validated and the desk is wired to back-office systems through event-driven hooks. More of the queue can be automated over time without losing the approval step or the audit trail.",
       },
       {
         heading: "The result",
@@ -257,7 +257,7 @@ export const projects: Project[] = [
     sections: [
       {
         heading: "The problem",
-        body: "Generic AI writing is easy to spot and easy to ignore. The hard part was never producing more words, it was sounding like a specific, credible person while doing it at volume. The briefs, deadlines, and approvals around the writing usually sit in a separate tool, so the work gets split across two places.",
+        body: "Generic AI writing is easy to spot and easy to ignore. The hard part is sounding like a specific, credible person while writing at volume. The briefs, deadlines, and approvals around the writing usually sit in a separate tool, so the work gets split across two places.",
       },
       {
         heading: "What I built",
@@ -334,7 +334,7 @@ export const projects: Project[] = [
       },
       {
         heading: "The result",
-        body: "Switching or combining providers becomes a config change instead of a rewrite, and every call is observable and costed.",
+        body: "Switching or combining providers becomes a config change instead of a rewrite, and every call is logged and costed.",
       },
     ],
   },
@@ -392,7 +392,7 @@ export const projects: Project[] = [
       },
       {
         heading: "My approach",
-        body: "I kept ingestion deliberately thin: accept telemetry, store it, visualise it. Postgres plus provisioned Grafana means dashboards are reproducible and the whole stack starts with one command, so observability is something you switch on, not a project in itself.",
+        body: "I kept ingestion deliberately thin: accept telemetry, store it, visualise it. Postgres plus provisioned Grafana means dashboards are reproducible and the whole stack starts with one command, so turning observability on takes one command.",
       },
       {
         heading: "The result",
