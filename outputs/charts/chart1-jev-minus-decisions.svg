@@ -1,0 +1,67 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1080' height='660' viewBox='0 0 1080 660'>
+<rect width='1080' height='660' fill='#fcfcfb'/>
+<text x='40' y='50' font-size='28' fill='#0b0b0b' text-anchor='start' font-weight='bold' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>JEV 1.14 minus OpenAI Decisions API, share right, by test</text>
+<text x='40' y='84' font-size='18' fill='#52514e' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Dot: the difference in percentage points. Line: 95% interval. Grey band: roughly the smallest gap each test could detect.</text>
+<rect x='297.77777777777777' y='126.0' width='408.88888888888886' height='74.0' fill='#ecebe7'/>
+<rect x='410.22222222222223' y='212.0' width='183.99999999999994' height='74.0' fill='#ecebe7'/>
+<rect x='410.22222222222223' y='298.0' width='183.99999999999994' height='74.0' fill='#ecebe7'/>
+<rect x='297.77777777777777' y='384.0' width='408.88888888888886' height='74.0' fill='#ecebe7'/>
+<rect x='297.77777777777777' y='470.0' width='408.88888888888886' height='74.0' fill='#ecebe7'/>
+<line x1='400.0' y1='120' x2='400.0' y2='550' stroke='#dcdbd6' stroke-width='1'/>
+<text x='400.0' y='578' font-size='16' fill='#52514e' text-anchor='middle' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>−2.0</text>
+<line x1='451.1111111111111' y1='120' x2='451.1111111111111' y2='550' stroke='#dcdbd6' stroke-width='1'/>
+<text x='451.1111111111111' y='578' font-size='16' fill='#52514e' text-anchor='middle' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>−1.0</text>
+<line x1='502.22222222222223' y1='120' x2='502.22222222222223' y2='550' stroke='#52514e' stroke-width='1.5'/>
+<text x='502.22222222222223' y='578' font-size='16' fill='#52514e' text-anchor='middle' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>0</text>
+<line x1='553.3333333333333' y1='120' x2='553.3333333333333' y2='550' stroke='#dcdbd6' stroke-width='1'/>
+<text x='553.3333333333333' y='578' font-size='16' fill='#52514e' text-anchor='middle' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>+1.0</text>
+<line x1='604.4444444444445' y1='120' x2='604.4444444444445' y2='550' stroke='#dcdbd6' stroke-width='1'/>
+<text x='604.4444444444445' y='578' font-size='16' fill='#52514e' text-anchor='middle' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>+2.0</text>
+<line x1='655.5555555555555' y1='120' x2='655.5555555555555' y2='550' stroke='#dcdbd6' stroke-width='1'/>
+<text x='655.5555555555555' y='578' font-size='16' fill='#52514e' text-anchor='middle' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>+3.0</text>
+<line x1='706.6666666666666' y1='120' x2='706.6666666666666' y2='550' stroke='#dcdbd6' stroke-width='1'/>
+<text x='706.6666666666666' y='578' font-size='16' fill='#52514e' text-anchor='middle' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>+4.0</text>
+<line x1='757.7777777777778' y1='120' x2='757.7777777777778' y2='550' stroke='#dcdbd6' stroke-width='1'/>
+<text x='757.7777777777778' y='578' font-size='16' fill='#52514e' text-anchor='middle' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>+5.0</text>
+<line x1='808.8888888888889' y1='120' x2='808.8888888888889' y2='550' stroke='#dcdbd6' stroke-width='1'/>
+<text x='808.8888888888889' y='578' font-size='16' fill='#52514e' text-anchor='middle' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>+6.0</text>
+<line x1='860.0' y1='120' x2='860.0' y2='550' stroke='#dcdbd6' stroke-width='1'/>
+<text x='860.0' y='578' font-size='16' fill='#52514e' text-anchor='middle' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>+7.0</text>
+<text x='630.0' y='610' font-size='16' fill='#52514e' text-anchor='middle' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>percentage points</text>
+<text x='380' y='159.0' font-size='20' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T1 Support routing</text>
+<text x='380' y='183.0' font-size='15' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>1,000 items · no detectable difference</text>
+<line x1='471.55555555555554' y1='163.0' x2='645.3333333333334' y2='163.0' stroke='#2a78d6' stroke-width='2.5' stroke-linecap='round'/>
+<line x1='471.55555555555554' y1='156.0' x2='471.55555555555554' y2='170.0' stroke='#2a78d6' stroke-width='2.5'/>
+<line x1='645.3333333333334' y1='156.0' x2='645.3333333333334' y2='170.0' stroke='#2a78d6' stroke-width='2.5'/>
+<circle cx='558.4444444444445' cy='163.0' r='9' fill='#2a78d6' stroke='#fcfcfb' stroke-width='2'/>
+<text x='876' y='169.0' font-size='16' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>+1.1 (−0.6 to +2.8)</text>
+<text x='380' y='245.0' font-size='20' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T2 Product category, text</text>
+<text x='380' y='269.0' font-size='15' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>2,000 items · no detectable difference</text>
+<line x1='461.3333333333333' y1='249.0' x2='558.4444444444445' y2='249.0' stroke='#2a78d6' stroke-width='2.5' stroke-linecap='round'/>
+<line x1='461.3333333333333' y1='242.0' x2='461.3333333333333' y2='256.0' stroke='#2a78d6' stroke-width='2.5'/>
+<line x1='558.4444444444445' y1='242.0' x2='558.4444444444445' y2='256.0' stroke='#2a78d6' stroke-width='2.5'/>
+<circle cx='507.3333333333333' cy='249.0' r='9' fill='#2a78d6' stroke='#fcfcfb' stroke-width='2'/>
+<text x='876' y='255.0' font-size='16' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>+0.1 (−0.8 to +1.1)</text>
+<text x='380' y='331.0' font-size='20' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T3 Product category, photo</text>
+<text x='380' y='355.0' font-size='15' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>1,999 items · no detectable difference, p 0.068</text>
+<line x1='502.22222222222223' y1='335.0' x2='589.1111111111111' y2='335.0' stroke='#2a78d6' stroke-width='2.5' stroke-linecap='round'/>
+<line x1='502.22222222222223' y1='328.0' x2='502.22222222222223' y2='342.0' stroke='#2a78d6' stroke-width='2.5'/>
+<line x1='589.1111111111111' y1='328.0' x2='589.1111111111111' y2='342.0' stroke='#2a78d6' stroke-width='2.5'/>
+<circle cx='548.2222222222222' cy='335.0' r='9' fill='#2a78d6' stroke='#fcfcfb' stroke-width='2'/>
+<text x='876' y='341.0' font-size='16' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>+0.9 (0.0 to +1.7)</text>
+<text x='380' y='417.0' font-size='20' fill='#0b0b0b' text-anchor='end' font-weight='bold' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T4 Intent, off-topic mixed in</text>
+<text x='380' y='441.0' font-size='15' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>1,000 items · JEV ahead</text>
+<line x1='609.5555555555555' y1='421.0' x2='803.7777777777778' y2='421.0' stroke='#2a78d6' stroke-width='2.5' stroke-linecap='round'/>
+<line x1='609.5555555555555' y1='414.0' x2='609.5555555555555' y2='428.0' stroke='#2a78d6' stroke-width='2.5'/>
+<line x1='803.7777777777778' y1='414.0' x2='803.7777777777778' y2='428.0' stroke='#2a78d6' stroke-width='2.5'/>
+<circle cx='706.6666666666666' cy='421.0' r='9' fill='#2a78d6' stroke='#fcfcfb' stroke-width='2'/>
+<text x='876' y='427.0' font-size='16' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>+4.0 (+2.1 to +5.9)</text>
+<text x='380' y='503.0' font-size='20' fill='#0b0b0b' text-anchor='end' font-weight='bold' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T5 Decision Bench</text>
+<text x='380' y='527.0' font-size='15' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>1,071 items · JEV ahead</text>
+<line x1='614.6666666666666' y1='507.0' x2='788.4444444444445' y2='507.0' stroke='#2a78d6' stroke-width='2.5' stroke-linecap='round'/>
+<line x1='614.6666666666666' y1='500.0' x2='614.6666666666666' y2='514.0' stroke='#2a78d6' stroke-width='2.5'/>
+<line x1='788.4444444444445' y1='500.0' x2='788.4444444444445' y2='514.0' stroke='#2a78d6' stroke-width='2.5'/>
+<circle cx='701.5555555555555' cy='507.0' r='9' fill='#2a78d6' stroke='#fcfcfb' stroke-width='2'/>
+<text x='876' y='513.0' font-size='16' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>+3.9 (+2.2 to +5.6)</text>
+<text x='40' y='644' font-size='14' fill='#52514e' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Run 17 October 2026 · jev-1.14.0, gpt-6-luna · pre-registered, tag prereg-2026-10-17</text>
+</svg>

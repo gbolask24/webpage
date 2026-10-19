@@ -1,0 +1,42 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1080' height='500' viewBox='0 0 1080 500'>
+<rect width='1080' height='500' fill='#fcfcfb'/>
+<text x='40' y='50' font-size='28' fill='#0b0b0b' text-anchor='start' font-weight='bold' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>What the main product photo added, by system</text>
+<text x='40' y='84' font-size='18' fill='#52514e' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Text and photo minus text only, same products, percentage points. Dot: the difference. Line: 95% interval.</text>
+<line x1='435.38461538461536' y1='120' x2='435.38461538461536' y2='390' stroke='#dcdbd6' stroke-width='1'/>
+<text x='435.38461538461536' y='418' font-size='16' fill='#52514e' text-anchor='middle' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>−4.0</text>
+<line x1='506.1538461538462' y1='120' x2='506.1538461538462' y2='390' stroke='#dcdbd6' stroke-width='1'/>
+<text x='506.1538461538462' y='418' font-size='16' fill='#52514e' text-anchor='middle' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>−3.0</text>
+<line x1='576.9230769230769' y1='120' x2='576.9230769230769' y2='390' stroke='#dcdbd6' stroke-width='1'/>
+<text x='576.9230769230769' y='418' font-size='16' fill='#52514e' text-anchor='middle' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>−2.0</text>
+<line x1='647.6923076923076' y1='120' x2='647.6923076923076' y2='390' stroke='#dcdbd6' stroke-width='1'/>
+<text x='647.6923076923076' y='418' font-size='16' fill='#52514e' text-anchor='middle' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>−1.0</text>
+<line x1='718.4615384615385' y1='120' x2='718.4615384615385' y2='390' stroke='#52514e' stroke-width='1.5'/>
+<text x='718.4615384615385' y='418' font-size='16' fill='#52514e' text-anchor='middle' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>0</text>
+<line x1='789.2307692307693' y1='120' x2='789.2307692307693' y2='390' stroke='#dcdbd6' stroke-width='1'/>
+<text x='789.2307692307693' y='418' font-size='16' fill='#52514e' text-anchor='middle' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>+1.0</text>
+<line x1='860.0' y1='120' x2='860.0' y2='390' stroke='#dcdbd6' stroke-width='1'/>
+<text x='860.0' y='418' font-size='16' fill='#52514e' text-anchor='middle' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>+2.0</text>
+<text x='630.0' y='450' font-size='16' fill='#52514e' text-anchor='middle' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>percentage points</text>
+<text x='380' y='161.0' font-size='20' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>JEV 1.14</text>
+<text x='380' y='185.0' font-size='15' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>1,999 products · 13 more right · cost 3.1×</text>
+<line x1='722.0' y1='165.0' x2='806.9230769230769' y2='165.0' stroke='#2a78d6' stroke-width='2.5' stroke-linecap='round'/>
+<line x1='722.0' y1='158.0' x2='722.0' y2='172.0' stroke='#2a78d6' stroke-width='2.5'/>
+<line x1='806.9230769230769' y1='158.0' x2='806.9230769230769' y2='172.0' stroke='#2a78d6' stroke-width='2.5'/>
+<circle cx='764.4615384615386' cy='165.0' r='9' fill='#2a78d6' stroke='#fcfcfb' stroke-width='2'/>
+<text x='876' y='171.0' font-size='16' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>+0.65 (+0.05 to +1.25)</text>
+<text x='380' y='251.0' font-size='20' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>OpenAI Decisions API</text>
+<text x='380' y='275.0' font-size='15' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>1,999 products · 2 fewer right · cost 2.3×</text>
+<line x1='661.8461538461538' y1='255.0' x2='760.9230769230769' y2='255.0' stroke='#eb6834' stroke-width='2.5' stroke-linecap='round'/>
+<line x1='661.8461538461538' y1='248.0' x2='661.8461538461538' y2='262.0' stroke='#eb6834' stroke-width='2.5'/>
+<line x1='760.9230769230769' y1='248.0' x2='760.9230769230769' y2='262.0' stroke='#eb6834' stroke-width='2.5'/>
+<circle cx='711.3846153846155' cy='255.0' r='9' fill='#eb6834' stroke='#fcfcfb' stroke-width='2'/>
+<text x='876' y='261.0' font-size='16' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>−0.1 (−0.8 to +0.6)</text>
+<text x='380' y='341.0' font-size='20' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Claude Opus 5.5</text>
+<text x='380' y='365.0' font-size='15' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>199-product sample · 3 fewer right · cost 1.2×</text>
+<line x1='435.38461538461536' y1='345.0' x2='753.8461538461538' y2='345.0' stroke='#1baf7a' stroke-width='2.5' stroke-linecap='round'/>
+<line x1='435.38461538461536' y1='338.0' x2='435.38461538461536' y2='352.0' stroke='#1baf7a' stroke-width='2.5'/>
+<line x1='753.8461538461538' y1='338.0' x2='753.8461538461538' y2='352.0' stroke='#1baf7a' stroke-width='2.5'/>
+<circle cx='612.3076923076924' cy='345.0' r='9' fill='#1baf7a' stroke='#fcfcfb' stroke-width='2'/>
+<text x='876' y='351.0' font-size='16' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>−1.5 (−4.0 to +0.5)</text>
+<text x='40' y='484' font-size='14' fill='#52514e' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Product category, 17 October 2026 · same 1,999 products and the same image file to every system</text>
+</svg>

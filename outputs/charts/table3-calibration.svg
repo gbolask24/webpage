@@ -1,0 +1,48 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1080' height='502' viewBox='0 0 1080 502'>
+<rect width='1080' height='502' fill='#fcfcfb'/>
+<text x='40' y='50' font-size='28' fill='#0b0b0b' text-anchor='start' font-weight='bold' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Calibration: Brier score and answers at exactly 100%</text>
+<text x='40' y='84' font-size='18' fill='#52514e' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Brier score, lower is better. Differences not corrected for multiple comparisons.</text>
+<rect x='40' y='118' width='1000' height='54' fill='#f1f0ec'/>
+<text x='52' y='151' font-size='15' fill='#52514e' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Test</text>
+<text x='410.35294117647055' y='151' font-size='15' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Brier, JEV</text>
+<text x='567.2156862745097' y='151' font-size='15' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Brier, Decisions</text>
+<text x='591.2156862745097' y='151' font-size='15' fill='#52514e' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Verdict</text>
+<text x='851.5294117647059' y='151' font-size='15' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>At 100%, JEV</text>
+<text x='1028.0' y='151' font-size='15' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>At 100%, Decisions</text>
+<line x1='40' y1='220' x2='1040' y2='220' stroke='#dcdbd6'/>
+<text x='52' y='203' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T1 Support routing</text>
+<text x='410.35294117647055' y='203' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>0.121</text>
+<text x='567.2156862745097' y='203' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>0.161</text>
+<text x='591.2156862745097' y='203' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>JEV better</text>
+<text x='851.5294117647059' y='203' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>41.8%</text>
+<text x='1028.0' y='203' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>7.4%</text>
+<line x1='40' y1='268' x2='1040' y2='268' stroke='#dcdbd6'/>
+<text x='52' y='251' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T2 Product category, text</text>
+<text x='410.35294117647055' y='251' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>0.262</text>
+<text x='567.2156862745097' y='251' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>0.283</text>
+<text x='591.2156862745097' y='251' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>JEV better</text>
+<text x='851.5294117647059' y='251' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>42.4%</text>
+<text x='1028.0' y='251' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>57.5%</text>
+<line x1='40' y1='316' x2='1040' y2='316' stroke='#dcdbd6'/>
+<text x='52' y='299' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T3 Product category, photo</text>
+<text x='410.35294117647055' y='299' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>0.254</text>
+<text x='567.2156862745097' y='299' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>0.287</text>
+<text x='591.2156862745097' y='299' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>JEV better</text>
+<text x='851.5294117647059' y='299' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>26.3%</text>
+<text x='1028.0' y='299' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>59.1%</text>
+<line x1='40' y1='364' x2='1040' y2='364' stroke='#dcdbd6'/>
+<text x='52' y='347' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T4 Intent, off-topic mixed in</text>
+<text x='410.35294117647055' y='347' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>0.172</text>
+<text x='567.2156862745097' y='347' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>0.261</text>
+<text x='591.2156862745097' y='347' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>JEV better</text>
+<text x='851.5294117647059' y='347' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>20.1%</text>
+<text x='1028.0' y='347' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>5.6%</text>
+<line x1='40' y1='412' x2='1040' y2='412' stroke='#dcdbd6'/>
+<text x='52' y='395' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T5 Decision Bench</text>
+<text x='410.35294117647055' y='395' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>0.091</text>
+<text x='567.2156862745097' y='395' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>0.135</text>
+<text x='591.2156862745097' y='395' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>JEV better</text>
+<text x='851.5294117647059' y='395' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>54.1%</text>
+<text x='1028.0' y='395' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>44.0%</text>
+<text x='40' y='478' font-size='14' fill='#52514e' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>By expected calibration error on T5, Decisions (0.016) was slightly better than JEV (0.021). Option order shuffled once per item, sent the same to every system.</text>
+</svg>

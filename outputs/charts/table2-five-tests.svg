@@ -1,0 +1,48 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1080' height='550' viewBox='0 0 1080 550'>
+<rect width='1080' height='550' fill='#fcfcfb'/>
+<text x='40' y='50' font-size='28' fill='#0b0b0b' text-anchor='start' font-weight='bold' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>JEV 1.14 against the OpenAI Decisions API, every item</text>
+<text x='40' y='84' font-size='18' fill='#52514e' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Share right on each test, 17 October 2026. No detectable difference means the gap is inside what the test could see.</text>
+<rect x='40' y='118' width='1000' height='54' fill='#f1f0ec'/>
+<text x='52' y='151' font-size='15' fill='#52514e' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Test</text>
+<text x='528.0' y='151' font-size='15' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Items</text>
+<text x='626.0392156862745' y='151' font-size='15' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>JEV</text>
+<text x='733.8823529411765' y='151' font-size='15' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Decisions</text>
+<text x='757.8823529411765' y='151' font-size='15' fill='#52514e' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Verdict</text>
+<line x1='40' y1='220' x2='1040' y2='220' stroke='#dcdbd6'/>
+<text x='52' y='203' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T1 Support routing (Bitext)</text>
+<text x='528.0' y='203' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>1,000</text>
+<text x='626.0392156862745' y='203' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>92.2%</text>
+<text x='733.8823529411765' y='203' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>91.1%</text>
+<text x='757.8823529411765' y='203' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>no detectable difference</text>
+<line x1='40' y1='268' x2='1040' y2='268' stroke='#dcdbd6'/>
+<text x='52' y='251' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T2 Product category, text (Amazon electrical)</text>
+<text x='528.0' y='251' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>2,000</text>
+<text x='626.0392156862745' y='251' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>85.9%</text>
+<text x='733.8823529411765' y='251' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>85.8%</text>
+<text x='757.8823529411765' y='251' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>no detectable difference</text>
+<line x1='40' y1='316' x2='1040' y2='316' stroke='#dcdbd6'/>
+<text x='52' y='299' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T3 Same products, with photo</text>
+<text x='528.0' y='299' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>1,999</text>
+<text x='626.0392156862745' y='299' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>86.5%</text>
+<text x='733.8823529411765' y='299' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>85.7%</text>
+<text x='757.8823529411765' y='299' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>no detectable difference (p 0.068)</text>
+<line x1='40' y1='364' x2='1040' y2='364' stroke='#dcdbd6'/>
+<text x='52' y='347' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='bold' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T4 Intent, off-topic messages mixed in (CLINC150)</text>
+<text x='528.0' y='347' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>1,000</text>
+<text x='626.0392156862745' y='347' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>88.2%</text>
+<text x='733.8823529411765' y='347' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>84.2%</text>
+<text x='757.8823529411765' y='347' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>JEV ahead</text>
+<line x1='40' y1='412' x2='1040' y2='412' stroke='#dcdbd6'/>
+<text x='52' y='395' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='bold' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T5 Decision Bench (bench-v4)</text>
+<text x='528.0' y='395' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>1,071</text>
+<text x='626.0392156862745' y='395' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>94.5%</text>
+<text x='733.8823529411765' y='395' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>90.6%</text>
+<text x='757.8823529411765' y='395' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>JEV ahead</text>
+<line x1='40' y1='460' x2='1040' y2='460' stroke='#dcdbd6'/>
+<text x='52' y='443' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>All five tests</text>
+<text x='528.0' y='443' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>7,070</text>
+<text x='626.0392156862745' y='443' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>88.6%</text>
+<text x='733.8823529411765' y='443' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>87.0%</text>
+<text x='757.8823529411765' y='443' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>6,264 against 6,152 right</text>
+<text x='40' y='526' font-size='14' fill='#52514e' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Decisions declined 13 of 7,070 items, counted as wrong. Smallest detectable gap: about 1.4 to 1.8 points on T2 and T3, up to 4 on the 1,000-item tests.</text>
+</svg>

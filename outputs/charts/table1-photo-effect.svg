@@ -1,0 +1,41 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1260' height='406' viewBox='0 0 1260 406'>
+<rect width='1260' height='406' fill='#fcfcfb'/>
+<text x='40' y='50' font-size='28' fill='#0b0b0b' text-anchor='start' font-weight='bold' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>What the main product photo changed, by system</text>
+<text x='40' y='84' font-size='18' fill='#52514e' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Same 1,999 products, text only against text and photo, 17 October 2026. Opus on a 199-product sample.</text>
+<rect x='40' y='118' width='1180' height='54' fill='#f1f0ec'/>
+<text x='52' y='151' font-size='15' fill='#52514e' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>System</text>
+<text x='363.7723577235773' y='151' font-size='15' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Text only</text>
+<text x='507.67479674796755' y='151' font-size='15' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Text and photo</text>
+<text x='728.3252032520326' y='151' font-size='15' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Photo effect (95% interval)</text>
+<text x='853.0406504065041' y='151' font-size='15' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Net extra right</text>
+<text x='1016.1300813008131' y='151' font-size='15' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Input tokens per call</text>
+<text x='1208.0' y='151' font-size='15' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Cost per 1,000</text>
+<line x1='40' y1='220' x2='1220' y2='220' stroke='#dcdbd6'/>
+<circle cx='58' cy='196.0' r='7' fill='#2a78d6'/>
+<text x='74' y='203' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>JEV 1.14</text>
+<text x='363.7723577235773' y='203' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>85.9%</text>
+<text x='507.67479674796755' y='203' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>86.5%</text>
+<text x='728.3252032520326' y='203' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>+0.65 (+0.05 to +1.25)</text>
+<text x='853.0406504065041' y='203' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>13</text>
+<text x='1016.1300813008131' y='203' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>878 → 2,716</text>
+<text x='1208.0' y='203' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>$0.037 → $0.114 (3.1×)</text>
+<line x1='40' y1='268' x2='1220' y2='268' stroke='#dcdbd6'/>
+<circle cx='58' cy='244.0' r='7' fill='#eb6834'/>
+<text x='74' y='251' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>OpenAI Decisions API</text>
+<text x='363.7723577235773' y='251' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>85.8%</text>
+<text x='507.67479674796755' y='251' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>85.7%</text>
+<text x='728.3252032520326' y='251' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>−0.1 (−0.8 to +0.6)</text>
+<text x='853.0406504065041' y='251' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>−2</text>
+<text x='1016.1300813008131' y='251' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>550 → 1,244</text>
+<text x='1208.0' y='251' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>$0.055 → $0.124 (2.3×)</text>
+<line x1='40' y1='316' x2='1220' y2='316' stroke='#dcdbd6'/>
+<circle cx='58' cy='292.0' r='7' fill='#1baf7a'/>
+<text x='74' y='299' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Claude Opus 5.5, sample</text>
+<text x='363.7723577235773' y='299' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>91.0%</text>
+<text x='507.67479674796755' y='299' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>89.4%</text>
+<text x='728.3252032520326' y='299' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>−1.5 (−4.0 to +0.5)</text>
+<text x='853.0406504065041' y='299' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>−3</text>
+<text x='1016.1300813008131' y='299' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>1,729 → 2,635</text>
+<text x='1208.0' y='299' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>$15.23 → $18.76 (1.2×)</text>
+<text x='40' y='382' font-size='14' fill='#52514e' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Pre-registered scoring, which counts five pairs of near-duplicate categories as right for every system; on raw labels JEV's gain is 7.</text>
+</svg>

@@ -1,0 +1,66 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1080' height='720' viewBox='0 0 1080 720'>
+<rect width='1080' height='720' fill='#fcfcfb'/>
+<text x='40' y='50' font-size='28' fill='#0b0b0b' text-anchor='start' font-weight='bold' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Cost per 1,000 decisions against share right, by test</text>
+<text x='40' y='84' font-size='18' fill='#52514e' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Each point is one system on one test. JEV and Decisions on every item; Opus on the fixed one-in-ten sample.</text>
+<circle cx='48' cy='118' r='8' fill='#2a78d6'/>
+<text x='64' y='124' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>JEV 1.14</text>
+<circle cx='182' cy='118' r='8' fill='#eb6834'/>
+<text x='198' y='124' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>OpenAI Decisions API</text>
+<circle cx='436' cy='118' r='8' fill='#1baf7a'/>
+<text x='452' y='124' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Claude Opus 5.5 (1-in-10 sample)</text>
+<line x1='110' y1='511.7647058823529' x2='1020' y2='511.7647058823529' stroke='#dcdbd6'/>
+<text x='98' y='517.7647058823529' font-size='16' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>84%</text>
+<line x1='110' y1='415.2941176470588' x2='1020' y2='415.2941176470588' stroke='#dcdbd6'/>
+<text x='98' y='421.2941176470588' font-size='16' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>88%</text>
+<line x1='110' y1='318.8235294117647' x2='1020' y2='318.8235294117647' stroke='#dcdbd6'/>
+<text x='98' y='324.8235294117647' font-size='16' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>92%</text>
+<line x1='110' y1='222.3529411764706' x2='1020' y2='222.3529411764706' stroke='#dcdbd6'/>
+<text x='98' y='228.3529411764706' font-size='16' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>96%</text>
+<line x1='156.0849748978884' y1='150' x2='156.0849748978884' y2='560' stroke='#dcdbd6'/>
+<text x='156.0849748978884' y='588' font-size='16' fill='#52514e' text-anchor='middle' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>$0.03</text>
+<line x1='292.92796176791904' y1='150' x2='292.92796176791904' y2='560' stroke='#dcdbd6'/>
+<text x='292.92796176791904' y='588' font-size='16' fill='#52514e' text-anchor='middle' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>$0.1</text>
+<line x1='417.795721615396' y1='150' x2='417.795721615396' y2='560' stroke='#dcdbd6'/>
+<text x='417.795721615396' y='588' font-size='16' fill='#52514e' text-anchor='middle' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>$0.3</text>
+<line x1='554.6387084854266' y1='150' x2='554.6387084854266' y2='560' stroke='#dcdbd6'/>
+<text x='554.6387084854266' y='588' font-size='16' fill='#52514e' text-anchor='middle' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>$1</text>
+<line x1='679.5064683329038' y1='150' x2='679.5064683329038' y2='560' stroke='#dcdbd6'/>
+<text x='679.5064683329038' y='588' font-size='16' fill='#52514e' text-anchor='middle' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>$3</text>
+<line x1='816.3494552029343' y1='150' x2='816.3494552029343' y2='560' stroke='#dcdbd6'/>
+<text x='816.3494552029343' y='588' font-size='16' fill='#52514e' text-anchor='middle' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>$10</text>
+<line x1='941.2172150504114' y1='150' x2='941.2172150504114' y2='560' stroke='#dcdbd6'/>
+<text x='941.2172150504114' y='588' font-size='16' fill='#52514e' text-anchor='middle' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>$30</text>
+<text x='565.0' y='622' font-size='16' fill='#52514e' text-anchor='middle' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>cost per 1,000 decisions, log scale</text>
+<text transform='rotate(-90 28 355.0)' x='28' y='355.0' font-size='16' fill='#52514e' text-anchor='middle' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>share right</text>
+<circle cx='204.17281277862662' cy='313.9999999999999' r='9' fill='#2a78d6' stroke='#fcfcfb' stroke-width='2'/>
+<text x='190.17281277862662' y='301.9999999999999' font-size='15' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T1</text>
+<circle cx='179.614108746414' cy='465.9411764705881' r='9' fill='#2a78d6' stroke='#fcfcfb' stroke-width='2'/>
+<text x='165.614108746414' y='453.9411764705881' font-size='15' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T2</text>
+<circle cx='307.9202305448036' cy='451.47058823529414' r='9' fill='#2a78d6' stroke='#fcfcfb' stroke-width='2'/>
+<text x='323.9202305448036' y='457.47058823529414' font-size='15' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T3</text>
+<circle cx='300.61801216729646' cy='410.47058823529403' r='9' fill='#2a78d6' stroke='#fcfcfb' stroke-width='2'/>
+<text x='316.61801216729646' y='416.47058823529403' font-size='15' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T4</text>
+<circle cx='217.50481648170145' cy='258.52941176470586' r='9' fill='#2a78d6' stroke='#fcfcfb' stroke-width='2'/>
+<text x='203.50481648170145' y='246.52941176470586' font-size='15' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T5</text>
+<circle cx='257.77917732145045' cy='340.529411764706' r='9' fill='#eb6834' stroke='#fcfcfb' stroke-width='2'/>
+<text x='243.77917732145045' y='328.529411764706' font-size='15' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T1</text>
+<circle cx='224.97808735973217' cy='468.35294117647067' r='9' fill='#eb6834' stroke='#fcfcfb' stroke-width='2'/>
+<text x='238.97808735973217' y='490.35294117647067' font-size='15' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T2</text>
+<circle cx='317.74347431461183' cy='470.76470588235287' r='9' fill='#eb6834' stroke='#fcfcfb' stroke-width='2'/>
+<text x='333.74347431461183' y='476.76470588235287' font-size='15' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T3</text>
+<circle cx='330.7645855975237' cy='506.9411764705882' r='9' fill='#eb6834' stroke='#fcfcfb' stroke-width='2'/>
+<text x='346.7645855975237' y='512.9411764705882' font-size='15' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T4</text>
+<circle cx='271.3382670728357' cy='352.5882352941178' r='9' fill='#eb6834' stroke='#fcfcfb' stroke-width='2'/>
+<text x='287.3382670728357' y='360.5882352941178' font-size='15' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T5</text>
+<circle cx='915.9968088755298' cy='246.47058823529414' r='9' fill='#1baf7a' stroke='#fcfcfb' stroke-width='2'/>
+<text x='931.9968088755298' y='252.47058823529414' font-size='15' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T1</text>
+<circle cx='864.1639833302265' cy='342.94117647058823' r='9' fill='#1baf7a' stroke='#fcfcfb' stroke-width='2'/>
+<text x='880.1639833302265' y='348.94117647058823' font-size='15' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T2</text>
+<circle cx='887.8574242280806' cy='381.52941176470574' r='9' fill='#1baf7a' stroke='#fcfcfb' stroke-width='2'/>
+<text x='903.8574242280806' y='387.52941176470574' font-size='15' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T3</text>
+<circle cx='908.2665472010875' cy='198.23529411764707' r='9' fill='#1baf7a' stroke='#fcfcfb' stroke-width='2'/>
+<text x='924.2665472010875' y='204.23529411764707' font-size='15' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T4</text>
+<circle cx='803.1042760506064' cy='260.9411764705881' r='9' fill='#1baf7a' stroke='#fcfcfb' stroke-width='2'/>
+<text x='819.1042760506064' y='266.9411764705881' font-size='15' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T5</text>
+<text x='40' y='704' font-size='14' fill='#52514e' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Run 17 October 2026 · list prices, no caching on any arm · Opus accuracies are sample figures, not whole-test</text>
+</svg>

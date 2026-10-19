@@ -1,0 +1,48 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='502' viewBox='0 0 1200 502'>
+<rect width='1200' height='502' fill='#fcfcfb'/>
+<text x='40' y='50' font-size='28' fill='#0b0b0b' text-anchor='start' font-weight='bold' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Claude Opus 5.5 beside the other two, same items only</text>
+<text x='40' y='84' font-size='18' fill='#52514e' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Fixed one-in-ten sample, the first tenth of each test in the seeded order: 707 items. Low effort, structured output.</text>
+<rect x='40' y='118' width='1120' height='54' fill='#f1f0ec'/>
+<text x='52' y='151' font-size='15' fill='#52514e' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Test</text>
+<text x='353.4700854700855' y='151' font-size='15' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Sample items</text>
+<text x='439.62393162393164' y='151' font-size='15' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Opus</text>
+<text x='583.2136752136753' y='151' font-size='15' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>JEV, same items</text>
+<text x='765.0940170940172' y='151' font-size='15' fill='#52514e' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Decisions, same items</text>
+<text x='789.0940170940172' y='151' font-size='15' fill='#52514e' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Claimed</text>
+<line x1='40' y1='220' x2='1160' y2='220' stroke='#dcdbd6'/>
+<text x='52' y='203' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T1 Support routing</text>
+<text x='353.4700854700855' y='203' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>100</text>
+<text x='439.62393162393164' y='203' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>95.0%</text>
+<text x='583.2136752136753' y='203' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>94.0%</text>
+<text x='765.0940170940172' y='203' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>92.0%</text>
+<text x='789.0940170940172' y='203' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>none</text>
+<line x1='40' y1='268' x2='1160' y2='268' stroke='#dcdbd6'/>
+<text x='52' y='251' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T2 Product category, text</text>
+<text x='353.4700854700855' y='251' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>200</text>
+<text x='439.62393162393164' y='251' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>91.0%</text>
+<text x='583.2136752136753' y='251' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>86.0%</text>
+<text x='765.0940170940172' y='251' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>84.0%</text>
+<text x='789.0940170940172' y='251' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Opus ahead of both (+5.0, +7.0)</text>
+<line x1='40' y1='316' x2='1160' y2='316' stroke='#dcdbd6'/>
+<text x='52' y='299' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T3 Product category, photo</text>
+<text x='353.4700854700855' y='299' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>199</text>
+<text x='439.62393162393164' y='299' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>89.4%</text>
+<text x='583.2136752136753' y='299' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>84.9%</text>
+<text x='765.0940170940172' y='299' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>83.4%</text>
+<text x='789.0940170940172' y='299' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Opus ahead of both (+4.5, +6.0)</text>
+<line x1='40' y1='364' x2='1160' y2='364' stroke='#dcdbd6'/>
+<text x='52' y='347' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T4 Intent, off-topic mixed in</text>
+<text x='353.4700854700855' y='347' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>100</text>
+<text x='439.62393162393164' y='347' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>97.0%</text>
+<text x='583.2136752136753' y='347' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>93.0%</text>
+<text x='765.0940170940172' y='347' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>87.0%</text>
+<text x='789.0940170940172' y='347' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Opus ahead of Decisions (+10.0)</text>
+<line x1='40' y1='412' x2='1160' y2='412' stroke='#dcdbd6'/>
+<text x='52' y='395' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>T5 Decision Bench</text>
+<text x='353.4700854700855' y='395' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>108</text>
+<text x='439.62393162393164' y='395' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>94.4%</text>
+<text x='583.2136752136753' y='395' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>92.6%</text>
+<text x='765.0940170940172' y='395' font-size='17' fill='#0b0b0b' text-anchor='end' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>82.4%</text>
+<text x='789.0940170940172' y='395' font-size='17' fill='#0b0b0b' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Opus ahead of Decisions (+12.0)</text>
+<text x='40' y='478' font-size='14' fill='#52514e' text-anchor='start' font-weight='normal' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>Pooled cost per 1,000: Opus $17.52, JEV $0.072, Decisions $0.094 (244× and 187×). Median call 2.4 to 6.4 s against about 0.25 s.</text>
+</svg>
