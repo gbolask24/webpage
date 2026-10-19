@@ -22,15 +22,13 @@ The photo bought JEV 0.65 points (13 more right answers out of 1,999; 95% interv
 
 jev-1.14.0, gpt-6-luna and claude-opus-5-5 at low effort, tag `prereg-2026-10-17`.
 
-[Chart 1: JEV minus Decisions per test, dot and 95% interval against a zero line, shaded band for the smallest detectable gap. Caption must say what the interval is.]
-
-[Race video, embedded vertical. Caption line, required: Claude Opus ran on a fixed one-in-ten sample; its whole-test figures in the video are estimates from that sample.]
+[Chart 1, captioned.]
 
 ## What a photo is worth
 
 The product-category tests are the pair that matter here. T2 is the listing text alone; T3 is the same 1,999 products with the main product photo, same option order, the same image file to every system: 78 images fell outside JEV's size limits and were padded or shrunk into range, never cropped. JEV took the image through its `assets` map with the header, Decisions as a data URL, Opus as an image block.
 
-[Table as image:]
+[Table as image, captioned:]
 
 | System | Products | Text only | Text and photo | Photo effect, points (95% interval) | Net extra right | Input tokens per call | Cost per 1,000 |
 |---|---|---|---|---|---|---|---|
@@ -44,7 +42,7 @@ What the photo clearly did is change JEV's certainty and its price. Answers give
 
 Why so little? TypeSafe's own post warns that every model does worse on images than on text, and on product category the listing text usually names the product anyway. A photo should pay where the text is thin, and there is post hoc support for that, labelled as such: of the nine products with under 30 characters of listing text, the photo turned three of JEV's four wrong answers right, and two of Decisions' four.
 
-[Chart 2: photo effect per system, dot and interval against zero.]
+[Chart 2, captioned.]
 
 If you want to send a photo yourself: PNG or JPEG behind a `TypeSafe-Danger-Zone-Images: true` header, each side 280 to 1,568 px, no resizing and no EXIF rotation on their side, billed as input tokens at the text price. On the day of my run `jev-latest` still served 1.13.0, so pin `jev-1.14.0`; nothing here compares 1.14 with 1.13. [Link the TypeSafe post (typesafe.ai/blog/jev-1-14) and the images page.]
 
@@ -54,7 +52,7 @@ So I would not send the photo by default. Send the listing text first and add th
 
 ## JEV against the Decisions API, item by item
 
-[Table as image:]
+[Table as image, captioned:]
 
 | Test | Items | JEV | Decisions | Verdict |
 |---|---|---|---|---|
@@ -78,7 +76,7 @@ The practical reading: if you route with the Decisions API, treat an out_of_scop
 
 The loudest doubt about decision models is whether the probability that comes back with each answer means anything. This run is the most direct public answer I have found.
 
-[Table as image:]
+[Table as image, captioned:]
 
 | Test | Brier, JEV / Decisions (lower is better) | Verdict | Answers at exactly 100%, JEV / Decisions |
 |---|---|---|---|
@@ -98,7 +96,7 @@ Opus is here as the ceiling: a general frontier model with structured output, gi
 
 The sample is the first tenth of each test in the seeded order, fixed in code before the run: 707 items. Opus is only ever set beside the other two on the same items.
 
-[Table as image:]
+[Table as image, captioned:]
 
 | Test | Sample items | Opus | JEV, same items | Decisions, same items | Claimed |
 |---|---|---|---|---|---|
@@ -116,9 +114,9 @@ Pooled over the 707 items, Opus cost $17.52 per 1,000 decisions against JEV's $0
 
 So, on the doubt I started with: on the same items the frontier model was about five points ahead of JEV on product category and not detectably ahead elsewhere, at 244 times the price and ten to thirty times the wait.
 
-Where that leaves me: run JEV on everything and send only the low-confidence slice to a frontier model. Sending one decision in ten to Opus would cost about $1.82 per 1,000 on this run's prices, against $0.07 for JEV alone. I did not test what that hybrid scores, so it is the next experiment, not a claim. And run Opus at low effort; medium bought one more right answer in a hundred for the same money.
+Where that leaves me: run JEV on everything and send only the low-confidence slice to a frontier model. Sending one decision in ten to Opus would cost about $1.82 per 1,000 on this run's prices, against $0.07 for JEV alone. I did not test what that hybrid scores, so it is the next experiment, not a claim. And run Opus at low effort: on the 100 routing items, medium scored 96% against low's 95% for the same $24 per 1,000.
 
-[Chart 3: cost per 1,000 on a log axis against share right, one point per system per test, Opus points labelled "1-in-10 sample".]
+[Chart 3, captioned.]
 
 ## If you're building with these
 
@@ -132,32 +130,27 @@ The short version, from one Saturday's run and my own use of these APIs:
 - Low effort. Medium was the same price for one more right answer in a hundred.
 - Do not treat either as a drop-in swap for your GPT or Claude calls. Run a shadow test first.
 
-That last one comes from a shadow test I ran on mail triage. Swapping a frontier model for a decision model in the same workflow, with the same prompts, mostly failed: false positives, wrong labels, categories that did not hold. The fix was the setup around it: more examples, a better retriever, cleaner data, prompts built for that API. Both JEV and the Decisions API will do the job for most people, but only after that work, and only on decisions where a wrong answer is cheap and speed is worth more than the last few points of accuracy.
+That last one comes from a shadow test I ran on mail triage. Swapping a frontier model for a decision model in the same workflow, with the same prompts, mostly failed: roughly 30 to 40% of the emails came back labelled right, with false positives and categories that did not hold. The fix was the setup around it: more examples, a better retriever, cleaner data, prompts built for that API. With that work in, it is getting better. Both JEV and the Decisions API will do the job for most people, but only after that work, and only on decisions where a wrong answer is cheap and speed is worth more than the last few points of accuracy.
 
 ## How far to trust this
 
 The design was pre-registered and tagged (`prereg-2026-10-17`, commit 03fc011) before the first call at 17:22:53 London time. The tag is not cryptographically signed; the Opus sample rule and the T2 accept list rest on git's own timestamps from minutes before the first call (DEVIATIONS.md, item 2).
 
-Seed 1017, one run per test, retries only on transport errors; refusals and invalid answers counted as wrong. The main run was 14,847 calls in 14 minutes, for $13.56. [Evening total: the brief says about $18; the pilot alone was $6.39, so reconcile against each vendor's billing page before publishing and state the reconciled figure.]
-
-Straight after the main run, at 17:38, I sent 300 of the T1 items to JEV and Decisions a second time to see whether the answers changed between calls. On the second pass JEV got 291 of 300 right (97.0%) and Decisions 279 (93.0%). [From the run logs: how many of the 300 answers were identical to the first pass, per system. That count is the stability result; the accuracy figures above are on a 300-item subset and are not comparable to the 1,000-item scores.] Opus answered a smaller cut of the same items and got every one right. [Confirm the Opus count: the dashboard shows 240, which looks like a scaled 24.]
+Seed 1017, one run per test, retries only on transport errors; refusals and invalid answers counted as wrong. The main run was 14,847 calls in 14 minutes, for $13.56.
 
 Latency came from one machine in London on one Saturday evening; the 55 ms gap between JEV and Decisions is the size network routing alone could move.
 
 Nothing here covers photos taken by customers, with blur, bad light or odd angles. No damage or condition checks, no reading values off receipts or labels, no Box, no multi-image comparison, no multilingual items (TypeSafe's own headline gain) and no long context. All five datasets are public, so the general model has very likely seen them. The labels are not perfect either: 3 of 100 audited T2 labels were wrong, and five pairs of near-duplicate categories count as right, the same for every system.
 
-[Conflicts line, his words only: who paid, any credits, early access or shares, and yes or no on whether his employer buys from any of the three. State only what is true.]
-
-If you want to check any of this, rerun it from the repo at the tag, or send me a photo task you want in the next round. The full record, with every number and its interval, is on gbolagade.com. [Site link.]
-
-Corrections ([publication date]): none yet.
+If you want to check any of this, rerun it from the repo at the tag prereg-2026-10-17, github.com/gbolask24/decision-bench, or send me a photo task you want in the next round.
 
 ---
 
 ## Draft notes (not article copy)
 
-- X draft created 19 Oct at x.com/compose/articles/edit/2112290824528576512 (@gbolagadehq): title (his, 95 chars; the composer caps titles at 100), full body, five section headings styled as Heading, the three charts and the four tables inline as the real 2160 px PNGs, in order. Captions are empty: the caption boxes do not take automated focus. Captions to paste: chart 1 "JEV 1.14 minus the Decisions API on each test, in percentage points. The line is the 95% paired bootstrap interval; the grey band is roughly the smallest gap each test could detect." Chart 2 "What the main product photo added, per system: text and photo minus text only on the same products, with the 95% interval. Opus is on the 199-product sample." Chart 3 "Cost per 1,000 decisions (log scale) against share right, one point per system per test. JEV and Decisions on every item; Opus on the fixed one-in-ten sample, so its accuracies are sample figures." Still placeholders in the X draft: race video, agreement counts, conflicts line, publication date. The cover currently on the draft (JEV vs Decisions vs Opus graphic with vendor logos) was not added by me; the brief says no vendor logos on the cover.
+- X draft at x.com/compose/articles/edit/2112290824528576512 (@gbolagadehq), complete as of 19 Oct evening: title, body, six headings, three charts and four tables as the real PNGs with captions, 2,031 words. Decided with him: no race video in the article (it goes out as a separate post), no stability paragraph, no corrections line, no publication date, cover left as it is. Closing paragraph links the repo at the tag (public, checked 19 Oct); the opening quote links the TypeSafe post. Only thing still open: a one-sentence disclosure of who paid for the calls and any tie to the three vendors, if he wants one.
 - X composer check (brief's open item): the Insert menu offers Media, GIF, Posts, Link preview, Divider and Code. No table support, so tables go in as images; code blocks exist. Paragraph breaks from Enter render as paragraphs; headings via the Body menu (Heading, Subheading, Body).
+- Shadow test figure (roughly 30 to 40% right as a straight swap on mail triage) is his, given 19 Oct.
 - Practical layer added 19 Oct at his request (brief's length and researcher-only framing set aside): four first-person "what I'd do" paragraphs at the end of the photo, head-to-head, calibration and Opus sections, and a bulleted "If you're building with these" section before the trust section. Every rule is tied to a number already in the article; the hybrid's accuracy is stated as untested. The last bullet and the paragraph after the list carry his mail-triage shadow test (his account, no numbers; add a count if he has one).
 - Trimmed 19 Oct to hold length after the practical layer: cut the video-estimate paragraph (the caption carries it), the 122 image rows, the medium-effort and caching paragraphs, the ECE and option-order lines, the pilot sentence, and shortened the spec, sample, tag and latency passages.
 - Word count of article body: about 2,150 in this file's count, about 2,100 in the composer.
@@ -169,7 +162,7 @@ Corrections ([publication date]): none yet.
 - Dates checked on 19 Oct against typesafe.ai: JEV launched in early access on 15 September 2026 (launch post), 1.14 available from 14 October 2026 (post and docs), jev-latest still pointing at jev-1.13.0 on the docs models page.
 - Photo gain checked 19 Oct: results/summary.json and data-pack.md give 13 under the pre-registered accept list (PREREGISTRATION.md, line 30); the dashboard's raw counts give 7. The article now states both.
 - Calibration: "the complaint I keep seeing" is his; if a specific post or thread made the 0-or-1 complaint, name it there instead.
-- He supplies: title wording, the TypeSafe quote (one sentence max), the conflicts line, the TypeSafe links, publication date, the reconciled evening cost, the stability agreement counts, the Opus stability count.
+- He supplies, if wanted: the disclosure sentence.
 - Dashboard housekeeping: the Opus 5.5 rows in the main, medium and stability runs are the sample scaled by ten (update notes of 19 Oct, 07:00 and 07:10). Put the real counts back before anyone reads the dashboard as a run record or links it from the article.
 - Open checks from the brief still gate publication: billing reconciliation, vendor terms on publishing benchmarks, the atlanai/TypeSafe tie question, `jev-latest` and Decisions GA on the morning, X composer table/cover behaviour, Premium and bio live.
 - Wording rules held: "no detectable difference" throughout, no winner in the title, no 1.14-against-1.13 claim, no claim that photos help in general, no em dashes, JEV in capitals in prose, lower case only inside model IDs.
