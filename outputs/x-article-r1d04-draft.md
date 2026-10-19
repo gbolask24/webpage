@@ -12,7 +12,7 @@ Working draft, restructured on 19 October 2026. He writes every sentence by hand
 
 ---
 
-JEV has been all over my feed for a couple of weeks: fast, cheap, and text only, while OpenAI's Decisions API takes a photo with the question. On 14 October TypeSafe shipped JEV 1.14 with images behind a "danger zone" header, and told us that "the Jev you all know and love (jev-1.13.0) was multimodal all along".
+JEV has been all over my feed for a couple of weeks: lightning fast and cheap, but text only. Then on 14 October TypeSafe shipped JEV 1.14, "for the builders AND dreamers", with images behind an experimental flag, which looks to me like an answer to OpenAI's Decisions API taking a photo with the question. The same post admits that the Jev everyone had been using, jev-1.13.0, was multimodal all along.
 
 I had my own doubt to settle. In my work, a decision model dropped into a workflow that was not reshaped to give it enough context tends to make skewed calls, where a frontier model muddles through. So three questions: what is a photo actually worth to JEV, how does JEV compare with the Decisions API on the same items, and how far is either from a general model like Claude Opus 5.5, and at what price?
 
