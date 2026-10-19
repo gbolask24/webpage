@@ -54,6 +54,8 @@ If you want to send a photo yourself: PNG or JPEG stills behind a `TypeSafe-Dang
 
 On the day of my run `jev-latest` still served 1.13.0, so I pinned `jev-1.14.0`. Nothing in my run compares 1.14 with 1.13.
 
+So I would not send the photo by default. Send the listing text first and add the photo only when the text is thin or the confidence comes back low. On these numbers that keeps most calls at $0.037 per 1,000 and spends the 3x only where it has a chance to pay.
+
 [Not allowed anywhere: Amazon listing text or product photos, in the article, the cover or the video.]
 
 ## JEV against the Decisions API, item by item
@@ -76,6 +78,8 @@ The T4 gap has a specific mechanism. Of the 200 off-topic messages, JEV wrongly 
 
 Decisions declined to answer 13 of 7,070 items (1 on T1, 8 on T2, 4 on T3); refusals counted as wrong. JEV and Opus refused nothing.
 
+The practical reading: if you route with the Decisions API, treat an out_of_scope at 1.00 as a prompt to re-check rather than a verdict, because that is where its errors sat in this run. On routing and intent, JEV was the cheaper and the better-calibrated choice. On product category from text, either will do, with JEV about a third cheaper.
+
 ## Calibration
 
 The loudest doubt about decision models is whether the probability that comes back with each answer means anything. This run is the most direct public answer I have found.
@@ -93,6 +97,8 @@ The loudest doubt about decision models is whether the probability that comes ba
 Brier score measures how far the stated probabilities sat from what actually happened, so lower is better. JEV's was lower than Decisions' on all five tests, though I did not correct those differences for multiple comparisons. The complaint I keep seeing, that Decisions only ever returns 0 or 1, turns out to depend on the task. On product category it did answer at exactly 100% confidence on 57.5% of items (59.1% with the photo), where JEV sat at 42.4% and 26.3%. On routing and intent it is the other way round: Decisions at 100% on 7.4% and 5.6% of items, JEV on 41.8% and 20.1%. By expected calibration error on T5, Decisions (0.016) was slightly better than JEV (0.021).
 
 Option order was shuffled once per item and sent identically to all three systems. That controls for order effects; it does not measure them.
+
+For a builder this is the part that matters most. With JEV you can set a confidence cut-off and escalate what falls below it; its probabilities were honest enough to gate on across all five tests. With Decisions on product category, do not bother gating: more than half the answers come back at exactly 100%, so the number is a label, not a probability.
 
 ## Claude Opus 5.5, on a one-in-ten sample
 
@@ -122,7 +128,21 @@ I also ran the 100 T1 sample items again at medium effort, straight after the ma
 
 No arm used caching, and caching would cut Opus's input cost, since its prompts repeat the option list.
 
+Where that leaves me: run JEV on everything and send only the low-confidence slice to a frontier model. Sending one decision in ten to Opus would cost about $1.82 per 1,000 on this run's prices, against $0.07 for JEV alone. I did not test what that hybrid scores, so it is the next experiment, not a claim. And run Opus at low effort; medium bought one more right answer in a hundred for the same money.
+
 [Chart 3: cost per 1,000 on a log axis against share right, one point per system per test, Opus points labelled "1-in-10 sample".]
+
+## If you're building with these
+
+The short version, from one Saturday's run and my own use of these APIs:
+
+- Route and classify with JEV by default. It was ahead on two tests, showed no detectable difference on three, cost least on all five, answered in about a quarter of a second, and its probabilities were better calibrated on every test.
+- Gate on confidence with JEV. Do not try to with Decisions on category tasks.
+- Send the photo only when the text is thin. Budget for triple the input tokens when you do, and pin jev-1.14.0 rather than jev-latest, which still served 1.13 on the day.
+- If you use Decisions for intent routing, re-check its out-of-scope calls. It over-used that exit on real requests.
+- Keep a frontier model for the slice JEV is unsure about, and measure what that hybrid scores before you trust it.
+- Low effort. Medium was the same price for one more right answer in a hundred.
+- Give the model the context it needs before the question. [His example: one workflow he reshaped so the decision model had enough state, and what changed. His words only; cut the bullet if there is none.]
 
 ## How far to trust this
 
@@ -148,6 +168,7 @@ Corrections ([publication date]): none yet.
 
 - X draft created 19 Oct at x.com/compose/articles/edit/2112290824528576512 (@gbolagadehq): title (his, 95 chars; the composer caps titles at 100), full body, five section headings styled as Heading, the three charts and the four tables inline as the real 2160 px PNGs, in order. Captions are empty: the caption boxes do not take automated focus. Captions to paste: chart 1 "JEV 1.14 minus the Decisions API on each test, in percentage points. The line is the 95% paired bootstrap interval; the grey band is roughly the smallest gap each test could detect." Chart 2 "What the main product photo added, per system: text and photo minus text only on the same products, with the 95% interval. Opus is on the 199-product sample." Chart 3 "Cost per 1,000 decisions (log scale) against share right, one point per system per test. JEV and Decisions on every item; Opus on the fixed one-in-ten sample, so its accuracies are sample figures." Still placeholders in the X draft: race video, agreement counts, conflicts line, publication date. The cover currently on the draft (JEV vs Decisions vs Opus graphic with vendor logos) was not added by me; the brief says no vendor logos on the cover.
 - X composer check (brief's open item): the Insert menu offers Media, GIF, Posts, Link preview, Divider and Code. No table support, so tables go in as images; code blocks exist. Paragraph breaks from Enter render as paragraphs; headings via the Body menu (Heading, Subheading, Body).
+- Practical layer added 19 Oct at his request (brief's length and researcher-only framing set aside): four first-person "what I'd do" paragraphs at the end of the photo, head-to-head, calibration and Opus sections, and a bulleted "If you're building with these" section before the trust section. Every rule is tied to a number already in the article; the hybrid's accuracy is stated as untested. The last bullet needs his own example or should be cut.
 - Word count of article body: about 1,900, inside the 1,500 to 2,200 target.
 - Tables as images: `outputs/charts/table1-photo-effect.png` (photo section), `table2-five-tests.png` (head-to-head), `table3-calibration.png`, `table4-opus-sample.png`; 2160 px wide PNGs with SVG sources, same type and colours as the charts. Insert each at its "[... table goes here as an image]" placeholder in the X draft via Insert, Media.
 - Charts: `outputs/charts/chart1-jev-minus-decisions.png`, `chart2-photo-effect.png`, `chart3-cost-vs-right.png` (2160 px wide PNGs; SVG sources beside them; generator in the session scratchpad). Chart 1's grey band uses ±1.8 points on T2 and T3 and ±4.0 on the 1,000-item tests, taken from the brief's "about 1.4 to 1.8" and "up to 4"; set the exact widths from the data pack's power figures before publishing. Chart 3 mixes whole-test accuracy for JEV and Decisions with sample accuracy for Opus, as the brief specified, and says so in the subtitle and footer.
