@@ -3,6 +3,10 @@ title: "I gave JEV 1.14 and OpenAI's Decisions API the same 1,999 product photos
 description: "JEV 1.14 vs the OpenAI Decisions API vs Claude Opus 5.5 on 7,070 pre-registered decisions: what a product photo is worth, who leads on which test, calibration, cost and speed."
 excerpt: "Five pre-registered tests, 7,070 items, three systems. The photo bought JEV 0.65 points at 3.1 times the cost, bought the Decisions API nothing, and Opus 5.5 cost 244 times as much."
 date: "2026-10-25"
+seoTitle: "JEV 1.14 vs OpenAI Decisions API: a 7,070-item benchmark"
+image: "/images/decision-bench/cover.webp"
+imageAlt: "JEV 1.14 vs OpenAI Decisions API vs Claude Opus 5.5: 5 tests, 7,070 items, text and photos, 14,847 calls."
+ogImage: "/images/decision-bench/cover-og.png"
 tags: ["Benchmark", "Decision models", "Evals"]
 ---
 

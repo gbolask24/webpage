@@ -2,55 +2,52 @@ import type { MetadataRoute } from "next";
 import { projects } from "@/lib/projects";
 import { getAllArticles } from "@/lib/articles";
 
+const base = "https://gbolagade.com";
+
+const day = (d: string) => new Date(`${d}T00:00:00Z`);
+const latest = (dates: (string | undefined)[]) =>
+  dates.filter((d): d is string => Boolean(d)).sort().pop();
+
+// No changefreq or priority: Google ignores both, and they only add noise.
+// lastmod is emitted only where a real date backs it; a made-up, churning
+// value gets the whole field ignored.
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://gbolagade.com";
   const articles = getAllArticles();
 
-  // The articles index doesn't change on its own; its "last modified" is
-  // really the last time an article was published. Tie lastmod to the newest
-  // article date so it reflects a real change, not the build.
-  const latestPublished = articles.length
-    ? new Date(`${articles[0].date}T00:00:00Z`)
-    : new Date();
+  // The index changes when an article is published or revised.
+  const articlesModified = latest(
+    articles.flatMap((a) => [a.date, a.updated]),
+  );
 
-  // The home page also lists every project, so it changes when a case study
-  // is added or revised. Use whichever is newer: an article or a project.
-  const latestProject = projects
-    .map((p) => p.updated)
-    .filter((d): d is string => Boolean(d))
-    .sort()
-    .pop();
-  const homeModified =
-    latestProject && new Date(`${latestProject}T00:00:00Z`) > latestPublished
-      ? new Date(`${latestProject}T00:00:00Z`)
-      : latestPublished;
+  // The home page lists every project, so it changes when a case study is
+  // added or revised, or when a new article appears in its footer.
+  const homeModified = latest([
+    ...projects.map((p) => p.updated),
+    articlesModified,
+  ]);
 
   return [
     {
       url: base,
-      lastModified: homeModified,
-      changeFrequency: "weekly",
-      priority: 1,
+      ...(homeModified && { lastModified: day(homeModified) }),
+      images: [`${base}/hero.png`],
     },
     {
       url: `${base}/articles`,
-      lastModified: latestPublished,
-      changeFrequency: "weekly",
-      priority: 0.8,
+      ...(articlesModified && { lastModified: day(articlesModified) }),
     },
     ...projects.map((p) => ({
       url: `${base}/projects/${p.slug}`,
-      // Only emit lastmod when we have a real date for it. A made-up, churning
-      // value is worse than none — Google ignores lastmod if it looks unreliable.
-      ...(p.updated && { lastModified: new Date(`${p.updated}T00:00:00Z`) }),
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
+      ...(p.updated && { lastModified: day(p.updated) }),
     })),
     ...articles.map((a) => ({
       url: `${base}/articles/${a.slug}`,
-      lastModified: new Date(`${a.date}T00:00:00Z`),
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
+      lastModified: day(a.updated ?? a.date),
+      ...(a.images.length && {
+        images: a.images.map((src) =>
+          src.startsWith("http") ? src : `${base}${src}`,
+        ),
+      }),
     })),
   ];
 }

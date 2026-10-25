@@ -84,6 +84,15 @@ export default function ArticlesIndex() {
                     href={`/articles/${a.slug}`}
                     className="group block py-7 transition-colors"
                   >
+                    {a.image && (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={a.image}
+                        alt=""
+                        loading="lazy"
+                        className="mb-5 w-full rounded-xl border border-white/10"
+                      />
+                    )}
                     <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-zinc-400">
                       <time dateTime={a.date}>{formatArticleDate(a.date)}</time>
                       <span aria-hidden>·</span>

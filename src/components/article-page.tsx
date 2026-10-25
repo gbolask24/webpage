@@ -250,6 +250,17 @@ export function ArticlePage({
               className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-zinc-400"
             >
               <time dateTime={article.date}>{formatArticleDate(article.date)}</time>
+              {article.updated && (
+                <>
+                  <span aria-hidden>·</span>
+                  <span>
+                    Updated{" "}
+                    <time dateTime={article.updated}>
+                      {formatArticleDate(article.updated)}
+                    </time>
+                  </span>
+                </>
+              )}
               <span aria-hidden>·</span>
               <span>{article.readingTime}</span>
             </motion.div>
@@ -274,6 +285,16 @@ export function ArticlePage({
                 </span>
               ))}
             </motion.div>
+
+            {article.image && (
+              // eslint-disable-next-line @next/next/no-img-element
+              <motion.img
+                variants={fadeUp}
+                src={article.image}
+                alt={article.imageAlt ?? ""}
+                className="mt-10 w-full rounded-xl border border-white/10"
+              />
+            )}
           </motion.div>
         </section>
 

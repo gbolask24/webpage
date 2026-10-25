@@ -11,7 +11,7 @@ export async function generateMetadata({
   if (!article) return {};
   const url = `https://gbolagade.com/articles/${article.slug}`;
   return {
-    title: article.title,
+    title: article.seoTitle ?? article.title,
     description: article.description,
     keywords: article.tags,
     openGraph: {
@@ -22,6 +22,7 @@ export async function generateMetadata({
       siteName: "Gbolagade Ishola",
       authors: ["Gbolagade Ishola"],
       publishedTime: article.date,
+      ...(article.updated && { modifiedTime: article.updated }),
       tags: article.tags,
     },
     twitter: {

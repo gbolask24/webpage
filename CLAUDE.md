@@ -141,7 +141,7 @@ This site should convey:
 Ongoing goal: optimize the site for search around keywords like **"AI Engineer"**, **"Forward Deployed Engineer"**, **"agentic systems"**, **"LLM systems"**, **"RAG"**, **"AI engineer London"**.
 
 **Done:**
-- Sitemap (`src/app/sitemap.ts`) + robots.txt (`src/app/robots.ts`) — domain `gbolagade.com`, includes all project pages
+- Sitemap (`src/app/sitemap.ts`) + robots.txt (`src/app/robots.ts`) — domain `gbolagade.com`, every project and article page, lastmod only where a real date exists (project `updated`, article `date`/`updated`), image entries for the hero and each article's images, no changefreq or priority (Google ignores both)
 - Keyword-rich meta tags (title, description, keywords, OG, Twitter cards) on all pages
 - Proper heading hierarchy (`h1` → `h2`) across all sections
 - Structured data / JSON-LD `Person` schema (`src/components/json-ld.tsx`, on homepage)
@@ -150,7 +150,7 @@ Ongoing goal: optimize the site for search around keywords like **"AI Engineer"*
 **Still to do:**
 - Replace favicon (`src/app/icon.png` is still Oleg's)
 - Performance audit (Lighthouse, image optimization)
-- Google Search Console verification (token slot is in `src/app/layout.tsx`, still empty)
+- Submit the sitemap and request indexing for new articles in Search Console (the domain is verified by DNS, so the token slot in `src/app/layout.tsx` stays empty)
 
 Done since the list was first written: Open Graph images (`opengraph-image.tsx` routes), the hero photo (`public/hero.png`), the custom domain on Vercel, and Google Analytics 4.
 
@@ -200,7 +200,7 @@ npm run start  # Start production server
 - Last content refresh: 1 October 2026, against the September 2026 CV. Added the federated agent platform, Microsoft automation, the local agent panel and the North Star bot; revised the executive assistant, Alice and the content pipeline.
 - **To add a project:** append to the `projects` array in `src/lib/projects.ts` — the homepage grid, footer, routes, and sitemap all derive from it automatically.
 
-**Articles** (`/articles`, `/articles/[slug]`) are markdown files in `content/articles/*.md` (frontmatter: title, description, excerpt, date, tags), loaded by `src/lib/articles.ts` and rendered by `src/components/article-page.tsx` (react-markdown + GFM). GFM tables render as styled tables from the sm breakpoint up and stack into labelled blocks per row on phones; an image's alt text is also shown as a visible caption under it. Article images live under `public/images/`. The index, routes, sitemap and OG images derive from the files. Latest: `jev-vs-openai-decisions.md` (25 October 2026), the site copy of the R1D04 benchmark article published on X on 19 October; its draft notes are in `outputs/x-article-r1d04-draft.md`.
+**Articles** (`/articles`, `/articles/[slug]`) are markdown files in `content/articles/*.md` (frontmatter: title, description, excerpt, date, tags; optional `updated` for a real content change, `seoTitle` for a short title tag while `title` stays the H1, `image` + `imageAlt` for a featured image shown on the page and the index, and `ogImage` for a hand-made 1200x630 social card that replaces the generated one), loaded by `src/lib/articles.ts` and rendered by `src/components/article-page.tsx` (react-markdown + GFM). GFM tables render as styled tables from the sm breakpoint up and stack into labelled blocks per row on phones; an image's alt text is also shown as a visible caption under it. Article images live under `public/images/`. The index, routes, sitemap and OG images derive from the files. Latest: `jev-vs-openai-decisions.md` (25 October 2026), the site copy of the R1D04 benchmark article published on X on 19 October; its draft notes are in `outputs/x-article-r1d04-draft.md`.
 
 **Shared components:**
 - Animation primitives in `src/components/motion/` (TextEffect, AnimatedGroup)
