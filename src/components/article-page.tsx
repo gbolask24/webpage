@@ -66,14 +66,37 @@ const markdownComponents: Components = {
       {...props}
     />
   ),
-  // eslint-disable-next-line @next/next/no-img-element
+  // Images sit inside a markdown paragraph, so the caption is a span, not a
+  // figcaption. The alt text doubles as the visible caption.
   img: ({ node, alt = "", ...props }) => (
-    <img
-      alt={alt}
-      loading="lazy"
-      className="mx-auto mt-8 w-full rounded-xl border border-white/10"
-      {...props}
-    />
+    <span className="block">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        alt={alt}
+        loading="lazy"
+        className="mx-auto mt-8 w-full rounded-xl border border-white/10"
+        {...props}
+      />
+      {alt && (
+        <span className="mt-3 block text-sm leading-relaxed text-zinc-400">
+          {alt}
+        </span>
+      )}
+    </span>
+  ),
+  table: ({ node, ...props }) => (
+    <div className="mt-8 overflow-x-auto rounded-xl border border-white/10">
+      <table className="w-full border-collapse text-left text-sm" {...props} />
+    </div>
+  ),
+  thead: ({ node, ...props }) => (
+    <thead className="bg-white/[0.04] text-xs uppercase tracking-wide text-zinc-400" {...props} />
+  ),
+  th: ({ node, ...props }) => (
+    <th className="whitespace-nowrap px-3 py-2.5 font-medium" {...props} />
+  ),
+  td: ({ node, ...props }) => (
+    <td className="whitespace-nowrap border-t border-white/10 px-3 py-2.5 align-top text-zinc-300" {...props} />
   ),
   blockquote: ({ node, ...props }) => (
     <blockquote
