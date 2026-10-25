@@ -1,6 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import {
+  Children,
+  cloneElement,
+  createContext,
+  isValidElement,
+  useContext,
+} from "react";
 import { motion } from "framer-motion";
 import ReactMarkdown, { type Components } from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -10,6 +17,33 @@ import { ResourceFooter } from "@/components/resource-footer";
 import { ConnectSection } from "@/components/connect-section";
 import { ArticleJsonLd } from "@/components/json-ld";
 import { ShareButtons } from "@/components/share-buttons";
+
+/**
+ * Column headings of the table being rendered, so each cell can carry its
+ * heading as a label when the table stacks on small screens.
+ */
+const TableHeadings = createContext<string[]>([]);
+
+type HastNode = {
+  type?: string;
+  tagName?: string;
+  value?: string;
+  children?: HastNode[];
+};
+
+function textOf(node: HastNode | undefined): string {
+  if (!node) return "";
+  if (node.type === "text") return node.value ?? "";
+  return (node.children ?? []).map(textOf).join("");
+}
+
+function headingsOf(table: HastNode | undefined): string[] {
+  const thead = table?.children?.find((c) => c.tagName === "thead");
+  const row = thead?.children?.find((c) => c.tagName === "tr");
+  return (row?.children ?? [])
+    .filter((c) => c.tagName === "th")
+    .map((c) => textOf(c).trim());
+}
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -84,20 +118,64 @@ const markdownComponents: Components = {
       )}
     </span>
   ),
+  // Tables stack on small screens: each row becomes a block, each cell shows
+  // its column heading as a label, and the first cell acts as the row's title.
+  // From the sm breakpoint up they render as ordinary tables.
   table: ({ node, ...props }) => (
-    <div className="mt-8 overflow-x-auto rounded-xl border border-white/10">
-      <table className="w-full border-collapse text-left text-sm" {...props} />
-    </div>
+    <TableHeadings.Provider value={headingsOf(node as HastNode)}>
+      <div className="mt-8 overflow-x-auto rounded-xl border border-white/10">
+        <table
+          className="block w-full border-collapse text-left text-sm sm:table"
+          {...props}
+        />
+      </div>
+    </TableHeadings.Provider>
   ),
   thead: ({ node, ...props }) => (
-    <thead className="bg-white/[0.04] text-xs uppercase tracking-wide text-zinc-400" {...props} />
+    <thead
+      className="hidden bg-white/[0.04] text-xs uppercase tracking-wide text-zinc-400 sm:table-header-group"
+      {...props}
+    />
   ),
+  tbody: ({ node, ...props }) => (
+    <tbody className="block sm:table-row-group" {...props} />
+  ),
+  tr: ({ node, children, ...props }) => {
+    const headings = useContext(TableHeadings);
+    let i = 0;
+    const cells = Children.map(children, (child) => {
+      if (!isValidElement(child)) return child;
+      const index = i++;
+      return cloneElement(child as React.ReactElement<Record<string, unknown>>, {
+        "data-label": index === 0 ? undefined : headings[index],
+        "data-first": index === 0 ? "true" : undefined,
+      });
+    });
+    return (
+      <tr
+        className="block border-t border-white/10 px-3 py-3 first:border-t-0 sm:table-row sm:border-0 sm:p-0"
+        {...props}
+      >
+        {cells}
+      </tr>
+    );
+  },
   th: ({ node, ...props }) => (
     <th className="whitespace-nowrap px-3 py-2.5 font-medium" {...props} />
   ),
-  td: ({ node, ...props }) => (
-    <td className="whitespace-nowrap border-t border-white/10 px-3 py-2.5 align-top text-zinc-300" {...props} />
-  ),
+  td: ({ node, ...props }) => {
+    const first = (props as Record<string, unknown>)["data-first"] === "true";
+    return (
+      <td
+        className={
+          first
+            ? "block py-0.5 font-medium text-white sm:table-cell sm:whitespace-nowrap sm:border-t sm:border-white/10 sm:px-3 sm:py-2.5 sm:align-top sm:font-normal sm:text-zinc-300"
+            : "block py-0.5 text-zinc-300 before:mr-2 before:text-xs before:uppercase before:tracking-wide before:text-zinc-500 before:content-[attr(data-label)] sm:table-cell sm:whitespace-nowrap sm:border-t sm:border-white/10 sm:px-3 sm:py-2.5 sm:align-top sm:before:hidden"
+        }
+        {...props}
+      />
+    );
+  },
   blockquote: ({ node, ...props }) => (
     <blockquote
       className="mt-6 border-l-2 border-white/20 pl-5 text-lg italic text-zinc-400"
